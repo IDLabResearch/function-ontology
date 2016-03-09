@@ -6,21 +6,61 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
 @base <http://semweb.mmlab.be/ns/function#> .
 
-<http://semweb.mmlab.be/ns/function#> rdf:type owl:Ontology ;
+<http://semweb.mmlab.be/ns/function>  rdf:type owl:Ontology ;
+
+                                      rdf:type voaf:Vocabulary;
+                                      
+                                      vann:preferredNamespacePrefix "fn";
+                                      
+                                      vann:preferredNamespaceUri "http://semweb.mmlab.be/ns/function#";
                                       
                                       rdfs:label "the Function Ontology"@en ;
                                       
-                                      rdfs:comment "The Function Ontology allows to declare and describe functions. More info at http://http://users.ugent.be/~bjdmeest/function/"@en ;
+                                      dct:title "the Function Ontology"@en ;
+                                      
+                                      dct:description "The Function Ontology allows to declare and describe functions."@en;
+                                      
+                                      rdfs:comment """-Version 0.2: added extra metadata.
+-Version 0.1: creation."""@en ;
                                       
                                       rdfs:seeAlso <http://http://users.ugent.be/~bjdmeest/function/> ;
                                       
+                                      dct:modified "2016-03-09"^^xsd:date ;
+                                     
+                                      dct:issued "2016-03-08"^^xsd:date ;
+                                      
+                                      owl:versionInfo "0.2"^^xsd:decimal ;
+                                      
+                                      dct:rights "Copyright © Ghent University – iMinds – Data Science Lab"@en ;
+                                      
+                                      cc:license <http://creativecommons.org/license/by/3.0/> ;
+                                     
+                                      foaf:primaryTopic <http://semweb.mmlab.be/ns/function> ;
+                                      
                                       dct:creator [ 
+                                      
+                                      rdf:type foaf:Person ;
                                       
                                       foaf:mbox "Ben.DeMeester@UGent.be";
                                     
                                       foaf:name "Ben De Meester"@en
+                                      
+                                      ] ;
+                                      
+                                      dct:contributor [
+                                      
+                                      rdf:type foaf:Person ;
+                                      
+                                      foaf:mbox "Anastasia.dimou@UGent.be" ;
+                                      
+                                      foaf:name "Anastasia Dimou"@en
                                       
                                       ] .
 
@@ -84,6 +124,8 @@ xsd:date rdf:type rdfs:Datatype .
           
           rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> ;
           
+          vs:term_status "testing" ;
+          
           rdfs:domain :Execution ;
           
           rdfs:range :Function .
@@ -99,6 +141,8 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:comment "Connects a function description to a parameter description"@en ;
          
          rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> ;
+         
+         vs:term_status "testing" ;
          
          rdfs:domain :Function ;
          
@@ -116,6 +160,8 @@ xsd:date rdf:type rdfs:Datatype .
             
             rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> ;
             
+            vs:term_status "testing" ;
+            
             rdfs:range :Algorithm ;
             
             rdfs:domain :Function .
@@ -132,6 +178,8 @@ xsd:date rdf:type rdfs:Datatype .
          
          rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> ;
          
+         vs:term_status "testing" ;
+         
          rdfs:domain :Function ;
          
          rdfs:range :Output .
@@ -147,6 +195,8 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:comment "connects a description of a function to the description of a problem it tries to solve."@en ;
         
         rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> ;
+        
+        vs:term_status "testing" ;
         
         rdfs:domain :Function ;
         
@@ -171,6 +221,8 @@ xsd:date rdf:type rdfs:Datatype .
            
            rdfs:comment "A declaration of an algorithm that is implemented by a function"@en ;
            
+           vs:term_status "testing" ;
+           
            rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> .
 
 
@@ -182,6 +234,8 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:label "Execution"@en ;
            
            rdfs:comment "The output of a function"@en ;
+           
+           vs:term_status "testing" ;
            
            rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> .
 
@@ -195,6 +249,8 @@ xsd:date rdf:type rdfs:Datatype .
           
           rdfs:comment "The declared function"@en ;
           
+          vs:term_status "testing" ;
+          
           rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> .
 
 
@@ -206,6 +262,8 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:label "Output"@en ;
         
         rdfs:comment "A certain execution of a defined function"@en ;
+        
+        vs:term_status "testing" ;
         
         rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> .
 
@@ -219,6 +277,8 @@ xsd:date rdf:type rdfs:Datatype .
            
            rdfs:comment "A parameter to a certain function"@en ;
            
+           vs:term_status "testing" ;
+           
            rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> .
 
 
@@ -231,6 +291,8 @@ xsd:date rdf:type rdfs:Datatype .
          
          rdfs:comment "A certain problem that a function solves"@en ;
          
+         vs:term_status "testing" ;
+         
          rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> .
 
 
@@ -238,28 +300,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://xmlns.com/foaf/0.1/Document
 
 foaf:Document rdf:type owl:Class .
-
-
-
-
-
-#################################################################
-#
-#    Individuals
-#
-#################################################################
-
-
-###  http://semweb.mmlab.be/ns/function
-
-<http://semweb.mmlab.be/ns/function> rdf:type owl:NamedIndividual ,
-                                              foaf:Document ;
                                      
-                                     dct:modified "2016-03-08"^^xsd:date ;
                                      
-                                     dct:issued "2016-03-08"^^xsd:date ;
-                                     
-                                     foaf:primaryTopic <http://semweb.mmlab.be/ns/function#> .
 
 
 
