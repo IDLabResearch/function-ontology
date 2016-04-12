@@ -27,7 +27,8 @@
                                       
                                       dct:description "The Function Ontology allows to declare and describe functions."@en;
                                       
-                                      rdfs:comment """-Version 0.2: added extra metadata.
+                                      rdfs:comment """-Version 0.3: improved comments.
+-Version 0.2: added extra metadata.
 -Version 0.1: creation."""@en ;
                                       
                                       rdfs:seeAlso <http://http://users.ugent.be/~bjdmeest/function/> ;
@@ -36,7 +37,7 @@
                                      
                                       dct:issued "2016-03-08"^^xsd:date ;
                                       
-                                      owl:versionInfo "0.2"^^xsd:decimal ;
+                                      owl:versionInfo "0.3"^^xsd:decimal ;
                                       
                                       dct:rights "Copyright © Ghent University – iMinds – Data Science Lab"@en ;
                                       
@@ -120,7 +121,7 @@ xsd:date rdf:type rdfs:Datatype .
           
           rdfs:label "executes"@en ;
           
-          rdfs:comment "Connects a function to a specific execution of that function"@en ;
+          rdfs:comment "Connects a function to an execution definition"@en ;
           
           rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> ;
           
@@ -156,7 +157,7 @@ xsd:date rdf:type rdfs:Datatype .
             
             rdfs:label "implements"@en ;
             
-            rdfs:comment "connects a function to the algorithm it implements. a function can implement multiple algorithms."@en ;
+            rdfs:comment "Connects a function to an algorithm it implements. A function can implement 0..n algorithms."@en ;
             
             rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> ;
             
@@ -174,7 +175,7 @@ xsd:date rdf:type rdfs:Datatype .
          
          rdfs:label "returns"@en ;
          
-         rdfs:comment "connects a description of a function to the description of the output"@en ;
+         rdfs:comment "Connects a description of a function to the description of the output"@en ;
          
          rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> ;
          
@@ -192,7 +193,7 @@ xsd:date rdf:type rdfs:Datatype .
         
         rdfs:label "solves"@en ;
         
-        rdfs:comment "connects a description of a function to the description of a problem it tries to solve."@en ;
+        rdfs:comment "Connects a description of a function to the description of a problem it tries to solve."@en ;
         
         rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> ;
         
@@ -219,7 +220,7 @@ xsd:date rdf:type rdfs:Datatype .
            
            rdfs:label "Algorithm"@en ;
            
-           rdfs:comment "A declaration of an algorithm that is implemented by a function"@en ;
+           rdfs:comment "A declaration of an algorithm. An algorithm is a specified set of instructions, independent of its implementation. There is no one-to-one mapping between an algorithm and a problem."@en ;
            
            vs:term_status "testing" ;
            
@@ -233,7 +234,7 @@ xsd:date rdf:type rdfs:Datatype .
            
            rdfs:label "Execution"@en ;
            
-           rdfs:comment "The output of a function"@en ;
+           rdfs:comment "An execution is the connection between a function and its input and output values."@en ;
            
            vs:term_status "testing" ;
            
@@ -261,7 +262,7 @@ xsd:date rdf:type rdfs:Datatype .
         
         rdfs:label "Output"@en ;
         
-        rdfs:comment "A certain execution of a defined function"@en ;
+        rdfs:comment "The definition of an output of a function"@en ;
         
         vs:term_status "testing" ;
         
@@ -275,7 +276,7 @@ xsd:date rdf:type rdfs:Datatype .
            
            rdfs:label "Parameter"@en ;
            
-           rdfs:comment "A parameter to a certain function"@en ;
+           rdfs:comment "The definition of a parameter to a certain function"@en ;
            
            vs:term_status "testing" ;
            
