@@ -31,7 +31,7 @@
 -Version 0.2: added extra metadata.
 -Version 0.1: creation."""@en ;
                                       
-                                      rdfs:seeAlso <http://http://users.ugent.be/~bjdmeest/function/> ;
+                                      rdfs:seeAlso <http://users.ugent.be/~bjdmeest/function/> ;
                                       
                                       dct:modified "2016-03-09"^^xsd:date ;
                                      
