@@ -25,7 +25,7 @@
                                       
                                       dct:title "the Function Ontology"@en ;
                                       
-                                      dct:description "The Function Ontology allows to declare and describe functions."@en;
+                                      dct:description "The Function Ontology allows to declare and describe functions. The specification is online at http://users.ugent.be/~bjdmeest/function/"@en;
                                       
                                       rdfs:comment """-Version 0.3: improved comments.
 -Version 0.2: added extra metadata.
