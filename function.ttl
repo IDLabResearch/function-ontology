@@ -205,6 +205,21 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 
+###  http://semweb.mmlab.be/ns/function#predicate
+
+:predicate rdf:type owl:ObjectProperty ;
+
+        rdfs:label "predicate"@en ;
+
+        rdfs:comment "defines which predicate can be usd to bind the value to the execution."@en ;
+
+        rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> ;
+
+        vs:term_status "testing" ;
+
+        rdfs:domain :Function .
+
+
 
 
 #################################################################
