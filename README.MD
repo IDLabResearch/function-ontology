@@ -1,0 +1,1 @@
+See http://users.ugent.be/~bjdmeest/function/ for the full specification
