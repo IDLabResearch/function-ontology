@@ -1,0 +1,53 @@
+@prefix : <http://semweb.mmlab.be/ns/function#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+
+@base <http://semweb.mmlab.be/ns/functions#> .
+
+<http://semweb.mmlab.be/ns/functions>  rdf:type voaf:Vocabulary;
+                                      
+                                      vann:preferredNamespacePrefix "fns";
+                                      
+                                      vann:preferredNamespaceUri "http://semweb.mmlab.be/ns/functions#";
+                                      
+                                      rdfs:label "Function Descriptions using the Function Ontology"@en ;
+                                      
+                                      dct:title "Function Descriptions using the Function Ontology"@en ;
+                                      
+                                      dct:description "Descriptions of Functions that are used in a multitude of technologies, such as SPARQL, and CWM. The specification of the Function Ontology is online at http://users.ugent.be/~bjdmeest/function/"@en;
+                                      
+                                      rdfs:comment """-Version 0.1: creation."""@en ;
+                                      
+                                      rdfs:seeAlso <http://users.ugent.be/~bjdmeest/function/> ;
+                                      
+                                      dct:modified "2016-04-29"^^xsd:date ;
+                                     
+                                      dct:issued "2016-04-29"^^xsd:date ;
+                                      
+                                      owl:versionInfo "0.1"^^xsd:decimal ;
+                                      
+                                      dct:rights "Copyright © Ghent University – iMinds – Data Science Lab"@en ;
+                                      
+                                      cc:license <http://creativecommons.org/license/by/3.0/> ;
+                                     
+                                      foaf:primaryTopic <http://semweb.mmlab.be/ns/function> ;
+                                      
+                                      dct:creator [ 
+                                      
+                                      rdf:type foaf:Person ;
+                                      
+                                      foaf:mbox "Ben.DeMeester@UGent.be";
+                                    
+                                      foaf:name "Ben De Meester"@en
+                                      
+                                      ] .
+
