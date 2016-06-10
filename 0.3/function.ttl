@@ -1,3 +1,4 @@
+@prefix : <http://semweb.mmlab.be/ns/function#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -9,17 +10,16 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix max: <http://maxime-lefrancois.info/me#> .
 
-@base <https://w3id.org/function/ontology#> .
-@prefix : <https://w3id.org/function/ontology#> .
-<https://w3id.org/function/ontology>  rdf:type owl:Ontology ;
+@base <http://semweb.mmlab.be/ns/function#> .
+
+<http://semweb.mmlab.be/ns/function>  rdf:type owl:Ontology ;
 
                                       rdf:type voaf:Vocabulary;
                                       
-                                      vann:preferredNamespacePrefix "fno";
+                                      vann:preferredNamespacePrefix "fn";
                                       
-                                      vann:preferredNamespaceUri "https://w3id.org/function/ontology#";
+                                      vann:preferredNamespaceUri "http://semweb.mmlab.be/ns/function#";
                                       
                                       rdfs:label "the Function Ontology"@en ;
                                       
@@ -27,32 +27,33 @@
                                       
                                       dct:description "The Function Ontology allows to declare and describe functions. The specification is online at http://users.ugent.be/~bjdmeest/function/"@en;
                                       
-                                      rdfs:comment """-Version 0.4: added some properties
--Version 0.3: improved comments.
+                                      rdfs:comment """-Version 0.3: improved comments.
 -Version 0.2: added extra metadata.
 -Version 0.1: creation."""@en ;
                                       
-                                      owl:versionIRI <https://w3id.org/function/ontology/0.4> ;
-                                      owl:versionInfo "0.4" ;
-                                      owl:priorVersion "https://w3id.org/function/ontology/0.3" ;
-                                      
+                                      owl:versionIRI <https://w3id.org/function/ontology/0.3> ;
+                                      owl:versionInfo "0.3" ;
+                                      owl:priorVersion "https://w3id.org/function/ontology/0.2" ;
+
                                       rdfs:seeAlso <http://users.ugent.be/~bjdmeest/function/> ;
                                       
-                                      dct:modified "2016-06-10"^^xsd:date ;
+                                      dct:modified "2016-03-09"^^xsd:date ;
                                      
                                       dct:issued "2016-03-08"^^xsd:date ;
-                                                                            
+                                      
+                                      owl:versionInfo "0.3"^^xsd:decimal ;
+                                      
                                       dct:rights "Copyright © Ghent University – iMinds – Data Science Lab"@en ;
                                       
                                       cc:license <http://creativecommons.org/license/by/3.0/> ;
                                      
-                                      foaf:primaryTopic <http://semweb.datasciencelab.be/ns/function> ;
+                                      foaf:primaryTopic <http://semweb.mmlab.be/ns/function> ;
                                       
                                       dct:creator [ 
                                       
                                       rdf:type foaf:Person ;
                                       
-                                      foaf:mbox "mailto:Ben.DeMeester@UGent.be";
+                                      foaf:mbox "Ben.DeMeester@UGent.be";
                                     
                                       foaf:name "Ben De Meester"@en
                                       
@@ -62,12 +63,11 @@
                                       
                                       rdf:type foaf:Person ;
                                       
-                                      foaf:mbox "mailto:Anastasia.dimou@UGent.be" ;
+                                      foaf:mbox "Anastasia.dimou@UGent.be" ;
                                       
                                       foaf:name "Anastasia Dimou"@en
                                       
-                                      ] ;
-                                      dct:contributor max: .
+                                      ] .
 
 
 #################################################################
@@ -119,7 +119,7 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 
 
-###  https://w3id.org/function/ontology#executes
+###  http://semweb.mmlab.be/ns/function#executes
 
 :executes rdf:type owl:ObjectProperty ;
           
@@ -127,7 +127,7 @@ xsd:date rdf:type rdfs:Datatype .
           
           rdfs:comment "Connects a function to an execution definition"@en ;
           
-          rdfs:isDefinedBy <https://w3id.org/function/ontology#> ;
+          rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> ;
           
           vs:term_status "testing" ;
           
@@ -137,25 +137,25 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 
-###  https://w3id.org/function/ontology#expects
+###  http://semweb.mmlab.be/ns/function#expects
 
 :expects rdf:type owl:ObjectProperty ;
          
          rdfs:label "expects"@en ;
          
-         rdfs:comment "Connects a function description to an ordered list of zero or more parameter descriptions"@en ;
+         rdfs:comment "Connects a function description to a parameter description"@en ;
          
-         rdfs:isDefinedBy <https://w3id.org/function/ontology#> ;
+         rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> ;
          
          vs:term_status "testing" ;
          
          rdfs:domain :Function ;
          
-         rdfs:range rdf:List .
+         rdfs:range :Parameter .
 
 
 
-###  https://w3id.org/function/ontology#implements
+###  http://semweb.mmlab.be/ns/function#implements
 
 :implements rdf:type owl:ObjectProperty ;
             
@@ -163,7 +163,7 @@ xsd:date rdf:type rdfs:Datatype .
             
             rdfs:comment "Connects a function to an algorithm it implements. A function can implement 0..n algorithms."@en ;
             
-            rdfs:isDefinedBy <https://w3id.org/function/ontology#> ;
+            rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> ;
             
             vs:term_status "testing" ;
             
@@ -173,7 +173,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 
-###  https://w3id.org/function/ontology#returns
+###  http://semweb.mmlab.be/ns/function#returns
 
 :returns rdf:type owl:ObjectProperty ;
          
@@ -181,7 +181,7 @@ xsd:date rdf:type rdfs:Datatype .
          
          rdfs:comment "Connects a description of a function to the description of the output"@en ;
          
-         rdfs:isDefinedBy <https://w3id.org/function/ontology#> ;
+         rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> ;
          
          vs:term_status "testing" ;
          
@@ -191,7 +191,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 
-###  https://w3id.org/function/ontology#solves
+###  http://semweb.mmlab.be/ns/function#solves
 
 :solves rdf:type owl:ObjectProperty ;
         
@@ -199,7 +199,7 @@ xsd:date rdf:type rdfs:Datatype .
         
         rdfs:comment "Connects a description of a function to the description of a problem it tries to solve."@en ;
         
-        rdfs:isDefinedBy <https://w3id.org/function/ontology#> ;
+        rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> ;
         
         vs:term_status "testing" ;
         
@@ -209,85 +209,19 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 
-###  https://w3id.org/function/ontology#predicate
+###  http://semweb.mmlab.be/ns/function#predicate
 
-:predicate rdf:type rdf:Property ;
-        
+:predicate rdf:type owl:ObjectProperty ;
+
         rdfs:label "predicate"@en ;
-        
-        rdfs:comment "Connects a parameter description to the predicate used to link executions of this function to their parameter."@en ;
-        
-        rdfs:isDefinedBy <https://w3id.org/function/ontology#> ;
-        
-        vs:term_status "testing" ;
-        
-        rdfs:domain :Parameter ;
-        
-        rdfs:range rdf:Property .
 
+        rdfs:comment "defines which predicate can be usd to bind the value to the execution."@en ;
 
-###  https://w3id.org/function/ontology#type
+        rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> ;
 
-:type rdf:type rdf:Property ;
-        
-        rdfs:label "type"@en ;
-        
-        rdfs:comment "Connects an output or a parameter description to the type of instances of these parameters or outputs."@en ;
-        
-        rdfs:isDefinedBy <https://w3id.org/function/ontology#> ;
-        
-        vs:term_status "testing" ;
-        
-        rdfs:range rdf:Property .
-
-
-
-
-###  https://w3id.org/function/ontology#name
-
-:name rdf:type rdf:Property ;
-        
-        rdfs:label "name"@en ;
-        
-        rdfs:comment "Connects an function or a parameter to its name."@en ;
-
-        rdfs:subPropertyOf rdfs:label ;
-
-        rdfs:range xsd:string ;
-        
-        rdfs:isDefinedBy <https://w3id.org/function/ontology#> ;
-        
         vs:term_status "testing" ;
 
         rdfs:domain :Function .
-        
-###  https://w3id.org/function/ontology#required
-
-:required rdf:type rdf:Property ;
-        
-        rdfs:label "required"@en ;
-        
-        rdfs:comment "Defines if a parameter or an output is required."@en ;
-
-        rdfs:range xsd:boolean ;
-        
-        rdfs:isDefinedBy <https://w3id.org/function/ontology#> ;
-        
-        vs:term_status "testing" .
-
-###  https://w3id.org/function/ontology#nullable
-
-:nullable rdf:type rdf:Property ;
-        
-        rdfs:label "nullable"@en ;
-        
-        rdfs:comment "Defines if a parameteris nullable."@en ;
-
-        rdfs:range xsd:boolean ;
-        
-        rdfs:isDefinedBy <https://w3id.org/function/ontology#> ;
-        
-        vs:term_status "testing" .
 
 
 
@@ -299,7 +233,7 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 
 
-###  https://w3id.org/function/ontology#Algorithm
+###  http://semweb.mmlab.be/ns/function#Algorithm
 
 :Algorithm rdf:type owl:Class ;
            
@@ -309,11 +243,11 @@ xsd:date rdf:type rdfs:Datatype .
            
            vs:term_status "testing" ;
            
-           rdfs:isDefinedBy <https://w3id.org/function/ontology#> .
+           rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> .
 
 
 
-###  https://w3id.org/function/ontology#Execution
+###  http://semweb.mmlab.be/ns/function#Execution
 
 :Execution rdf:type owl:Class ;
            
@@ -323,11 +257,11 @@ xsd:date rdf:type rdfs:Datatype .
            
            vs:term_status "testing" ;
            
-           rdfs:isDefinedBy <https://w3id.org/function/ontology#> .
+           rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> .
 
 
 
-###  https://w3id.org/function/ontology#Function
+###  http://semweb.mmlab.be/ns/function#Function
 
 :Function rdf:type owl:Class ;
           
@@ -337,11 +271,11 @@ xsd:date rdf:type rdfs:Datatype .
           
           vs:term_status "testing" ;
           
-          rdfs:isDefinedBy <https://w3id.org/function/ontology#> .
+          rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> .
 
 
 
-###  https://w3id.org/function/ontology#Output
+###  http://semweb.mmlab.be/ns/function#Output
 
 :Output rdf:type owl:Class ;
         
@@ -351,11 +285,11 @@ xsd:date rdf:type rdfs:Datatype .
         
         vs:term_status "testing" ;
         
-        rdfs:isDefinedBy <https://w3id.org/function/ontology#> .
+        rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> .
 
 
 
-###  https://w3id.org/function/ontology#Parameter
+###  http://semweb.mmlab.be/ns/function#Parameter
 
 :Parameter rdf:type owl:Class ;
            
@@ -365,11 +299,11 @@ xsd:date rdf:type rdfs:Datatype .
            
            vs:term_status "testing" ;
            
-           rdfs:isDefinedBy <https://w3id.org/function/ontology#> .
+           rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> .
 
 
 
-###  https://w3id.org/function/ontology#Problem
+###  http://semweb.mmlab.be/ns/function#Problem
 
 :Problem rdf:type owl:Class ;
          
@@ -379,7 +313,7 @@ xsd:date rdf:type rdfs:Datatype .
          
          vs:term_status "testing" ;
          
-         rdfs:isDefinedBy <https://w3id.org/function/ontology#> .
+         rdfs:isDefinedBy <http://semweb.mmlab.be/ns/function#> .
 
 
 
@@ -388,3 +322,9 @@ xsd:date rdf:type rdfs:Datatype .
 foaf:Document rdf:type owl:Class .
                                      
                                      
+
+
+
+
+###  Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net
+
