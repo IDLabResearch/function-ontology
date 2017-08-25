@@ -11,7 +11,7 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix max: <http://maxime-lefrancois.info/me#> .
 
-@base <https://w3id.org/function/ontology#> .
+@base <https://w3id.org/function/ontology> .
 @prefix : <https://w3id.org/function/ontology#> .
 <https://w3id.org/function/ontology>  rdf:type owl:Ontology ;
 
@@ -21,24 +21,25 @@
                                       
                                       vann:preferredNamespaceUri "https://w3id.org/function/ontology#";
                                       
-                                      rdfs:label "the Function Ontology"@en ;
+                                      rdfs:label "The Function Ontology"@en ;
                                       
-                                      dct:title "the Function Ontology"@en ;
+                                      dct:title "The Function Ontology"@en ;
                                       
-                                      dct:description "The Function Ontology allows to declare and describe functions. The specification is online at http://users.ugent.be/~bjdmeest/function/"@en;
+                                      dct:description "The Function Ontology allows to declare and describe functions. The specification is online at https://w3id.org/function/spec"@en;
                                       
-                                      rdfs:comment """-Version 0.4: added some properties
+                                      rdfs:comment """-Version 0.4.1: wrong range definition, updated descriptions.
+-Version 0.4: added some properties
 -Version 0.3: improved comments.
 -Version 0.2: added extra metadata.
 -Version 0.1: creation."""@en ;
                                       
-                                      owl:versionIRI <https://w3id.org/function/ontology/0.4> ;
-                                      owl:versionInfo "0.4" ;
-                                      owl:priorVersion "https://w3id.org/function/ontology/0.3" ;
+                                      owl:versionIRI <https://w3id.org/function/ontology/0.4.1> ;
+                                      owl:versionInfo "0.4.1" ;
+                                      owl:priorVersion "https://w3id.org/function/ontology/0.4" ;
                                       
-                                      rdfs:seeAlso <http://users.ugent.be/~bjdmeest/function/> ;
+                                      rdfs:seeAlso <https://w3id.org/function/spec> ;
                                       
-                                      dct:modified "2016-06-10"^^xsd:date ;
+                                      dct:modified "2017-08-25"^^xsd:date ;
                                      
                                       dct:issued "2016-03-08"^^xsd:date ;
                                                                             
@@ -46,7 +47,7 @@
                                       
                                       cc:license <http://creativecommons.org/license/by/3.0/> ;
                                      
-                                      foaf:primaryTopic <http://semweb.datasciencelab.be/ns/function> ;
+                                      foaf:primaryTopic <https://w3id.org/function/ontology> ;
                                       
                                       dct:creator [ 
                                       
@@ -238,7 +239,7 @@ xsd:date rdf:type rdfs:Datatype .
         
         vs:term_status "testing" ;
         
-        rdfs:range rdf:Property .
+        rdfs:domain rdf:Property .
 
 
 
@@ -249,7 +250,7 @@ xsd:date rdf:type rdfs:Datatype .
         
         rdfs:label "name"@en ;
         
-        rdfs:comment "Connects an function or a parameter to its name."@en ;
+        rdfs:comment "Connects a function or a parameter to its name."@en ;
 
         rdfs:subPropertyOf rdfs:label ;
 
