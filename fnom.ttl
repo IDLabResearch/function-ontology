@@ -28,15 +28,18 @@
 
                                       dct:description "The Function Ontology Implementation Mapping vocabulary specifies terms relevant to link FnO models to implementations. The specification is online at https://w3id.org/function/spec"@en;
 
-                                      rdfs:comment """-Version 0.1.0: creation."""@en ;
+                                      rdfs:comment """-Version 0.2.0: ReturnMapping
+-Version 0.1.0: creation."""@en ;
 
-owl:versionIRI <https://w3id.org/function/vocabulary/mapping/0.1.0> ;
-                                      owl:versionInfo "0.1.0" ;
-#                                      owl:priorVersion "https://w3id.org/function/vocabulary/mapping/0.0.0" ;
+                                      owl:versionIRI <https://w3id.org/function/vocabulary/mapping/0.2.0> ;
+
+                                      owl:versionInfo "0.2.0" ;
+
+                                      owl:priorVersion "https://w3id.org/function/vocabulary/mapping/0.1.0" ;
 
                                       rdfs:seeAlso <https://w3id.org/function/spec> ;
 
-                                      dct:modified "2019-05-21"^^xsd:date ;
+                                      dct:modified "2019-05-29"^^xsd:date ;
 
                                       dct:issued "2019-05-21"^^xsd:date ;
 
@@ -128,6 +131,22 @@ owl:versionIRI <https://w3id.org/function/vocabulary/mapping/0.1.0> ;
 
         rdfs:range xsd:string .
 
+###  https://w3id.org/function/vocabulary/mapping#implementationProperty
+
+:functionOutput rdf:type rdf:Property ;
+
+        rdfs:label "function output"@en ;
+
+        rdfs:comment "Connects a function output to a return mapping."@en ;
+
+        rdfs:isDefinedBy <https://w3id.org/vocabulary/mapping#> ;
+
+        vs:term_status "testing" ;
+
+        rdfs:domain :ReturnMapping ;
+
+        rdfs:range fno:Output .
+
 #################################################################
 #
 #    Classes
@@ -173,3 +192,27 @@ owl:versionIRI <https://w3id.org/function/vocabulary/mapping/0.1.0> ;
          rdfs:isDefinedBy <https://w3id.org/function/vocabulary/mapping#> ;
 
          rdfs:subClassOf fno:ParameterMapping .
+
+:DefaultReturnMapping rdf:type owl:Class ;
+
+         rdfs:label "Default Return Mapping"@en ;
+
+         rdfs:comment "A default return mapping links the return value of the method to a fno:Output"@en ;
+
+         vs:term_status "testing" ;
+
+         rdfs:isDefinedBy <https://w3id.org/function/vocabulary/mapping#> ;
+
+         rdfs:subClassOf fno:ReturnMapping .
+
+:ExceptionReturnMapping rdf:type owl:Class ;
+
+         rdfs:label "Exception Return Mapping"@en ;
+
+         rdfs:comment "An exception return mapping links the thrown exception of the method to a fno:Output"@en ;
+
+         vs:term_status "testing" ;
+
+         rdfs:isDefinedBy <https://w3id.org/function/vocabulary/mapping#> ;
+
+         rdfs:subClassOf fno:ReturnMapping .
