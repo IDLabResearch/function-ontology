@@ -1,0 +1,133 @@
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix fnosh: <https://w3id.org/function/shape#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fnosh:FunctionShape
+  a sh:NodeShape ;
+  sh:targetClass fno:Function ;
+  sh:property [
+    sh:path fno:solves ;
+    sh:node fnosh:ProblemShape
+  ] ;
+  sh:property [
+    sh:path fno:implements;
+    sh:maxCount 1;
+    sh:node fnosh:AlgorithmShape
+  ] ;
+  sh:property [
+    sh:path fno:expects ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:node fnosh:ListShape
+  ] ;
+  sh:property [
+    sh:path fno:returns ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:node fnosh:ListShape
+  ] .
+
+fnosh:ParameterShape
+  a sh:NodeShape ;
+  sh:targetClass fno:Parameter;
+  sh:property [
+    sh:path fno:predicate ;
+    sh:maxCount 1;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path fno:required ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:boolean;
+  ] .
+
+fnosh:OutputShape
+  a sh:NodeShape ;
+  sh:targetClass fno:Output;
+  sh:property [
+    sh:path fno:predicate ;
+    sh:maxCount 1;
+    sh:minCount 1
+  ] ;
+  sh:property [
+    sh:path fno:required ;
+    sh:maxCount 1 ;
+    sh:datatype xsd:boolean;
+  ] .
+
+fnosh:predicateShape
+  a sh:NodeShape ;
+  sh:targetObjectsOf fno:predicate;
+  sh:property [
+    sh:path fno:type;
+    sh:maxCount 1;
+    sh:minCount 1
+  ] .
+
+fnosh:nameShape
+  a sh:NodeShape ;
+  sh:targetObjectsOf fno:name;
+  sh:datatype xsd:string .
+
+fnosh:ProblemShape
+  a sh:NodeShape ;
+  sh:targetClass fno:Problem .
+
+fnosh:AlgorithmShape
+  a sh:NodeShape ;
+  sh:targetClass fno:Algorithm.
+
+fnosh:ExecutionShape
+  a sh:NodeShape ;
+  sh:targetClass fno:Execution ;
+  sh:property [
+    sh:path fno:executes ;
+    sh:maxCount 1;
+    sh:node fnosh:FunctionShape
+  ] .
+
+
+fnosh:ListShape
+	a sh:NodeShape ;
+	rdfs:label "List shape"@en ;
+	rdfs:comment "A shape describing well-formed RDF lists. Currently does not check for non-recursion. This could be expressed using SHACL-SPARQL."@en ;
+	rdfs:seeAlso <https://www.w3.org/TR/shacl/#syntax-rule-SHACL-list> ;
+	sh:property [
+		sh:path [ sh:zeroOrMorePath rdf:rest ] ;
+		rdfs:comment "Each list member (including this node) must be have the shape fnosh:ListNodeShape."@en ;
+		sh:hasValue rdf:nil ;
+		sh:node fnosh:ListNodeShape ;
+	] .
+
+fnosh:ListNodeShape
+	a sh:NodeShape ;
+	rdfs:label "List node shape"@en ;
+	rdfs:comment "Defines constraints on what it means for a node to be a node within a well-formed RDF list. Note that this does not check whether the rdf:rest items are also well-formed lists as this would lead to unsupported recursion."@en ;
+	sh:or ( [
+				sh:hasValue rdf:nil ;
+        		sh:property [
+					sh:path rdf:first ;
+					sh:maxCount 0 ;
+				] ;
+				sh:property [
+					sh:path rdf:rest ;
+					sh:maxCount 0 ;
+				] ;
+			]
+			[
+				sh:not [ sh:hasValue rdf:nil ] ;
+				sh:property [
+					sh:path rdf:first ;
+					sh:maxCount 1 ;
+					sh:minCount 1 ;
+          # TODO set what kind of thinky
+				] ;
+				sh:property [
+					sh:path rdf:rest ;
+					sh:maxCount 1 ;
+					sh:minCount 1 ;
+				] ;
+			] ) .
