@@ -86,11 +86,67 @@ owl:versionIRI <https://w3id.org/function/vocabulary/implementation/0.1.0> ;
 #
 #################################################################
 
+###  https://w3id.org/function/vocabulary/implementation#OpenRefineImplementation
+
+:OpenRefineImplementation rdf:type owl:Class ;
+
+          rdfs:label "Openrefine Function"@en ;
+
+          rdfs:comment "A fno:Implementation, as used in OpenRefine"@en ;
+
+          vs:term_status "testing" ;
+
+          rdfs:isDefinedBy <https://w3id.org/function/vocabulary/implementation#> ;
+
+          rdfs:subClassOf fno:Implementation .
+
+###  https://w3id.org/function/vocabulary/implementation#SPARQLImplementation
+
+:SPARQLImplementation rdf:type owl:Class ;
+
+          rdfs:label "SPARQL Function"@en ;
+
+          rdfs:comment "A fno:Implementation, as used in a SPARQL query"@en ;
+
+          vs:term_status "testing" ;
+
+          rdfs:isDefinedBy <https://w3id.org/function/vocabulary/implementation#> ;
+
+          rdfs:subClassOf fno:Implementation .
+
+###  https://w3id.org/function/vocabulary/implementation#XPATHImplementation
+
+:XPATHImplementation rdf:type owl:Class ;
+
+          rdfs:label "XPath Function"@en ;
+
+          rdfs:comment "A fno:Implementation, as used in an XPath expression"@en ;
+
+          vs:term_status "testing" ;
+
+          rdfs:isDefinedBy <https://w3id.org/function/vocabulary/implementation#> ;
+
+          rdfs:subClassOf fno:Implementation .
+
+###  https://w3id.org/function/vocabulary/implementation#SQLImplementation
+
+:SQLImplementation rdf:type owl:Class ;
+
+          rdfs:label "SQL Function"@en ;
+
+          rdfs:comment "A fno:Implementation, as used in a SQL query"@en ;
+
+          vs:term_status "testing" ;
+
+          rdfs:isDefinedBy <https://w3id.org/function/vocabulary/implementation#> ;
+
+          rdfs:subClassOf fno:Implementation .
+
 ###  https://w3id.org/function/vocabulary/implementation#JavaScriptImplementation
 
 :JavaScriptImplementation rdf:type owl:Class ;
 
-          rdfs:label "JavaScript Implementation"@en ;
+          rdfs:label "JavaScript Function"@en ;
 
           rdfs:comment "A fno:Implementation, coded in JavaScript"@en ;
 

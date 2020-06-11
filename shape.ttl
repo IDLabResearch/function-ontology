@@ -1,9 +1,13 @@
 @prefix fno: <https://w3id.org/function/ontology#> .
+@prefix fnom: <https://w3id.org/function/vocabulary/mapping#> .
+@prefix fnoi: <https://w3id.org/function/vocabulary/implementation#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix fnosh: <https://w3id.org/function/shape#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
 
 fnosh:FunctionShape
   a sh:NodeShape ;
@@ -42,6 +46,11 @@ fnosh:ParameterShape
     sh:path fno:required ;
     sh:maxCount 1 ;
     sh:datatype xsd:boolean;
+  ] ;
+  sh:property [
+    sh:path fno:type;
+    sh:maxCount 1;
+    sh:minCount 1
   ] .
 
 fnosh:OutputShape
@@ -56,11 +65,7 @@ fnosh:OutputShape
     sh:path fno:required ;
     sh:maxCount 1 ;
     sh:datatype xsd:boolean;
-  ] .
-
-fnosh:predicateShape
-  a sh:NodeShape ;
-  sh:targetObjectsOf fno:predicate;
+  ] ;
   sh:property [
     sh:path fno:type;
     sh:maxCount 1;
@@ -70,6 +75,11 @@ fnosh:predicateShape
 fnosh:nameShape
   a sh:NodeShape ;
   sh:targetObjectsOf fno:name;
+  sh:datatype xsd:string .
+
+fnosh:descriptionShape
+  a sh:NodeShape ;
+  sh:targetObjectsOf dc:description;
   sh:datatype xsd:string .
 
 fnosh:ProblemShape
@@ -89,6 +99,125 @@ fnosh:ExecutionShape
     sh:node fnosh:FunctionShape
   ] .
 
+fnosh:MappingShape
+  a sh:NodeShape ;
+  sh:targetClass fno:mapping ;
+  sh:property [
+    sh:path fno:methodMapping ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:node fnosh:methodMappingShape
+  ] ;
+  sh:property [
+    sh:path fno:parameterMapping ;
+    sh:node fnosh:parameterMappingShape
+  ] ;
+  sh:property [
+    sh:path rdfs:seeAlso ;
+    sh:datatype xsd:string
+  ] ;
+  .
+
+fnosh:methodMappingShape
+  a sh:NodeShape ;
+  sh:targetClass fno:MethodMapping ;
+  .
+
+fnosh:stringMethodMappingShape
+  a sh:NodeShape ;
+  sh:targetClass fnom:StringMethodMapping ;
+  sh:property [
+    sh:path fnom:method-name ;
+    sh:datatype xsd:string ;
+  ] ;
+  .
+
+fnosh:parameterMappingShape
+  a sh:NodeShape ;
+  sh:targetClass fno:ParameterMapping;
+  sh:property [
+    sh:path fnom:functionParameter ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:node fnosh:FunctionShape
+  ] ;
+  sh:property [
+    sh:path fnom:constantParameterValue;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path fnom:repeatableParameter;
+    sh:maxCount 1
+  ] ;
+  .
+
+fnosh:positionParameterMappingShape
+  a sh:NodeShape ;
+  sh:targetClass fnom:PositionParameterMapping ;
+  sh:property [
+    sh:path fnom:implementationParameterPosition ;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:datatype xsd:integer ;
+  ] ;
+  .
+
+fnosh:PropertyParameterMappingShape
+  a sh:NodeShape ;
+  sh:targetClass fnom:PropertyParameterMapping ;
+  sh:property [
+    sh:path fnom:implementationProperty;
+    sh:minCount 1;
+    sh:maxCount 1;
+    sh:datatype xsd:string
+  ] ;
+  .
+
+fnosh:JavaScriptFunctionShape
+  a sh:NodeShape ;
+  sh:targetClass fnoi:JavaScriptFunction ;
+  sh:property [
+    sh:path doap:download-page ;
+    sh:datatype xsd:string ;
+    sh:minCount 1;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path doap:name ;
+    sh:datatype xsd:string ;
+    sh:minCount 1;
+    sh:maxCount 1
+  ] ;
+  .
+
+
+fnosh:NpmPackageShape
+  a sh:NodeShape ;
+  sh:targetClass fnoi:NpmPackage;
+  sh:property [
+    sh:path doap:name ;
+    sh:datatype xsd:string ;
+    sh:minCount 1;
+    sh:maxCount 1
+  ] ;
+  .
+
+fnosh:JavaClassShape
+  a sh:NodeShape ;
+  sh:targetClass fnoi:JavaClass;
+  sh:property [
+    sh:path fnoi:class-name ;
+    sh:datatype xsd:string ;
+    sh:minCount 1;
+    sh:maxCount 1
+  ] ;
+  sh:property [
+    sh:path doap:download-page ;
+    sh:datatype xsd:string ;
+    sh:minCount 1;
+    sh:maxCount 1
+  ] ;
+  .
 
 fnosh:ListShape
 	a sh:NodeShape ;

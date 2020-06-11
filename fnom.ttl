@@ -10,6 +10,7 @@
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix fno: <https://w3id.org/function/ontology#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 @base <https://w3id.org/function/vocabulary/mapping#> .
 @prefix : <https://w3id.org/function/vocabulary/mapping#> .
@@ -115,6 +116,38 @@
 
         rdfs:range xsd:int .
 
+###  https://w3id.org/function/vocabulary/mapping#constantParameterValue
+
+:constantParameterValue rdf:type rdf:Property ;
+
+        rdfs:label "constant parameter value"@en ;
+
+        rdfs:comment "Connects an implementation constant to a parameter value."@en ;
+
+        rdfs:isDefinedBy <https://w3id.org/vocabulary/mapping#> ;
+
+        vs:term_status "testing" ;
+
+        rdfs:domain :ParameterMapping ;
+
+        rdfs:range xsd:string .
+
+###  https://w3id.org/function/vocabulary/mapping#repeatableParameterValue
+
+:repeatableParameter rdf:type rdf:Property ;
+
+        rdfs:label "repeatable parameter value"@en ;
+
+        rdfs:comment "Flag indicating whether the parameter can be repeated."@en ;
+
+        rdfs:isDefinedBy <https://w3id.org/vocabulary/mapping#> ;
+
+        vs:term_status "testing" ;
+
+        rdfs:domain :ParameterMapping ;
+
+        rdfs:range xsd:boolean .
+
 ###  https://w3id.org/function/vocabulary/mapping#implementationProperty
 
 :implementationProperty rdf:type rdf:Property ;
@@ -167,7 +200,7 @@
 
           rdfs:subClassOf fno:MethodMapping .
 
-###  https://w3id.org/function/vocabulary/mapping#StringMethodMapping
+###  https://w3id.org/function/vocabulary/mapping#PositionParameterMapping
 
 :PositionParameterMapping rdf:type owl:Class ;
 
@@ -181,11 +214,27 @@
 
          rdfs:subClassOf fno:ParameterMapping .
 
+###  https://w3id.org/function/vocabulary/mapping#PropertyParameterMapping
+
 :PropertyParameterMapping rdf:type owl:Class ;
 
          rdfs:label "Property Parameter Mapping"@en ;
 
          rdfs:comment "A property parameter mapping uses a property string to map a parameter of an fno:Implementation to an fno:Parameter"@en ;
+
+         vs:term_status "testing" ;
+
+         rdfs:isDefinedBy <https://w3id.org/function/vocabulary/mapping#> ;
+
+         rdfs:subClassOf fno:ParameterMapping .
+
+###  https://w3id.org/function/vocabulary/mapping#ConstantParameterMapping
+
+:ConstantParameterMapping rdf:type owl:Class ;
+
+         rdfs:label "Constant Parameter Mapping"@en ;
+
+         rdfs:comment "A constant parameter mapping uses a property string to map a parameter of an fno:Implementation to a constant value"@en ;
 
          vs:term_status "testing" ;
 
@@ -216,3 +265,21 @@
          rdfs:isDefinedBy <https://w3id.org/function/vocabulary/mapping#> ;
 
          rdfs:subClassOf fno:ReturnMapping .
+
+xsd:decimal skos:narrower xsd:integer .
+xsd:anyAtomicType skos:narrower xsd:decimal, rdf:List, xsd:decimal, xsd:dateTime, xsd:integer, xsd:string .
+
+xsd:integer skos:broader xsd:decimal .
+xsd:decimal skos:broader xsd:anyAtomicType .
+rdf:List skos:broader xsd:anyAtomicType .
+xsd:decimal skos:broader xsd:anyAtomicType .
+xsd:dateTime skos:broader xsd:anyAtomicType .
+xsd:integer skos:broader xsd:anyAtomicType .
+xsd:string skos:broader xsd:anyAtomicType .
+
+xsd:integer rdfs:label "integer" .
+xsd:decimal rdfs:label "decimal" .
+rdf:List rdfs:label "array" .
+xsd:dateTime rdfs:label "dateTime" .
+xsd:string rdfs:label "string" .
+xsd:anyAtomicType rdfs:label "(any)" .
