@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Function Ontology</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3 class="text-muted">The Function Ontology</h3>
+      </div>
+      <div class="jumbotron">
+        <p>
+
+<p>The Function Ontology allows to declare and describe functions. The specification is online at <a href="https://w3id.org/function/spec">https://w3id.org/function/spec</a></p>
+
+        </p>
+        <p id="issued" class="col-lg-6">
+          <label>issued:</label>&nbsp;2016-03-08
+        </p>
+        <p id="modified" class="col-lg-6">
+          <label>modified:</label>&nbsp;2017-08-25
+        </p>
+      </div>
+      <div class="row marketing">
+        <div class="col-lg-12">
+          <label>Created By</label>
+          <ul id="creators">
+            <li>Ben De Meester</li>
+          </ul>
+        </div>
+        <div class="col-lg-12">
+          <h2>Classes</h2>
+          <h3 id="Algorithm"><a href="https://w3id.org/function/ontology#Algorithm">Algorithm</a></h3>
+          <p class="smalllabels">Algorithm</p>
+          <p><p>A declaration of an algorithm. An algorithm is a specified set of instructions, independent of its implementation. There is no one-to-one mapping between an algorithm and a problem.</p>
+</p>
+          <h3 id="Execution"><a href="https://w3id.org/function/ontology#Execution">Execution</a></h3>
+          <p class="smalllabels">Execution</p>
+          <p><p>An execution is the connection between a function and its input and output values.</p>
+</p>
+          <h3 id="Function"><a href="https://w3id.org/function/ontology#Function">Function</a></h3>
+          <p class="smalllabels">Function</p>
+          <p><p>The declared function</p>
+</p>
+          <h3 id="Output"><a href="https://w3id.org/function/ontology#Output">Output</a></h3>
+          <p class="smalllabels">Output</p>
+          <p><p>The definition of an output of a function</p>
+</p>
+          <h3 id="Parameter"><a href="https://w3id.org/function/ontology#Parameter">Parameter</a></h3>
+          <p class="smalllabels">Parameter</p>
+          <p><p>The definition of a parameter to a certain function</p>
+</p>
+          <h3 id="Problem"><a href="https://w3id.org/function/ontology#Problem">Problem</a></h3>
+          <p class="smalllabels">Problem</p>
+          <p><p>A certain problem that a function solves</p>
+</p>
+          <h3 id="Document"><a href="http://xmlns.com/foaf/0.1/Document">Document</a></h3>
+          <p class="smalllabels">Document</p>
+          <p><p>undefined</p>
+</p>
+        </div>
+        <div class="col-lg-12">
+          <h2>Properties</h2>
+          <h3 id="executes"><a href="https://w3id.org/function/ontology#executes">executes</a></h3>
+          <p class="smalllabels">executes</p>
+          <p>Connects a function to an execution definition</p>
+          <div class="domain">
+            <label>Domain:</label>&nbsp;<a href="https://w3id.org/function/ontology#Execution">Execution</a>&nbsp;
+            <div class="range"></div>
+            <label>Range:</label>&nbsp;<a href="https://w3id.org/function/ontology#Function">Function</a>&nbsp;
+          </div>
+          <h3 id="expects"><a href="https://w3id.org/function/ontology#expects">expects</a></h3>
+          <p class="smalllabels">expects</p>
+          <p>Connects a function description to an ordered list of zero or more parameter descriptions</p>
+          <div class="domain">
+            <label>Domain:</label>&nbsp;<a href="https://w3id.org/function/ontology#Function">Function</a>&nbsp;
+            <div class="range"></div>
+            <label>Range:</label>&nbsp;<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">List</a>&nbsp;
+          </div>
+          <h3 id="implements"><a href="https://w3id.org/function/ontology#implements">implements</a></h3>
+          <p class="smalllabels">implements</p>
+          <p>Connects a function to an algorithm it implements. A function can implement 0..n algorithms.</p>
+          <div class="domain">
+            <label>Domain:</label>&nbsp;<a href="https://w3id.org/function/ontology#Function">Function</a>&nbsp;
+            <div class="range"></div>
+            <label>Range:</label>&nbsp;<a href="https://w3id.org/function/ontology#Algorithm">Algorithm</a>&nbsp;
+          </div>
+          <h3 id="returns"><a href="https://w3id.org/function/ontology#returns">returns</a></h3>
+          <p class="smalllabels">returns</p>
+          <p>Connects a description of a function to the description of the output</p>
+          <div class="domain">
+            <label>Domain:</label>&nbsp;<a href="https://w3id.org/function/ontology#Function">Function</a>&nbsp;
+            <div class="range"></div>
+            <label>Range:</label>&nbsp;<a href="https://w3id.org/function/ontology#Output">Output</a>&nbsp;
+          </div>
+          <h3 id="solves"><a href="https://w3id.org/function/ontology#solves">solves</a></h3>
+          <p class="smalllabels">solves</p>
+          <p>Connects a description of a function to the description of a problem it tries to solve.</p>
+          <div class="domain">
+            <label>Domain:</label>&nbsp;<a href="https://w3id.org/function/ontology#Function">Function</a>&nbsp;
+            <div class="range"></div>
+            <label>Range:</label>&nbsp;<a href="https://w3id.org/function/ontology#Problem">Problem</a>&nbsp;
+          </div>
+          <h3 id="predicate"><a href="https://w3id.org/function/ontology#predicate">predicate</a></h3>
+          <p class="smalllabels">predicate</p>
+          <p>Connects a parameter description to the predicate used to link executions of this function to their parameter.</p>
+          <div class="domain">
+            <label>Domain:</label>&nbsp;<a href="https://w3id.org/function/ontology#Parameter">Parameter</a>&nbsp;
+            <div class="range"></div>
+            <label>Range:</label>&nbsp;<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>&nbsp;
+          </div>
+          <h3 id="type"><a href="https://w3id.org/function/ontology#type">type</a></h3>
+          <p class="smalllabels">type</p>
+          <p>Connects an output or a parameter description to the type of instances of these parameters or outputs.</p>
+          <div class="domain">
+            <label>Domain:</label>&nbsp;<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">Property</a>&nbsp;
+            <div class="range"></div>
+            <label>Range:</label>&nbsp;
+          </div>
+          <h3 id="name"><a href="https://w3id.org/function/ontology#name">name</a></h3>
+          <p class="smalllabels">name</p>
+          <p>Connects a function or a parameter to its name.</p>
+          <div class="domain">
+            <label>Domain:</label>&nbsp;<a href="https://w3id.org/function/ontology#Function">Function</a>&nbsp;
+            <div class="range"></div>
+            <label>Range:</label>&nbsp;<a href="http://www.w3.org/2001/XMLSchema#string">string</a>&nbsp;
+          </div>
+          <h3 id="required"><a href="https://w3id.org/function/ontology#required">required</a></h3>
+          <p class="smalllabels">required</p>
+          <p>Defines if a parameter or an output is required.</p>
+          <div class="domain">
+            <label>Domain:</label>&nbsp;
+            <div class="range"></div>
+            <label>Range:</label>&nbsp;<a href="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>&nbsp;
+          </div>
+          <h3 id="nullable"><a href="https://w3id.org/function/ontology#nullable">nullable</a></h3>
+          <p class="smalllabels">nullable</p>
+          <p>Defines if a parameteris nullable.</p>
+          <div class="domain">
+            <label>Domain:</label>&nbsp;
+            <div class="range"></div>
+            <label>Range:</label>&nbsp;<a href="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>&nbsp;
+          </div>
+        </div>
+        <div class="col-lg-12">
+        </div>
+      </div>
+      <div class="footer">
+        <p>&copy; 2013-2017 Data Science Lab - Ghent University - Visit our &nbsp;<a href="http://semweb.datasciencelab.be/">website</a></p>
+      </div>
+    </div>
+  </body>
+</html>

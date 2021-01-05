@@ -1,0 +1,1194 @@
+<h2 id="crossreference" class="list">Cross reference for The Function Ontology classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by The Function Ontology.
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Algorithm" title="https://w3id.org/function/ontology#Algorithm">Algorithm</a>
+      </li>
+      <li>
+         <a href="#Execution" title="https://w3id.org/function/ontology#Execution">Execution</a>
+      </li>
+      <li>
+         <a href="#Function" title="https://w3id.org/function/ontology#Function">Function</a>
+      </li>
+      <li>
+         <a href="#Implementation"
+            title="https://w3id.org/function/ontology#Implementation">Implementation</a>
+      </li>
+      <li>
+         <a href="#Mapping" title="https://w3id.org/function/ontology#Mapping">Mapping</a>
+      </li>
+      <li>
+         <a href="#MethodMapping" title="https://w3id.org/function/ontology#MethodMapping">Method mapping</a>
+      </li>
+      <li>
+         <a href="#Output" title="https://w3id.org/function/ontology#Output">Output</a>
+      </li>
+      <li>
+         <a href="#Parameter" title="https://w3id.org/function/ontology#Parameter">Parameter</a>
+      </li>
+      <li>
+         <a href="#ParameterMapping"
+            title="https://w3id.org/function/ontology#ParameterMapping">Parameter mapping</a>
+      </li>
+      <li>
+         <a href="#Problem" title="https://w3id.org/function/ontology#Problem">Problem</a>
+      </li>
+      <li>
+         <a href="#ReturnMapping" title="https://w3id.org/function/ontology#ReturnMapping">Return mapping</a>
+      </li>
+   </ul>
+   <div class="entity" id="Algorithm">
+      <h3>Algorithm<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#Algorithm</p>
+      <div class="comment">
+         <span class="markdown">An algorithm is a specified set of instructions, independent of its implementation.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fn-algorithm">https://w3id.org/function/spec/#fn-algorithm</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#implements" title="https://w3id.org/function/ontology#implements">implements</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Execution">
+      <h3>Execution<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#Execution</p>
+      <div class="comment">
+         <span class="markdown">An Execution is the connection between a Function and its Parameters and Outputs.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fn-execution">https://w3id.org/function/spec/#fn-execution</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#executes" title="https://w3id.org/function/ontology#executes">executes</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#uses" title="https://w3id.org/function/ontology#uses">uses</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Function">
+      <h3>Function<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#Function</p>
+      <div class="comment">
+         <span class="markdown">A Function is a process that performs a specific task by associating one or more Parameters to an Output</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fn-function">https://w3id.org/function/spec/#fn-function</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#expects" title="https://w3id.org/function/ontology#expects">expects</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#implements" title="https://w3id.org/function/ontology#implements">implements</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#name" title="https://w3id.org/function/ontology#name">name</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#returns" title="https://w3id.org/function/ontology#returns">returns</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#solves" title="https://w3id.org/function/ontology#solves">solves</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#executes" title="https://w3id.org/function/ontology#executes">executes</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#function" title="https://w3id.org/function/ontology#function">function</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Implementation">
+      <h3>Implementation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#Implementation</p>
+      <div class="comment">
+         <span class="markdown">An Implementation defines the internal workings of one or more Functions</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fno-implementation">https://w3id.org/function/spec/#fno-implementation</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#implementation"
+               title="https://w3id.org/function/ontology#implementation">implementation</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Mapping">
+      <h3>Mapping<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#Mapping</p>
+      <div class="comment">
+         <span class="markdown">A Mapping links (abstract) Functions and (concrete) Implementations</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fno-Mapping">https://w3id.org/function/spec/#fno-Mapping</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#function" title="https://w3id.org/function/ontology#function">function</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#implementation"
+               title="https://w3id.org/function/ontology#implementation">implementation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#methodMapping" title="https://w3id.org/function/ontology#methodMapping">method mapping</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#parameterMapping"
+               title="https://w3id.org/function/ontology#parameterMapping">parameter mapping</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#returnMapping" title="https://w3id.org/function/ontology#returnMapping">return mapping</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#uses" title="https://w3id.org/function/ontology#uses">uses</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MethodMapping">
+      <h3>Method mapping<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#MethodMapping</p>
+      <div class="comment">
+         <span class="markdown">A method mapping unambiguously specifies how the abstract function can be mapped to the implemented method. This can be, e.g., the name of the method</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fno-MethodMapping">https://w3id.org/function/spec/#fno-MethodMapping</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#methodMapping" title="https://w3id.org/function/ontology#methodMapping">method mapping</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Output">
+      <h3>Output<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#Output</p>
+      <div class="comment">
+         <span class="markdown">An Output is the description of the output value of a Function.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fn-output">https://w3id.org/function/spec/#fn-output</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Parameter">
+      <h3>Parameter<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#Parameter</p>
+      <div class="comment">
+         <span class="markdown">A Parameter is the description of the input value of a Function.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fn-parameter">https://w3id.org/function/spec/#fn-parameter</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#nullable" title="https://w3id.org/function/ontology#nullable">nullable</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#predicate" title="https://w3id.org/function/ontology#predicate">predicate</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#required" title="https://w3id.org/function/ontology#required">required</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#type" title="https://w3id.org/function/ontology#type">type</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ParameterMapping">
+      <h3>Parameter mapping<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#ParameterMapping</p>
+      <div class="comment">
+         <span class="markdown">A parameter mapping unambiguously specifies how the abstract parameter can be mapped to the implemented method's argument. For example: Parameter X is mapped to the third argument of the method (a position parameter mapping, common for programming languages), or to property with name Y of the method (a property parameter mapping, common for Web APIs)</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fno-ParameterMapping">https://w3id.org/function/spec/#fno-ParameterMapping</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#parameterMapping"
+               title="https://w3id.org/function/ontology#parameterMapping">parameter mapping</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Problem">
+      <h3>Problem<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#Problem</p>
+      <div class="comment">
+         <span class="markdown">A Problem is a general issue. Some problems can be solved by executing a certain Function.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fn-problem">https://w3id.org/function/spec/#fn-problem</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#solves" title="https://w3id.org/function/ontology#solves">solves</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ReturnMapping">
+      <h3>Return mapping<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#ReturnMapping</p>
+      <div class="comment">
+         <span class="markdown">A return mapping unambiguously specifies how the abstract output can be mapped to the implemented method's return value. For example: the return value of the method, or the thrown error of a the method</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fno-ReturnMapping">https://w3id.org/function/spec/#fno-ReturnMapping</a>
+         </dd>
+      </dl>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#returnMapping" title="https://w3id.org/function/ontology#returnMapping">return mapping</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#executes" title="https://w3id.org/function/ontology#executes">executes</a>
+      </li>
+      <li>
+         <a href="#expects" title="https://w3id.org/function/ontology#expects">expects</a>
+      </li>
+      <li>
+         <a href="#function" title="https://w3id.org/function/ontology#function">function</a>
+      </li>
+      <li>
+         <a href="#implementation"
+            title="https://w3id.org/function/ontology#implementation">implementation</a>
+      </li>
+      <li>
+         <a href="#implements" title="https://w3id.org/function/ontology#implements">implements</a>
+      </li>
+      <li>
+         <a href="#methodMapping" title="https://w3id.org/function/ontology#methodMapping">method mapping</a>
+      </li>
+      <li>
+         <a href="#parameterMapping"
+            title="https://w3id.org/function/ontology#parameterMapping">parameter mapping</a>
+      </li>
+      <li>
+         <a href="#predicate" title="https://w3id.org/function/ontology#predicate">predicate</a>
+      </li>
+      <li>
+         <a href="#returnMapping" title="https://w3id.org/function/ontology#returnMapping">return mapping</a>
+      </li>
+      <li>
+         <a href="#returns" title="https://w3id.org/function/ontology#returns">returns</a>
+      </li>
+      <li>
+         <a href="#solves" title="https://w3id.org/function/ontology#solves">solves</a>
+      </li>
+      <li>
+         <a href="#type" title="https://w3id.org/function/ontology#type">type</a>
+      </li>
+      <li>
+         <a href="#uses" title="https://w3id.org/function/ontology#uses">uses</a>
+      </li>
+   </ul>
+   <div class="entity" id="executes">
+      <h3>executes<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#executes</p>
+      <div class="comment">
+         <span class="markdown">Connects a function to an execution definition</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fn-execution">https://w3id.org/function/spec/#fn-execution</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Execution" title="https://w3id.org/function/ontology#Execution">Execution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Function" title="https://w3id.org/function/ontology#Function">Function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="expects">
+      <h3>expects<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#expects</p>
+      <div class="comment">
+         <span class="markdown">Connects a function description to an ordered list of zero or more parameter descriptions</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fn-parameter">https://w3id.org/function/spec/#fn-parameter</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Function" title="https://w3id.org/function/ontology#Function">Function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">list</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="function">
+      <h3>function<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#function</p>
+      <div class="comment">
+         <span class="markdown">Connects a function to a mapping definition</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fno-Mapping">https://w3id.org/function/spec/#fno-Mapping</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Mapping" title="https://w3id.org/function/ontology#Mapping">Mapping</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Function" title="https://w3id.org/function/ontology#Function">Function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="implementation">
+      <h3>implementation<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#implementation</p>
+      <div class="comment">
+         <span class="markdown">Connects an implementation to a mapping definition</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fno-Mapping">https://w3id.org/function/spec/#fno-Mapping</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Mapping" title="https://w3id.org/function/ontology#Mapping">Mapping</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Implementation"
+                  title="https://w3id.org/function/ontology#Implementation">Implementation</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="implements">
+      <h3>implements<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#implements</p>
+      <div class="comment">
+         <span class="markdown">Connects a function to an algorithm it implements. A function can implement 0..n algorithms.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fn-algorithm">https://w3id.org/function/spec/#fn-algorithm</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Function" title="https://w3id.org/function/ontology#Function">Function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Algorithm" title="https://w3id.org/function/ontology#Algorithm">Algorithm</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="methodMapping">
+      <h3>method mapping<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#methodMapping</p>
+      <div class="comment">
+         <span class="markdown">Connects a method mapping to a mapping definition</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fno-MethodMapping">https://w3id.org/function/spec/#fno-MethodMapping</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Mapping" title="https://w3id.org/function/ontology#Mapping">Mapping</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#MethodMapping" title="https://w3id.org/function/ontology#MethodMapping">Method mapping</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="parameterMapping">
+      <h3>parameter mapping<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#parameterMapping</p>
+      <div class="comment">
+         <span class="markdown">Connects a parameter mapping to a mapping definition</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fno-ParameterMapping">https://w3id.org/function/spec/#fno-ParameterMapping</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Mapping" title="https://w3id.org/function/ontology#Mapping">Mapping</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ParameterMapping"
+                  title="https://w3id.org/function/ontology#ParameterMapping">Parameter mapping</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="predicate">
+      <h3>predicate<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#predicate</p>
+      <div class="comment">
+         <span class="markdown">Connects a parameter description to the predicate used to link executions of this function to their parameter.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fn-parameter">https://w3id.org/function/spec/#fn-parameter</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Parameter" title="https://w3id.org/function/ontology#Parameter">Parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted"
+                     title="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">property</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="returnMapping">
+      <h3>return mapping<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#returnMapping</p>
+      <div class="comment">
+         <span class="markdown">Connects a return mapping to a mapping definition</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fno-ReturnMapping">https://w3id.org/function/spec/#fno-ReturnMapping</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Mapping" title="https://w3id.org/function/ontology#Mapping">Mapping</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ReturnMapping" title="https://w3id.org/function/ontology#ReturnMapping">Return mapping</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="returns">
+      <h3>returns<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#returns</p>
+      <div class="comment">
+         <span class="markdown">Connects a description of a function to the description of the output</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fn-output">https://w3id.org/function/spec/#fn-output</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Function" title="https://w3id.org/function/ontology#Function">Function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">list</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="solves">
+      <h3>solves<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#solves</p>
+      <div class="comment">
+         <span class="markdown">Connects a description of a function to the description of a problem it tries to solve.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fn-problem">https://w3id.org/function/spec/#fn-problem</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Function" title="https://w3id.org/function/ontology#Function">Function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Problem" title="https://w3id.org/function/ontology#Problem">Problem</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="type">
+      <h3>type<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#type</p>
+      <div class="comment">
+         <span class="markdown">Connects an output or a parameter description to the type of instances of these parameters or outputs.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fn-parameter">https://w3id.org/function/spec/#fn-parameter</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Parameter" title="https://w3id.org/function/ontology#Parameter">Parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="uses">
+      <h3>uses<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#uses</p>
+      <div class="comment">
+         <span class="markdown">Connects an execution to a mapping definition</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fno-uses">https://w3id.org/function/spec/#fno-uses</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Execution" title="https://w3id.org/function/ontology#Execution">Execution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Mapping" title="https://w3id.org/function/ontology#Mapping">Mapping</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#name" title="https://w3id.org/function/ontology#name">
+            <span>name</span>
+         </a>
+      </li>
+      <li>
+         <a href="#nullable" title="https://w3id.org/function/ontology#nullable">nullable</a>
+      </li>
+      <li>
+         <a href="#required" title="https://w3id.org/function/ontology#required">required</a>
+      </li>
+   </ul>
+   <div class="entity" id="name">
+      <h3>name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#name</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Function" title="https://w3id.org/function/ontology#Function">Function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#name">annotation property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="nullable">
+      <h3>nullable<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#nullable</p>
+      <div class="comment">
+         <span class="markdown">Defines if a parameteris nullable.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Parameter" title="https://w3id.org/function/ontology#Parameter">Parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="required">
+      <h3>required<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology#required</p>
+      <div class="comment">
+         <span class="markdown">Defines if a parameter or an output is required.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology">https://w3id.org/function/ontology</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl>
+         <dt>Example</dt>
+         <dd>
+            <a href="https://w3id.org/function/spec/#fn-parameter">https://w3id.org/function/spec/#fn-parameter</a>
+         </dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Parameter" title="https://w3id.org/function/ontology#Parameter">Parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://natadimou.com/#me" title="https://natadimou.com/#me">Anastasia Dimou</a>
+      </li>
+      <li>
+         <a href="#https://ben.de-meester.org/#me" title="https://ben.de-meester.org/#me">Ben De Meester</a>
+      </li>
+      <li>
+         <a href="#" title="https://w3id.org/function/ontology">
+            <span>The Function Ontology</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="https://natadimou.com/#me">
+      <h3>Anastasia Dimou<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://natadimou.com/#me</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/Person">person</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://ben.de-meester.org/#me">
+      <h3>Ben De Meester<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ben.de-meester.org/#me</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://xmlns.com/foaf/0.1/Person">person</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="">
+      <h3>The Function Ontology<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/ontology</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://purl.org/vocommons/voaf#Vocabulary">vocabulary</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>

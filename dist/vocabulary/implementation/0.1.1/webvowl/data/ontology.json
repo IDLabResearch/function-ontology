@@ -1,0 +1,683 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/function/vocabulary/implementation", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "https://w3id.org/function/ontology" ],
+    "title" : {
+      "en" : "The Function Ontology - Implementation vocabulary"
+    },
+    "iri" : "https://w3id.org/function/vocabulary/implementation",
+    "version" : "0.1.1",
+    "author" : [ "https://ben.de-meester.org/#me" ],
+    "description" : {
+      "en" : "The Function Ontology Implementation vocabulary specifies terms relevant to structure fno:Implementations. The specification is online at https://w3id.org/function/spec"
+    },
+    "labels" : {
+      "en" : "The Function Ontology - Implementation vocabulary"
+    },
+    "comments" : {
+      "en" : "- Version 0.1.1: updated metadata\r\n- Version 0.1.0: creation."
+    },
+    "other" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/implementation/0.1.0",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://ben.de-meester.org/#me",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-05-21",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.1",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The Function Ontology - Implementation vocabulary",
+        "type" : "label"
+      } ],
+      "backwardCompatibleWith" : [ {
+        "identifier" : "backwardCompatibleWith",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/implementation/0.1.0",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec",
+        "type" : "iri"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/license/by/3.0/",
+        "type" : "iri"
+      } ],
+      "primaryTopic" : [ {
+        "identifier" : "primaryTopic",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "fnoi",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright © Ghent University – imec – IDLab",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "https://ben.de-meester.org/#me",
+        "type" : "iri"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2020-12-23",
+        "type" : "label"
+      } ],
+      "logo" : [ {
+        "identifier" : "logo",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/img/fno_favicon.png",
+        "type" : "iri"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/implementation#",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "undefined",
+        "value" : "De Meester, B.; Seymoens, T.; Dimou, A. & Verborgh, R. Implementation-independent Function Reuse. Future Generation Computer Systems, Elsevier BV, 2020, 110, 946-959 ",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2019-05-21",
+        "type" : "label"
+      } ],
+      "status" : [ {
+        "identifier" : "status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "doi" : [ {
+        "identifier" : "doi",
+        "language" : "undefined",
+        "value" : "10.5281/zenodo.595382",
+        "type" : "label"
+      } ],
+      "depiction" : [ {
+        "identifier" : "depiction",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/resources/images/fno-full.png",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/function/vocabulary/implementation#SPARQLImplementation",
+    "baseIri" : "https://w3id.org/function/vocabulary/implementation",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/implementation",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SPARQLImplementation",
+      "en" : "SPARQL Function"
+    },
+    "comment" : {
+      "en" : "A fno:Implementation, as used in a SPARQL query"
+    },
+    "id" : "9",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/function/vocabulary/implementation#OpenRefineImplementation",
+    "baseIri" : "https://w3id.org/function/vocabulary/implementation",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/implementation",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OpenRefineImplementation",
+      "en" : "Openrefine Function"
+    },
+    "comment" : {
+      "en" : "A fno:Implementation, as used in OpenRefine"
+    },
+    "id" : "10",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/function/vocabulary/implementation#NpmPackage",
+    "baseIri" : "https://w3id.org/function/vocabulary/implementation",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/implementation",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NpmPackage",
+      "en" : "NPM Package"
+    },
+    "comment" : {
+      "en" : "A fno:Implementation, distributed as an NPM package"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/function/ontology#Implementation",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Implementation"
+    },
+    "subClasses" : [ "2", "6", "8", "10", "9", "14", "16" ],
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/function/vocabulary/implementation#JavaScriptFunction",
+    "baseIri" : "https://w3id.org/function/vocabulary/implementation",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/implementation",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "JavaScriptFunction",
+      "en" : "JavaScript function"
+    },
+    "comment" : {
+      "en" : "A fno:Implementation, distributed as a JavaScript snippet"
+    },
+    "id" : "19",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/function/vocabulary/implementation#JavaImplementation",
+    "baseIri" : "https://w3id.org/function/vocabulary/implementation",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/implementation",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "JavaImplementation",
+      "en" : "JAVA implementation"
+    },
+    "subClasses" : [ "20" ],
+    "comment" : {
+      "en" : "A fno:Implementation, coded in JAVA"
+    },
+    "id" : "14",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/function/vocabulary/implementation#JavaScriptImplementation",
+    "baseIri" : "https://w3id.org/function/vocabulary/implementation",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/implementation",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "JavaScriptImplementation",
+      "en" : "JavaScript Function"
+    },
+    "subClasses" : [ "19", "1" ],
+    "comment" : {
+      "en" : "A fno:Implementation, coded in JavaScript"
+    },
+    "id" : "2",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/function/vocabulary/implementation#XPATHImplementation",
+    "baseIri" : "https://w3id.org/function/vocabulary/implementation",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/implementation",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "XPATHImplementation",
+      "en" : "XPath Function"
+    },
+    "comment" : {
+      "en" : "A fno:Implementation, as used in an XPath expression"
+    },
+    "id" : "8",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/function/vocabulary/implementation#JsonApi",
+    "baseIri" : "https://w3id.org/function/vocabulary/implementation",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/implementation",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "JsonApi",
+      "en" : "JSON API"
+    },
+    "comment" : {
+      "en" : "A fno:Implementation, distributed as a JSON (Hydra) API"
+    },
+    "id" : "22",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/function/vocabulary/implementation#JavaClass",
+    "baseIri" : "https://w3id.org/function/vocabulary/implementation",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/implementation",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "JavaClass",
+      "en" : "JAVA class"
+    },
+    "comment" : {
+      "en" : "A fno:Implementation, distributed as a JAVA class snippet file"
+    },
+    "id" : "20",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "https://w3id.org/function/vocabulary/implementation#WebApi",
+    "baseIri" : "https://w3id.org/function/vocabulary/implementation",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/implementation",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WebApi",
+      "en" : "Web API"
+    },
+    "subClasses" : [ "22" ],
+    "comment" : {
+      "en" : "A fno:Implementation, distributed as a Web API"
+    },
+    "id" : "6",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/function/vocabulary/implementation",
+      "baseIri" : "https://w3id.org/function/vocabulary",
+      "labels" : {
+        "IRI-based" : "implementation"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "individuals" : [ {
+      "iri" : "https://ben.de-meester.org/#me",
+      "baseIri" : "https://ben.de-meester.org/",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "en",
+          "value" : "Ben De Meester",
+          "type" : "label"
+        } ],
+        "mbox" : [ {
+          "identifier" : "mbox",
+          "language" : "undefined",
+          "value" : "mailto:Ben.DeMeester@UGent.be",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "me",
+        "en" : "Ben De Meester"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/function/vocabulary/implementation#SQLImplementation",
+    "baseIri" : "https://w3id.org/function/vocabulary/implementation",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/implementation",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SQLImplementation",
+      "en" : "SQL Function"
+    },
+    "comment" : {
+      "en" : "A fno:Implementation, as used in a SQL query"
+    },
+    "id" : "16",
+    "superClasses" : [ "4" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "range" : "4",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "range" : "4",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "5"
+  }, {
+    "range" : "4",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "7"
+  }, {
+    "range" : "4",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
+  }, {
+    "range" : "4",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "4",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "range" : "4",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "2",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/function/vocabulary/implementation#class-name",
+    "baseIri" : "https://w3id.org/function/vocabulary/implementation",
+    "range" : "17",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/implementation",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "class-name",
+      "en" : "class name"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Connects a class name to an implemenation description."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "21"
+  }, {
+    "range" : "6",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "14",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  } ]
+}

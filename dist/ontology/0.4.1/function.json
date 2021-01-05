@@ -1,0 +1,776 @@
+[
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/2002/07/owl#Ontology",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://purl.org/vocommons/voaf#Vocabulary",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://purl.org/vocab/vann/preferredNamespacePrefix",
+    "object": "\"fno\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://purl.org/vocab/vann/preferredNamespaceUri",
+    "object": "\"https://w3id.org/function/ontology#\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"The Function Ontology\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://purl.org/dc/terms/title",
+    "object": "\"The Function Ontology\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://purl.org/dc/terms/description",
+    "object": "\"The Function Ontology allows to declare and describe functions. The specification is online at https://w3id.org/function/spec\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"-Version 0.4.1: wrong range definition, updated descriptions.\r\n-Version 0.4: added some properties\r\n-Version 0.3: improved comments.\r\n-Version 0.2: added extra metadata.\r\n-Version 0.1: creation.\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://www.w3.org/2002/07/owl#versionIRI",
+    "object": "https://w3id.org/function/ontology/0.4.1",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://www.w3.org/2002/07/owl#versionInfo",
+    "object": "\"0.4.1\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://www.w3.org/2002/07/owl#priorVersion",
+    "object": "\"https://w3id.org/function/ontology/0.4\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "object": "https://w3id.org/function/spec",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://purl.org/dc/terms/modified",
+    "object": "\"2017-08-25\"^^http://www.w3.org/2001/XMLSchema#date",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://purl.org/dc/terms/issued",
+    "object": "\"2016-03-08\"^^http://www.w3.org/2001/XMLSchema#date",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://purl.org/dc/terms/rights",
+    "object": "\"Copyright © Ghent University – iMinds – Data Science Lab\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://creativecommons.org/ns#license",
+    "object": "http://creativecommons.org/license/by/3.0/",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://xmlns.com/foaf/0.1/primaryTopic",
+    "object": "https://w3id.org/function/ontology",
+    "graph": ""
+  },
+  {
+    "subject": "_:b2",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://xmlns.com/foaf/0.1/Person",
+    "graph": ""
+  },
+  {
+    "subject": "_:b2",
+    "predicate": "http://xmlns.com/foaf/0.1/mbox",
+    "object": "\"mailto:Ben.DeMeester@UGent.be\"",
+    "graph": ""
+  },
+  {
+    "subject": "_:b2",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "\"Ben De Meester\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://purl.org/dc/terms/creator",
+    "object": "_:b2",
+    "graph": ""
+  },
+  {
+    "subject": "_:b3",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://xmlns.com/foaf/0.1/Person",
+    "graph": ""
+  },
+  {
+    "subject": "_:b3",
+    "predicate": "http://xmlns.com/foaf/0.1/mbox",
+    "object": "\"mailto:Anastasia.dimou@UGent.be\"",
+    "graph": ""
+  },
+  {
+    "subject": "_:b3",
+    "predicate": "http://xmlns.com/foaf/0.1/name",
+    "object": "\"Anastasia Dimou\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://purl.org/dc/terms/contributor",
+    "object": "_:b3",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology",
+    "predicate": "http://purl.org/dc/terms/contributor",
+    "object": "http://maxime-lefrancois.info/me#",
+    "graph": ""
+  },
+  {
+    "subject": "http://purl.org/dc/terms/issued",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/2002/07/owl#AnnotationProperty",
+    "graph": ""
+  },
+  {
+    "subject": "http://purl.org/dc/terms/modified",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/2002/07/owl#AnnotationProperty",
+    "graph": ""
+  },
+  {
+    "subject": "http://xmlns.com/foaf/0.1/primaryTopic",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/2002/07/owl#AnnotationProperty",
+    "graph": ""
+  },
+  {
+    "subject": "http://www.w3.org/2001/XMLSchema#date",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#executes",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#executes",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"executes\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#executes",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"Connects a function to an execution definition\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#executes",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "object": "https://w3id.org/function/ontology#",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#executes",
+    "predicate": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+    "object": "\"testing\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#executes",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#domain",
+    "object": "https://w3id.org/function/ontology#Execution",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#executes",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#range",
+    "object": "https://w3id.org/function/ontology#Function",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#expects",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#expects",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"expects\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#expects",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"Connects a function description to an ordered list of zero or more parameter descriptions\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#expects",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "object": "https://w3id.org/function/ontology#",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#expects",
+    "predicate": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+    "object": "\"testing\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#expects",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#domain",
+    "object": "https://w3id.org/function/ontology#Function",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#expects",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#range",
+    "object": "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#implements",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#implements",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"implements\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#implements",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"Connects a function to an algorithm it implements. A function can implement 0..n algorithms.\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#implements",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "object": "https://w3id.org/function/ontology#",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#implements",
+    "predicate": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+    "object": "\"testing\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#implements",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#range",
+    "object": "https://w3id.org/function/ontology#Algorithm",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#implements",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#domain",
+    "object": "https://w3id.org/function/ontology#Function",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#returns",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#returns",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"returns\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#returns",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"Connects a description of a function to the description of the output\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#returns",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "object": "https://w3id.org/function/ontology#",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#returns",
+    "predicate": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+    "object": "\"testing\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#returns",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#domain",
+    "object": "https://w3id.org/function/ontology#Function",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#returns",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#range",
+    "object": "https://w3id.org/function/ontology#Output",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#solves",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/2002/07/owl#ObjectProperty",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#solves",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"solves\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#solves",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"Connects a description of a function to the description of a problem it tries to solve.\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#solves",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "object": "https://w3id.org/function/ontology#",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#solves",
+    "predicate": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+    "object": "\"testing\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#solves",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#domain",
+    "object": "https://w3id.org/function/ontology#Function",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#solves",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#range",
+    "object": "https://w3id.org/function/ontology#Problem",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#predicate",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#predicate",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"predicate\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#predicate",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"Connects a parameter description to the predicate used to link executions of this function to their parameter.\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#predicate",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "object": "https://w3id.org/function/ontology#",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#predicate",
+    "predicate": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+    "object": "\"testing\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#predicate",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#domain",
+    "object": "https://w3id.org/function/ontology#Parameter",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#predicate",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#range",
+    "object": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#type",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#type",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"type\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#type",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"Connects an output or a parameter description to the type of instances of these parameters or outputs.\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#type",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "object": "https://w3id.org/function/ontology#",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#type",
+    "predicate": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+    "object": "\"testing\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#type",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#domain",
+    "object": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#name",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#name",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"name\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#name",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"Connects a function or a parameter to its name.\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#name",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+    "object": "http://www.w3.org/2000/01/rdf-schema#label",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#name",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#range",
+    "object": "http://www.w3.org/2001/XMLSchema#string",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#name",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "object": "https://w3id.org/function/ontology#",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#name",
+    "predicate": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+    "object": "\"testing\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#name",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#domain",
+    "object": "https://w3id.org/function/ontology#Function",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#required",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#required",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"required\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#required",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"Defines if a parameter or an output is required.\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#required",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#range",
+    "object": "http://www.w3.org/2001/XMLSchema#boolean",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#required",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "object": "https://w3id.org/function/ontology#",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#required",
+    "predicate": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+    "object": "\"testing\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#nullable",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#nullable",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"nullable\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#nullable",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"Defines if a parameteris nullable.\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#nullable",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#range",
+    "object": "http://www.w3.org/2001/XMLSchema#boolean",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#nullable",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "object": "https://w3id.org/function/ontology#",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#nullable",
+    "predicate": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+    "object": "\"testing\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Algorithm",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/2002/07/owl#Class",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Algorithm",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"Algorithm\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Algorithm",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"A declaration of an algorithm. An algorithm is a specified set of instructions, independent of its implementation. There is no one-to-one mapping between an algorithm and a problem.\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Algorithm",
+    "predicate": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+    "object": "\"testing\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Algorithm",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "object": "https://w3id.org/function/ontology#",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Execution",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/2002/07/owl#Class",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Execution",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"Execution\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Execution",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"An execution is the connection between a function and its input and output values.\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Execution",
+    "predicate": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+    "object": "\"testing\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Execution",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "object": "https://w3id.org/function/ontology#",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Function",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/2002/07/owl#Class",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Function",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"Function\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Function",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"The declared function\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Function",
+    "predicate": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+    "object": "\"testing\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Function",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "object": "https://w3id.org/function/ontology#",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Output",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/2002/07/owl#Class",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Output",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"Output\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Output",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"The definition of an output of a function\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Output",
+    "predicate": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+    "object": "\"testing\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Output",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "object": "https://w3id.org/function/ontology#",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Parameter",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/2002/07/owl#Class",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Parameter",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"Parameter\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Parameter",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"The definition of a parameter to a certain function\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Parameter",
+    "predicate": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+    "object": "\"testing\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Parameter",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "object": "https://w3id.org/function/ontology#",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Problem",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/2002/07/owl#Class",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Problem",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#label",
+    "object": "\"Problem\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Problem",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "object": "\"A certain problem that a function solves\"@en",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Problem",
+    "predicate": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+    "object": "\"testing\"",
+    "graph": ""
+  },
+  {
+    "subject": "https://w3id.org/function/ontology#Problem",
+    "predicate": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+    "object": "https://w3id.org/function/ontology#",
+    "graph": ""
+  },
+  {
+    "subject": "http://xmlns.com/foaf/0.1/Document",
+    "predicate": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+    "object": "http://www.w3.org/2002/07/owl#Class",
+    "graph": ""
+  }
+]

@@ -1,0 +1,1350 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "https://w3id.org/function/ontology" ],
+    "title" : {
+      "en" : "The Function Ontology"
+    },
+    "iri" : "https://w3id.org/function/ontology",
+    "version" : "1.0.0",
+    "author" : [ "https://ben.de-meester.org/#me", "https://natadimou.com/#me" ],
+    "description" : {
+      "en" : "The Function Ontology allows to declare and describe functions. The specification is online at https://w3id.org/function/spec. Copyright © Ghent University – imec – IDLab."
+    },
+    "labels" : {
+      "en" : "The Function Ontology"
+    },
+    "other" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology/0.6.0",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://ben.de-meester.org/#me",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://natadimou.com/#me",
+        "type" : "iri"
+      } ],
+      "incompatibleWith" : [ {
+        "identifier" : "incompatibleWith",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology/0.4.1",
+        "type" : "iri"
+      }, {
+        "identifier" : "incompatibleWith",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology/0.5.0",
+        "type" : "iri"
+      }, {
+        "identifier" : "incompatibleWith",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology/0.4",
+        "type" : "iri"
+      }, {
+        "identifier" : "incompatibleWith",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology/0.2",
+        "type" : "iri"
+      }, {
+        "identifier" : "incompatibleWith",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology/0.5.1",
+        "type" : "iri"
+      }, {
+        "identifier" : "incompatibleWith",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology/0.1",
+        "type" : "iri"
+      }, {
+        "identifier" : "incompatibleWith",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology/0.3",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2016-03-08",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The Function Ontology",
+        "type" : "label"
+      } ],
+      "backwardCompatibleWith" : [ {
+        "identifier" : "backwardCompatibleWith",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology/0.6.0",
+        "type" : "iri"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec",
+        "type" : "iri"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/license/by/3.0/",
+        "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "http://maxime-lefrancois.info/me#",
+        "type" : "iri"
+      } ],
+      "primaryTopic" : [ {
+        "identifier" : "primaryTopic",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "fno",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright © Ghent University – imec – IDLab",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2020-12-22",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "https://ben.de-meester.org/#me",
+        "type" : "iri"
+      } ],
+      "logo" : [ {
+        "identifier" : "logo",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/img/fno_favicon.png",
+        "type" : "iri"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology#",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "undefined",
+        "value" : "De Meester, B.; Seymoens, T.; Dimou, A. & Verborgh, R. Implementation-independent Function Reuse. Future Generation Computer Systems, Elsevier BV, 2020, 110, 946-959 ",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2016-03-08",
+        "type" : "label"
+      } ],
+      "status" : [ {
+        "identifier" : "status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "doi" : [ {
+        "identifier" : "doi",
+        "language" : "undefined",
+        "value" : "10.5281/zenodo.595382",
+        "type" : "label"
+      } ],
+      "depiction" : [ {
+        "identifier" : "depiction",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/resources/images/fno-full.png",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/function/ontology#Mapping",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fno-Mapping",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Mapping",
+      "en" : "Mapping"
+    },
+    "comment" : {
+      "en" : "A Mapping links (abstract) Functions and (concrete) Implementations"
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "https://w3id.org/function/ontology#MethodMapping",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fno-MethodMapping",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MethodMapping",
+      "en" : "Method mapping"
+    },
+    "comment" : {
+      "en" : "A method mapping unambiguously specifies how the abstract function can be mapped to the implemented method. This can be, e.g., the name of the method"
+    },
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "8",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/function/ontology#Function",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "A Function is an actionable thing that can have input parameters, output, solve certain problems, and can be implemented using certain algorithms.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fn-function",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Function",
+      "en" : "Function"
+    },
+    "comment" : {
+      "en" : "A Function is a process that performs a specific task by associating one or more Parameters to an Output"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#Execution",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : " An Execution is the assignment of the values of the Parameters of a Function. An Execution has as result the value of the Output of the Function.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fn-execution",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Execution",
+      "en" : "Execution"
+    },
+    "comment" : {
+      "en" : "An Execution is the connection between a Function and its Parameters and Outputs."
+    },
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#Parameter",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "A Function expects a list of Parameters. This description actually defines which predicates to use when binding the values to the execution of the Function. The parameters are ordered in a list, and each parameter defines the relationship that is used for the execution. For this, the fno:predicate predicate MUST be used. All predicates are allowed, except for rdf:type and fno:executes. A Parameter can have a specific type or other metadata (e.g., required or not, having a default value or not).",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fn-parameter",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Parameter",
+      "en" : "Parameter"
+    },
+    "comment" : {
+      "en" : "A Parameter is the description of the input value of a Function."
+    },
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#Problem",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "For example, a Function can solve the <code>doing a sum</code> problem, however, \"global warming\" could also be perceived as a problem, with no single function to solve it.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fn-problem",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Problem",
+      "en" : "Problem"
+    },
+    "comment" : {
+      "en" : "A Problem is a general issue. Some problems can be solved by executing a certain Function."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#Implementation",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "An Implementation depends on the used development context, i.e., the used programming language and execution environment. An Implementation could be, e.g., an NPM package.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fno-implementation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Implementation",
+      "en" : "Implementation"
+    },
+    "comment" : {
+      "en" : "An Implementation defines the internal workings of one or more Functions"
+    },
+    "id" : "25"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "https://w3id.org/function/ontology#ReturnMapping",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fno-ReturnMapping",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ReturnMapping",
+      "en" : "Return mapping"
+    },
+    "comment" : {
+      "en" : "A return mapping unambiguously specifies how the abstract output can be mapped to the implemented method's return value. For example: the return value of the method, or the thrown error of a the method"
+    },
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#ParameterMapping",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fno-ParameterMapping",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ParameterMapping",
+      "en" : "Parameter mapping"
+    },
+    "comment" : {
+      "en" : "A parameter mapping unambiguously specifies how the abstract parameter can be mapped to the implemented method's argument. For example: Parameter X is mapped to the third argument of the method (a position parameter mapping, common for programming languages), or to property with name Y of the method (a property parameter mapping, common for Web APIs)"
+    },
+    "id" : "26"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#Algorithm",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "A function can be implemented using a known algorithm (e.g., Dijkstra's shortest path algorithm),\r\nor use a combination of multiple algorithms to solve a certain problem.\r\nA function does not have to be implemented by any algorithm or have to be mapped one-on-one to an algorithm.\r\nIt is not required to have a one-to-one mapping between an algorithm and a problem.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fn-algorithm",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Algorithm",
+      "en" : "Algorithm"
+    },
+    "comment" : {
+      "en" : "An algorithm is a specified set of instructions, independent of its implementation."
+    },
+    "id" : "15"
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "List"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/function/ontology",
+      "baseIri" : "https://w3id.org/function",
+      "labels" : {
+        "IRI-based" : "ontology"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+    "baseIri" : "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property"
+    },
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "individuals" : [ {
+      "iri" : "https://ben.de-meester.org/#me",
+      "baseIri" : "https://ben.de-meester.org/",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "en",
+          "value" : "Ben De Meester",
+          "type" : "label"
+        } ],
+        "mbox" : [ {
+          "identifier" : "mbox",
+          "language" : "undefined",
+          "value" : "mailto:Ben.DeMeester@UGent.be",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "me",
+        "en" : "Ben De Meester"
+      }
+    }, {
+      "iri" : "https://natadimou.com/#me",
+      "baseIri" : "https://natadimou.com/",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "en",
+          "value" : "Anastasia Dimou",
+          "type" : "label"
+        } ],
+        "mbox" : [ {
+          "identifier" : "mbox",
+          "language" : "undefined",
+          "value" : "mailto:Anastasia.dimou@UGent.be",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "me",
+        "en" : "Anastasia Dimou"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#Output",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "instances" : 0,
+    "annotations" : {
+      "note" : [ {
+        "identifier" : "note",
+        "language" : "en",
+        "value" : "A Function can have multiple outputs, just as, e.g., callbacks in JavaScript can return multiple results, or a function could throw multiple types of errors.",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fn-output",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Output",
+      "en" : "Output"
+    },
+    "comment" : {
+      "en" : "An Output is the description of the output value of a Function."
+    },
+    "id" : "34"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/function/ontology#solves",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fn-problem",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "solves",
+      "en" : "solves"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Connects a description of a function to the description of a problem it tries to solve."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#returns",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fn-output",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "returns",
+      "en" : "returns"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Connects a description of a function to the description of the output"
+    },
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#type",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fn-parameter",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "type",
+      "en" : "type"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Connects an output or a parameter description to the type of instances of these parameters or outputs."
+    },
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#expects",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fn-parameter",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "expects",
+      "en" : "expects"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Connects a function description to an ordered list of zero or more parameter descriptions"
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#required",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "range" : "11",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fn-parameter",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "required",
+      "en" : "required"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Defines if a parameter or an output is required."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#methodMapping",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fno-MethodMapping",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "methodMapping",
+      "en" : "method mapping"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Connects a method mapping to a mapping definition"
+    },
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#implements",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "range" : "15",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fn-algorithm",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implements",
+      "en" : "implements"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Connects a function to an algorithm it implements. A function can implement 0..n algorithms."
+    },
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#nullable",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "range" : "18",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "nullable",
+      "en" : "nullable"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Defines if a parameteris nullable."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#function",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fno-Mapping",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "function",
+      "en" : "function"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Connects a function to a mapping definition"
+    },
+    "attributes" : [ "object" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#name",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "range" : "21",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fn-function",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "name"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Connects a function or a parameter to its name."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "20"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#uses",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "range" : "3",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fno-uses",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "uses",
+      "en" : "uses"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Connects an execution to a mapping definition"
+    },
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#returnMapping",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "range" : "24",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fno-ReturnMapping",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "returnMapping",
+      "en" : "return mapping"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Connects a return mapping to a mapping definition"
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#implementation",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "range" : "25",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fno-Mapping",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implementation",
+      "en" : "implementation"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Connects an implementation to a mapping definition"
+    },
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#parameterMapping",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "range" : "26",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fno-ParameterMapping",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "parameterMapping",
+      "en" : "parameter mapping"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Connects a parameter mapping to a mapping definition"
+    },
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#executes",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fn-execution",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "executes",
+      "en" : "executes"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Connects a function to an execution definition"
+    },
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/function/ontology#predicate",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "range" : "31",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec/#fn-parameter",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "predicate",
+      "en" : "predicate"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Connects a parameter description to the predicate used to link executions of this function to their parameter."
+    },
+    "attributes" : [ "object" ],
+    "id" : "30"
+  } ]
+}

@@ -1,0 +1,14 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<https://w3id.org/function/ontology/0.6.0> a prov:Entity;
+	 dc:title "The Function Ontology";
+	 prov:wasAttributedTo <https://ben.de-meester.org/#me>;
+	 dc:creator <https://ben.de-meester.org/#me>;
+	 prov:wasAttributedTo <https://data.verborgh.org/people/anastasia_dimou>;
+	 dc:creator <https://data.verborgh.org/people/anastasia_dimou>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <https://w3id.org/function/ontology>;
+	 prov:wasRevisionOf <https://w3id.org/function/ontology/0.5.1>;
+	 prov:wasGeneratedAt "2019-05-29";
+.

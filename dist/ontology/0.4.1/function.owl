@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdfa="http://www.w3.org/ns/rdfa#" xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:dct="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:voaf="http://purl.org/vocommons/voaf#" xmlns:vann="http://purl.org/vocab/vann/" xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:max="http://maxime-lefrancois.info/me#" xmlns:="https://w3id.org/function/ontology#">
+  <rdf:Description rdf:about="https://w3id.org/function/ontology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    <vann:preferredNamespacePrefix>fno</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://w3id.org/function/ontology#</vann:preferredNamespaceUri>
+    <rdfs:label xml:lang="en" rdfs:Datatype="rdf:langString">The Function Ontology</rdfs:label>
+    <dct:title xml:lang="en" rdfs:Datatype="rdf:langString">The Function Ontology</dct:title>
+    <dct:description xml:lang="en" rdfs:Datatype="rdf:langString">The Function Ontology allows to declare and describe functions. The specification is online at https://w3id.org/function/spec</dct:description>
+    <rdfs:comment xml:lang="en" rdfs:Datatype="rdf:langString">-Version 0.4.1: wrong range definition, updated descriptions.
+-Version 0.4: added some properties
+-Version 0.3: improved comments.
+-Version 0.2: added extra metadata.
+-Version 0.1: creation.</rdfs:comment>
+    <owl:versionIRI rdf:resource="https://w3id.org/function/ontology/0.4.1"/>
+    <owl:versionInfo>0.4.1</owl:versionInfo>
+    <owl:priorVersion>https://w3id.org/function/ontology/0.4</owl:priorVersion>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/function/spec"/>
+    <dct:modified rdfs:Datatype="xsd:date">2017-08-25</dct:modified>
+    <dct:issued rdfs:Datatype="xsd:date">2016-03-08</dct:issued>
+    <dct:rights xml:lang="en" rdfs:Datatype="rdf:langString">Copyright © Ghent University – iMinds – Data Science Lab</dct:rights>
+    <cc:license rdf:resource="http://creativecommons.org/license/by/3.0/"/>
+    <foaf:primaryTopic rdf:resource="https://w3id.org/function/ontology"/>
+    <dct:creator rdf:nodeID="_:b1"/>
+    <dct:contributor rdf:nodeID="_:b2"/>
+    <dct:contributor rdf:resource="http://maxime-lefrancois.info/me#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/issued">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/primaryTopic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#date">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/function/ontology#executes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en" rdfs:Datatype="rdf:langString">executes</rdfs:label>
+    <rdfs:comment xml:lang="en" rdfs:Datatype="rdf:langString">Connects a function to an execution definition</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology#"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Execution"/>
+    <rdfs:range rdf:resource="https://w3id.org/function/ontology#Function"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/function/ontology#expects">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en" rdfs:Datatype="rdf:langString">expects</rdfs:label>
+    <rdfs:comment xml:lang="en" rdfs:Datatype="rdf:langString">Connects a function description to an ordered list of zero or more parameter descriptions</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology#"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Function"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/function/ontology#implements">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en" rdfs:Datatype="rdf:langString">implements</rdfs:label>
+    <rdfs:comment xml:lang="en" rdfs:Datatype="rdf:langString">Connects a function to an algorithm it implements. A function can implement 0..n algorithms.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology#"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:range rdf:resource="https://w3id.org/function/ontology#Algorithm"/>
+    <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Function"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/function/ontology#returns">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en" rdfs:Datatype="rdf:langString">returns</rdfs:label>
+    <rdfs:comment xml:lang="en" rdfs:Datatype="rdf:langString">Connects a description of a function to the description of the output</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology#"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Function"/>
+    <rdfs:range rdf:resource="https://w3id.org/function/ontology#Output"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/function/ontology#solves">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en" rdfs:Datatype="rdf:langString">solves</rdfs:label>
+    <rdfs:comment xml:lang="en" rdfs:Datatype="rdf:langString">Connects a description of a function to the description of a problem it tries to solve.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology#"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Function"/>
+    <rdfs:range rdf:resource="https://w3id.org/function/ontology#Problem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/function/ontology#predicate">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:label xml:lang="en" rdfs:Datatype="rdf:langString">predicate</rdfs:label>
+    <rdfs:comment xml:lang="en" rdfs:Datatype="rdf:langString">Connects a parameter description to the predicate used to link executions of this function to their parameter.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology#"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/function/ontology#type">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:label xml:lang="en" rdfs:Datatype="rdf:langString">type</rdfs:label>
+    <rdfs:comment xml:lang="en" rdfs:Datatype="rdf:langString">Connects an output or a parameter description to the type of instances of these parameters or outputs.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology#"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/function/ontology#name">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:label xml:lang="en" rdfs:Datatype="rdf:langString">name</rdfs:label>
+    <rdfs:comment xml:lang="en" rdfs:Datatype="rdf:langString">Connects a function or a parameter to its name.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology#"/>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Function"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/function/ontology#required">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:label xml:lang="en" rdfs:Datatype="rdf:langString">required</rdfs:label>
+    <rdfs:comment xml:lang="en" rdfs:Datatype="rdf:langString">Defines if a parameter or an output is required.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology#"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/function/ontology#nullable">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:label xml:lang="en" rdfs:Datatype="rdf:langString">nullable</rdfs:label>
+    <rdfs:comment xml:lang="en" rdfs:Datatype="rdf:langString">Defines if a parameteris nullable.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology#"/>
+    <vs:term_status>testing</vs:term_status>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/function/ontology#Algorithm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en" rdfs:Datatype="rdf:langString">Algorithm</rdfs:label>
+    <rdfs:comment xml:lang="en" rdfs:Datatype="rdf:langString">A declaration of an algorithm. An algorithm is a specified set of instructions, independent of its implementation. There is no one-to-one mapping between an algorithm and a problem.</rdfs:comment>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/function/ontology#Execution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en" rdfs:Datatype="rdf:langString">Execution</rdfs:label>
+    <rdfs:comment xml:lang="en" rdfs:Datatype="rdf:langString">An execution is the connection between a function and its input and output values.</rdfs:comment>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/function/ontology#Function">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en" rdfs:Datatype="rdf:langString">Function</rdfs:label>
+    <rdfs:comment xml:lang="en" rdfs:Datatype="rdf:langString">The declared function</rdfs:comment>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/function/ontology#Output">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en" rdfs:Datatype="rdf:langString">Output</rdfs:label>
+    <rdfs:comment xml:lang="en" rdfs:Datatype="rdf:langString">The definition of an output of a function</rdfs:comment>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/function/ontology#Parameter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en" rdfs:Datatype="rdf:langString">Parameter</rdfs:label>
+    <rdfs:comment xml:lang="en" rdfs:Datatype="rdf:langString">The definition of a parameter to a certain function</rdfs:comment>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/function/ontology#Problem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en" rdfs:Datatype="rdf:langString">Problem</rdfs:label>
+    <rdfs:comment xml:lang="en" rdfs:Datatype="rdf:langString">A certain problem that a function solves</rdfs:comment>
+    <vs:term_status>testing</vs:term_status>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Document">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_:b1">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:mbox>mailto:Ben.DeMeester@UGent.be</foaf:mbox>
+    <foaf:name xml:lang="en" rdfs:Datatype="rdf:langString">Ben De Meester</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="_:b2">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:mbox>mailto:Anastasia.dimou@UGent.be</foaf:mbox>
+    <foaf:name xml:lang="en" rdfs:Datatype="rdf:langString">Anastasia Dimou</foaf:name>
+  </rdf:Description>
+</rdf:RDF>

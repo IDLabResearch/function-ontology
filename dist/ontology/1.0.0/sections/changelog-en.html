@@ -1,0 +1,296 @@
+<div id="changelog">
+<h2 id="changes" class="list">Changes from last version</h2>
+<h3 id="changeClass" class="list">Classes</h3>
+<details><summary><u>Modified classes</u></summary>
+<ul><li><a href="#Algorithm">https://w3id.org/function/ontology#Algorithm</a>
+<ul>
+<li>Added: rdfs:comment "An algorithm is a specified set of instructions, independent of its implementation."@en</li>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fn-algorithm</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#note> "A function can be implemented using a known algorithm (e.g., Dijkstra's shortest path algorithm),
+or use a combination of multiple algorithms to solve a certain problem.
+A function does not have to be implemented by any algorithm or have to be mapped one-on-one to an algorithm.
+It is not required to have a one-to-one mapping between an algorithm and a problem."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "A declaration of an algorithm. An algorithm is a specified set of instructions, independent of its implementation. There is no one-to-one mapping between an algorithm and a problem."@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+<li><a href="#Execution">https://w3id.org/function/ontology#Execution</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#note> " An Execution is the assignment of the values of the Parameters of a Function. An Execution has as result the value of the Output of the Function."@en</li>
+<li>Added: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string</li>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fn-execution</li>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+<li>Added: rdfs:comment "An Execution is the connection between a Function and its Parameters and Outputs."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "An execution is the connection between a function and its input and output values."@en</li>
+<li>Deleted: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+<li><a href="#Function">https://w3id.org/function/ontology#Function</a>
+<ul>
+<li>Added: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string</li>
+<li>Added: rdfs:comment "A Function is a process that performs a specific task by associating one or more Parameters to an Output"@en</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#note> "A Function is an actionable thing that can have input parameters, output, solve certain problems, and can be implemented using certain algorithms."@en</li>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fn-function</li>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string</li>
+<li>Deleted: rdfs:comment "The declared function"@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+<li><a href="#Implementation">https://w3id.org/function/ontology#Implementation</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#note> "An Implementation depends on the used development context, i.e., the used programming language and execution environment. An Implementation could be, e.g., an NPM package."@en</li>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fno-implementation</li>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+<li>Added: rdfs:comment "An Implementation defines the internal workings of one or more Functions"@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "A certain implementation of a function"@en</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+<li><a href="#Mapping">https://w3id.org/function/ontology#Mapping</a>
+<ul>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fno-Mapping</li>
+<li>Added: rdfs:comment "A Mapping links (abstract) Functions and (concrete) Implementations"@en</li>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+<li>Deleted: rdfs:comment "A mapping connects a function to an implementation"@en</li>
+</ul>
+</li>
+<li><a href="#MethodMapping">https://w3id.org/function/ontology#MethodMapping</a>
+<ul>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fno-MethodMapping</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+<li><a href="#Output">https://w3id.org/function/ontology#Output</a>
+<ul>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fn-output</li>
+<li>Added: rdfs:comment "An Output is the description of the output value of a Function."@en</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#note> "A Function can have multiple outputs, just as, e.g., callbacks in JavaScript can return multiple results, or a function could throw multiple types of errors."@en</li>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+<li>Added: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+<li>Deleted: rdfs:comment "The definition of an output of a function"@en</li>
+</ul>
+</li>
+<li><a href="#Parameter">https://w3id.org/function/ontology#Parameter</a>
+<ul>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fn-parameter</li>
+<li>Added: rdfs:comment "A Parameter is the description of the input value of a Function."@en</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#note> "A Function expects a list of Parameters. This description actually defines which predicates to use when binding the values to the execution of the Function. The parameters are ordered in a list, and each parameter defines the relationship that is used for the execution. For this, the fno:predicate predicate MUST be used. All predicates are allowed, except for rdf:type and fno:executes. A Parameter can have a specific type or other metadata (e.g., required or not, having a default value or not)."@en</li>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+<li>Added: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+<li>Deleted: rdfs:comment "The definition of a parameter to a certain function"@en</li>
+</ul>
+</li>
+<li><a href="#ParameterMapping">https://w3id.org/function/ontology#ParameterMapping</a>
+<ul>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fno-ParameterMapping</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+<li><a href="#Problem">https://w3id.org/function/ontology#Problem</a>
+<ul>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fn-problem</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#note> "For example, a Function can solve the <code>doing a sum</code> problem, however, \"global warming\" could also be perceived as a problem, with no single function to solve it."@en</li>
+<li>Added: rdfs:comment "A Problem is a general issue. Some problems can be solved by executing a certain Function."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+<li>Deleted: rdfs:comment "A certain problem that a function solves"@en</li>
+</ul>
+</li>
+<li><a href="#ReturnMapping">https://w3id.org/function/ontology#ReturnMapping</a>
+<ul>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fno-ReturnMapping</li>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+</ul></details><h3 id="changeProp" class="list">Object Properties</h3>
+<details><summary><u>Modified properties</u></summary>
+<ul><li><a href="#executes">https://w3id.org/function/ontology#executes</a>
+<ul>
+<li>Added: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string</li>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fn-execution</li>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+<li>Deleted: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#expects">https://w3id.org/function/ontology#expects</a>
+<ul>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+<li>Added: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string</li>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fn-parameter</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+<li>Deleted: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#function">https://w3id.org/function/ontology#function</a>
+<ul>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fno-Mapping</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+<li><a href="#implementation">https://w3id.org/function/ontology#implementation</a>
+<ul>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fno-Mapping</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+<li><a href="#implements">https://w3id.org/function/ontology#implements</a>
+<ul>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fn-algorithm</li>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+<li><a href="#methodMapping">https://w3id.org/function/ontology#methodMapping</a>
+<ul>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fno-MethodMapping</li>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+<li><a href="#parameterMapping">https://w3id.org/function/ontology#parameterMapping</a>
+<ul>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fno-ParameterMapping</li>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+<li><a href="#predicate">https://w3id.org/function/ontology#predicate</a>
+<ul>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+<li>Added: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string</li>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fn-parameter</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+<li>Deleted: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#returnMapping">https://w3id.org/function/ontology#returnMapping</a>
+<ul>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fno-ReturnMapping</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+<li><a href="#returns">https://w3id.org/function/ontology#returns</a>
+<ul>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fn-output</li>
+<li>Added: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string</li>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string</li>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+<li><a href="#solves">https://w3id.org/function/ontology#solves</a>
+<ul>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fn-problem</li>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+<li><a href="#type">https://w3id.org/function/ontology#type</a>
+<ul>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fn-parameter</li>
+<li>Added: domain https://w3id.org/function/ontology#Parameter</li>
+<li>Added: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"^^xsd:string</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+<li>Deleted: <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#uses">https://w3id.org/function/ontology#uses</a>
+<ul>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fno-uses</li>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+</ul></details><h3 id="changeDataProp" class="list">Data Properties</h3>
+<details><summary><u>Modified data properties</u></summary>
+<ul><li><a href="#nullable">https://w3id.org/function/ontology#nullable</a>
+<ul>
+<li>Added: Domain https://w3id.org/function/ontology#Parameter</li>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+<li><a href="#required">https://w3id.org/function/ontology#required</a>
+<ul>
+<li>Added: rdfs:isDefinedBy https://w3id.org/function/ontology</li>
+<li>Added: Domain https://w3id.org/function/ontology#Parameter</li>
+<li>Added: <http://purl.org/vocab/vann/example> https://w3id.org/function/spec/#fn-parameter</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:isDefinedBy https://w3id.org/function/ontology#</li>
+</ul>
+</li>
+</ul></details><details><summary><u>Added data properties</u></summary>
+<ul><li><a href="#name">https://w3id.org/function/ontology#name</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+<li>Added: Domain https://w3id.org/function/ontology#Function</li>
+</ul>
+</li>
+</ul></details></div>

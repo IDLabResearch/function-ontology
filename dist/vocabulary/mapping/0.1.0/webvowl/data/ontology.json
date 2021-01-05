@@ -1,0 +1,468 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://purl.org/vocommons/voaf", "http://www.w3.org/2000/01/rdf-schema", "https://w3id.org/function/vocabulary/mapping", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "https://w3id.org/function/ontology" ],
+    "title" : {
+      "en" : "The Function Ontology - Implementation Mapping vocabulary"
+    },
+    "iri" : "https://w3id.org/function/vocabulary/mapping#",
+    "version" : "0.1.0",
+    "author" : [ "https://ben.de-meester.org/#me" ],
+    "description" : {
+      "en" : "The Function Ontology Implementation Mapping vocabulary specifies terms relevant to link FnO models to implementations. The specification is online at https://w3id.org/function/spec"
+    },
+    "labels" : {
+      "en" : "The Function Ontology - Implementation Mapping vocabulary"
+    },
+    "comments" : {
+      "en" : "-Version 0.1.0: creation."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/license/by/3.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://ben.de-meester.org/#me",
+        "type" : "iri"
+      } ],
+      "primaryTopic" : [ {
+        "identifier" : "primaryTopic",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/ontology",
+        "type" : "iri"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright © Ghent University – imec – IDLab",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "fnom",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-05-21",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "https://ben.de-meester.org/#me",
+        "type" : "iri"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/mapping#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1.0",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2019-05-21",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "The Function Ontology - Implementation Mapping vocabulary",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/spec",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/function/ontology#MethodMapping",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MethodMapping"
+    },
+    "subClasses" : [ "4" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/function/ontology#Parameter",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Parameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "https://w3id.org/function/vocabulary/mapping#PropertyParameterMapping",
+    "baseIri" : "https://w3id.org/function/vocabulary/mapping",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/mapping#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PropertyParameterMapping",
+      "en" : "Property Parameter Mapping"
+    },
+    "comment" : {
+      "en" : "A property parameter mapping uses a property string to map a parameter of an fno:Implementation to an fno:Parameter"
+    },
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/function/vocabulary/mapping#StringMethodMapping",
+    "baseIri" : "https://w3id.org/function/vocabulary/mapping",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/mapping#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "StringMethodMapping",
+      "en" : "String Method Mapping"
+    },
+    "comment" : {
+      "en" : "A string method mapping uses a string to map a method of an fno:Implementation to an fno:Function"
+    },
+    "id" : "4",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/function/vocabulary/mapping#PositionParameterMapping",
+    "baseIri" : "https://w3id.org/function/vocabulary/mapping",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/function/vocabulary/mapping#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PositionParameterMapping",
+      "en" : "Position Parameter Mapping"
+    },
+    "comment" : {
+      "en" : "A position parameter mapping uses a position to map a parameter of an fno:Implementation to an fno:Parameter"
+    },
+    "id" : "12",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/function/ontology#ParameterMapping",
+    "baseIri" : "https://w3id.org/function/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParameterMapping"
+    },
+    "subClasses" : [ "9", "12" ],
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://purl.org/vocommons/voaf#Vocabulary",
+    "baseIri" : "http://purl.org/vocommons/voaf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vocabulary"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/function/vocabulary/mapping#",
+      "baseIri" : "https://w3id.org/function/vocabulary/mapping",
+      "labels" : { }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Person",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "individuals" : [ {
+      "iri" : "https://ben.de-meester.org/#me",
+      "baseIri" : "https://ben.de-meester.org/",
+      "annotations" : {
+        "name" : [ {
+          "identifier" : "name",
+          "language" : "en",
+          "value" : "Ben De Meester",
+          "type" : "label"
+        } ],
+        "mbox" : [ {
+          "identifier" : "mbox",
+          "language" : "undefined",
+          "value" : "mailto:Ben.DeMeester@UGent.be",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "me",
+        "en" : "Ben De Meester"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "18"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/function/vocabulary/mapping#implementationParameterPosition",
+    "baseIri" : "https://w3id.org/function/vocabulary/mapping",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/vocabulary/mapping#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implementationParameterPosition",
+      "en" : "implementation parameter position"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Connects an implementation parameter position to a parameter mapping."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/function/vocabulary/mapping#method-name",
+    "baseIri" : "https://w3id.org/function/vocabulary/mapping",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/vocabulary/mapping#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "method-name",
+      "en" : "method name"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Connects a method name to a method mapping."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "range" : "6",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "7"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/function/vocabulary/mapping#functionParameter",
+    "baseIri" : "https://w3id.org/function/vocabulary/mapping",
+    "range" : "13",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/vocabulary/mapping#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "functionParameter",
+      "en" : "function parameter"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Connects a function parameter to a parameter mapping."
+    },
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "range" : "10",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/function/vocabulary/mapping#implementationProperty",
+    "baseIri" : "https://w3id.org/function/vocabulary/mapping",
+    "range" : "16",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/vocabulary/mapping#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "implementationProperty",
+      "en" : "implementation property"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Connects an implementation parameter label to a parameter mapping."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "15"
+  } ]
+}

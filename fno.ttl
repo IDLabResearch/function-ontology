@@ -8,10 +8,10 @@
 @prefix owl:      <http://www.w3.org/2002/07/owl#> .
 @prefix pav:      <http://purl.org/pav/> .
 @prefix prov:     <http://www.w3.org/ns/prov#> .
-@prefix schema:   <http://schema.org/> .
-@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:   <http://schema.org/> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann:     <http://purl.org/vocab/vann/> .
 @prefix voaf:     <http://purl.org/vocommons/voaf#> .
 @prefix vs:       <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
@@ -27,6 +27,7 @@
     vann:preferredNamespaceUri    "https://w3id.org/function/ontology#" ;
     vann:preferredNamespacePrefix "fno" ;
     dc:title                      "The Function Ontology"@en ;
+    rdfs:label                    "The Function Ontology"@en ;
     dc:description
                                   "The Function Ontology allows to declare and describe functions. The specification is online at https://w3id.org/function/spec. Copyright © Ghent University – imec – IDLab."@en ;
     bibo:status                   "stable" ;
@@ -51,18 +52,18 @@
                                   "De Meester, B.; Seymoens, T.; Dimou, A. & Verborgh, R. Implementation-independent Function Reuse. Future Generation Computer Systems, Elsevier BV, 2020, 110, 946-959 " ;
     dc:rights                     "Copyright © Ghent University – imec – IDLab"@en ;
     schema:license                <http://creativecommons.org/license/by/3.0/> ;
-    foaf:logo                     <https://fno.io/img/fno_favicon.png> ;
-    foaf:depiction                <https://fno.io/spec/resources/images/fno-full.png> ;
+    foaf:logo                     <https://w3id.org/function/img/fno_favicon.png> ;
+    foaf:depiction                <https://w3id.org/function/spec/resources/images/fno-full.png> ;
     rdfs:seeAlso                  <https://w3id.org/function/spec> ;
-    rdfs:comment                  """-Version 1.0.0: updated metadata and specified definitions, v1
--Version 0.6.0: fno:ReturnMapping
--Version 0.5.1: fno:type a ObjectProperty
--Version 0.5.0: added Mapping and Implementation classes.
--Version 0.4.1: wrong range definition, updated descriptions.
--Version 0.4: added some properties
--Version 0.3: improved comments.
--Version 0.2: added extra metadata.
--Version 0.1: creation."""@en ; # Not recommended by https://w3id.org/widoco/bestPractices
+#    rdfs:comment                  """- Version 1.0.0: updated metadata and specified definitions, v1
+#- Version 0.6.0: fno:ReturnMapping
+#- Version 0.5.1: fno:type a ObjectProperty
+#- Version 0.5.0: added Mapping and Implementation classes.
+#- Version 0.4.1: wrong range definition, updated descriptions.
+#- Version 0.4: added some properties
+#- Version 0.3: improved comments.
+#- Version 0.2: added extra metadata.
+#- Version 0.1: creation."""@en ; # Not recommended by https://w3id.org/widoco/bestPractices
     foaf:primaryTopic
                                   <https://w3id.org/function/ontology> ; # Not recommended by https://w3id.org/widoco/bestPractices
 .
@@ -88,12 +89,11 @@
                      "A Function is an actionable thing that can have input parameters, output, solve certain problems, and can be implemented using certain algorithms."@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fn-function> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "stable" ;
 .
 
 :name
-    rdf:type           rdf:Property ;
+    rdf:type           owl:DatatypeProperty ;
     rdfs:domain        :Function ;
     rdfs:range         xsd:string ;
     rdfs:subPropertyOf rdfs:label ;
@@ -101,7 +101,6 @@
     rdfs:comment       "Connects a function or a parameter to its name."@en ;
     rdfs:isDefinedBy   <https://w3id.org/function/ontology> ;
     vann:example       <https://w3id.org/function/spec/#fn-function> ;
-    owl:deprecated     "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status     "testing" ;
 .
 
@@ -113,7 +112,6 @@
                      "For example, a Function can solve the <code>doing a sum</code> problem, however, \"global warming\" could also be perceived as a problem, with no single function to solve it."@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fn-problem> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "testing" ;
 .
 
@@ -125,7 +123,6 @@
     rdfs:comment     "Connects a description of a function to the description of a problem it tries to solve."@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fn-problem> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "testing" ;
 .
 
@@ -139,7 +136,6 @@ A function does not have to be implemented by any algorithm or have to be mapped
 It is not required to have a one-to-one mapping between an algorithm and a problem."""@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fn-algorithm> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "testing" ;
 .
 
@@ -151,7 +147,6 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
     rdfs:comment     "Connects a function to an algorithm it implements. A function can implement 0..n algorithms."@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fn-algorithm> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "testing" ;
 .
 
@@ -163,7 +158,6 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
                      "A Function expects a list of Parameters. This description actually defines which predicates to use when binding the values to the execution of the Function. The parameters are ordered in a list, and each parameter defines the relationship that is used for the execution. For this, the fno:predicate predicate MUST be used. All predicates are allowed, except for rdf:type and fno:executes. A Parameter can have a specific type or other metadata (e.g., required or not, having a default value or not)."@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fn-parameter> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "stable" ;
 .
 
@@ -175,7 +169,6 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
     rdfs:comment     "Connects a function description to an ordered list of zero or more parameter descriptions"@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fn-parameter> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "stable" ;
 .
 
@@ -188,40 +181,39 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
                      "Connects a parameter description to the predicate used to link executions of this function to their parameter."@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fn-parameter> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "stable" ;
 .
 
 :type
     rdf:type         owl:ObjectProperty ;
+    rdfs:domain      :Parameter ;
     rdfs:label       "type"@en ;
     rdfs:comment
                      "Connects an output or a parameter description to the type of instances of these parameters or outputs."@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fn-parameter> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "stable" ;
 .
 
 :required
     rdf:type         rdf:Property ;
+    rdfs:domain      :Parameter ;
     rdfs:range       xsd:boolean ;
     rdfs:label       "required"@en ;
     rdfs:comment     "Defines if a parameter or an output is required."@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fn-parameter> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "testing" ;
 .
 
 :nullable
     rdf:type         rdf:Property ;
+    rdfs:domain      :Parameter ;
     rdfs:range       xsd:boolean ;
     rdfs:label       "nullable"@en ;
     rdfs:comment     "Defines if a parameteris nullable."@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
 # TODO example?
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "testing" ;
 .
 
@@ -233,7 +225,6 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
                      " An Execution is the assignment of the values of the Parameters of a Function. An Execution has as result the value of the Output of the Function."@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fn-execution> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "stable" ;
 .
 
@@ -245,7 +236,6 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
     rdfs:comment     "Connects a function to an execution definition"@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fn-execution> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "stable" ;
 .
 
@@ -257,7 +247,6 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
                      "A Function can have multiple outputs, just as, e.g., callbacks in JavaScript can return multiple results, or a function could throw multiple types of errors."@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fn-output> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "stable" ;
 .
 
@@ -269,7 +258,6 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
     rdfs:comment     "Connects a description of a function to the description of the output"@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fn-output> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "stable" ;
 .
 
@@ -281,7 +269,6 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
                      "An Implementation depends on the used development context, i.e., the used programming language and execution environment. An Implementation could be, e.g., an NPM package."@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fno-implementation> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "testing" ;
 .
 
@@ -291,7 +278,6 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
     rdfs:comment     "A Mapping links (abstract) Functions and (concrete) Implementations"@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fno-Mapping> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "testing" ;
 .
 
@@ -303,7 +289,6 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
     rdfs:comment     "Connects a function to a mapping definition"@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fno-Mapping> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "testing" ;
 .
 
@@ -315,7 +300,6 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
     rdfs:comment     "Connects an implementation to a mapping definition"@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fno-Mapping> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "testing" ;
 .
 
@@ -326,7 +310,6 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
                      "A method mapping unambiguously specifies how the abstract function can be mapped to the implemented method. This can be, e.g., the name of the method"@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fno-MethodMapping> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "testing" ;
 .
 
@@ -338,7 +321,6 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
     rdfs:comment     "Connects a method mapping to a mapping definition"@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fno-MethodMapping> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "testing" ;
 .
 
@@ -349,7 +331,6 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
                      "A parameter mapping unambiguously specifies how the abstract parameter can be mapped to the implemented method's argument. For example: Parameter X is mapped to the third argument of the method (a position parameter mapping, common for programming languages), or to property with name Y of the method (a property parameter mapping, common for Web APIs)"@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fno-ParameterMapping> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "testing" ;
 .
 
@@ -361,7 +342,6 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
     rdfs:comment     "Connects a parameter mapping to a mapping definition"@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fno-ParameterMapping> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "testing" ;
 .
 
@@ -372,7 +352,6 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
                      "A return mapping unambiguously specifies how the abstract output can be mapped to the implemented method's return value. For example: the return value of the method, or the thrown error of a the method"@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fno-ReturnMapping> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "testing" ;
 .
 
@@ -384,7 +363,6 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
     rdfs:comment     "Connects a return mapping to a mapping definition"@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fno-ReturnMapping> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "testing" ;
 .
 
@@ -396,6 +374,5 @@ It is not required to have a one-to-one mapping between an algorithm and a probl
     rdfs:comment     "Connects an execution to a mapping definition"@en ;
     rdfs:isDefinedBy <https://w3id.org/function/ontology> ;
     vann:example     <https://w3id.org/function/spec/#fno-uses> ;
-    owl:deprecated   "false"^^xsd:false ; # Not sure this is the correct usage of owl:deprecated
     vs:term_status   "testing" ;
 .

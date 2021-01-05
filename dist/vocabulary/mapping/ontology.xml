@@ -1,0 +1,630 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/function/vocabulary/mapping#"
+     xml:base="https://w3id.org/function/vocabulary/mapping"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:mapping="https://w3id.org/function/vocabulary/mapping#">
+    <owl:Ontology rdf:about="https://w3id.org/function/vocabulary/mapping#">
+        <owl:versionIRI rdf:resource="https://w3id.org/function/vocabulary/mapping/0.2.1"/>
+        <dc:description xml:lang="en">The Function Ontology Implementation Mapping vocabulary specifies terms relevant to link FnO models to implementations. The specification is online at https://w3id.org/function/spec</dc:description>
+        <dc:rights xml:lang="en">Copyright © Ghent University – imec – IDLab</dc:rights>
+        <dc:source rdf:resource="https://w3id.org/function/spec"/>
+        <dc:title xml:lang="en">The Function Ontology - Mapping vocabulary</dc:title>
+        <terms:bibliographicCitation>De Meester, B.; Seymoens, T.; Dimou, A. &amp; Verborgh, R. Implementation-independent Function Reuse. Future Generation Computer Systems, Elsevier BV, 2020, 110, 946-959 </terms:bibliographicCitation>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-21</terms:created>
+        <terms:creator rdf:resource="https://ben.de-meester.org/#me"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-21</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-12-23</terms:modified>
+        <terms:publisher rdf:resource="https://ben.de-meester.org/#me"/>
+        <bibo:doi>10.5281/zenodo.595382</bibo:doi>
+        <bibo:status>testing</bibo:status>
+        <vann:preferredNamespacePrefix>fnom</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/function/vocabulary/mapping#</vann:preferredNamespaceUri>
+        <schema:license rdf:resource="http://creativecommons.org/license/by/3.0/"/>
+        <rdfs:comment xml:lang="en">- Version 0.2.1: Updated metadata
+- Version 0.2.0: ReturnMapping
+- Version 0.1.0: creation.</rdfs:comment>
+        <rdfs:label xml:lang="en">The Function Ontology - Mapping vocabulary</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/function/spec"/>
+        <owl:backwardCompatibleWith rdf:resource="https://w3id.org/function/vocabulary/mapping/0.2.0"/>
+        <owl:priorVersion rdf:resource="https://w3id.org/function/vocabulary/mapping/0.2.0"/>
+        <owl:versionInfo>0.2.1</owl:versionInfo>
+        <foaf:depiction rdf:resource="https://w3id.org/function/spec/resources/images/fno-full.png"/>
+        <foaf:logo rdf:resource="https://w3id.org/function/img/fno_favicon.png"/>
+        <foaf:primaryTopic rdf:resource="https://w3id.org/function/ontology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/doi -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/doi"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/license"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/logo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/logo"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/primaryTopic -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/primaryTopic"/>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#constantParameterValue -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/function/vocabulary/mapping#constantParameterValue">
+        <rdfs:domain rdf:resource="https://w3id.org/function/vocabulary/mapping#ParameterMapping"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#functionOutput -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/function/vocabulary/mapping#functionOutput">
+        <rdfs:domain rdf:resource="https://w3id.org/function/vocabulary/mapping#ReturnMapping"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#implementationParameterPosition -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/function/vocabulary/mapping#implementationParameterPosition">
+        <rdfs:domain rdf:resource="https://w3id.org/function/vocabulary/mapping#ParameterMapping"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#implementationProperty -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/function/vocabulary/mapping#implementationProperty">
+        <rdfs:domain rdf:resource="https://w3id.org/function/vocabulary/mapping#ParameterMapping"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#repeatableParameter -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/function/vocabulary/mapping#repeatableParameter">
+        <rdfs:domain rdf:resource="https://w3id.org/function/vocabulary/mapping#ParameterMapping"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string">
+        <rdfs:label>string</rdfs:label>
+        <skos:broader rdf:resource="http://www.w3.org/2001/XMLSchema#anyAtomicType"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#functionOutput -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/function/vocabulary/mapping#functionOutput">
+        <rdfs:range rdf:resource="https://w3id.org/function/ontology#Output"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#functionParameter -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/function/vocabulary/mapping#functionParameter">
+        <rdfs:domain rdf:resource="https://w3id.org/function/vocabulary/mapping#PositionParameterMapping"/>
+        <rdfs:range rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:comment xml:lang="en">Connects a function parameter to a parameter mapping.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/mapping"/>
+        <rdfs:label xml:lang="en">function parameter</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#constantParameterValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/function/vocabulary/mapping#constantParameterValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#implementationParameterPosition -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/function/vocabulary/mapping#implementationParameterPosition">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#implementationProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/function/vocabulary/mapping#implementationProperty">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#method-name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/function/vocabulary/mapping#method-name">
+        <rdfs:domain rdf:resource="https://w3id.org/function/vocabulary/mapping#StringMethodMapping"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Connects a method name to a method mapping.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/mapping"/>
+        <rdfs:label xml:lang="en">method name</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#repeatableParameter -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/function/vocabulary/mapping#repeatableParameter">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- https://w3id.org/function/ontology#MethodMapping -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/ontology#MethodMapping"/>
+    
+
+
+    <!-- https://w3id.org/function/ontology#Output -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/ontology#Output"/>
+    
+
+
+    <!-- https://w3id.org/function/ontology#Parameter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/ontology#Parameter"/>
+    
+
+
+    <!-- https://w3id.org/function/ontology#ParameterMapping -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/ontology#ParameterMapping"/>
+    
+
+
+    <!-- https://w3id.org/function/ontology#ReturnMapping -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/ontology#ReturnMapping"/>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#ConstantParameterMapping -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/vocabulary/mapping#ConstantParameterMapping">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/function/ontology#ParameterMapping"/>
+        <rdfs:comment xml:lang="en">A constant parameter mapping uses a property string to map a parameter of an fno:Implementation to a constant value</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/mapping"/>
+        <rdfs:label xml:lang="en">Constant Parameter Mapping</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#DefaultReturnMapping -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/vocabulary/mapping#DefaultReturnMapping">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/function/ontology#ReturnMapping"/>
+        <rdfs:comment xml:lang="en">A default return mapping links the return value of the method to a fno:Output</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/mapping"/>
+        <rdfs:label xml:lang="en">Default Return Mapping</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#ExceptionReturnMapping -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/vocabulary/mapping#ExceptionReturnMapping">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/function/ontology#ReturnMapping"/>
+        <rdfs:comment xml:lang="en">An exception return mapping links the thrown exception of the method to a fno:Output</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/mapping"/>
+        <rdfs:label xml:lang="en">Exception Return Mapping</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#PositionParameterMapping -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/vocabulary/mapping#PositionParameterMapping">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/function/ontology#ParameterMapping"/>
+        <rdfs:comment xml:lang="en">A position parameter mapping uses a position to map a parameter of an fno:Implementation to an fno:Parameter</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/mapping"/>
+        <rdfs:label xml:lang="en">Position Parameter Mapping</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#PropertyParameterMapping -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/vocabulary/mapping#PropertyParameterMapping">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/function/ontology#ParameterMapping"/>
+        <rdfs:comment xml:lang="en">A property parameter mapping uses a property string to map a parameter of an fno:Implementation to an fno:Parameter</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/mapping"/>
+        <rdfs:label xml:lang="en">Property Parameter Mapping</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping#StringMethodMapping -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/vocabulary/mapping#StringMethodMapping">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/function/ontology#MethodMapping"/>
+        <rdfs:comment xml:lang="en">A string method mapping uses a string to map a method of an fno:Implementation to an fno:Function</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/mapping"/>
+        <rdfs:label xml:lang="en">String Method Mapping</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://ben.de-meester.org/#me -->
+
+
+    <owl:NamedIndividual rdf:about="https://ben.de-meester.org/#me">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label xml:lang="en">Ben De Meester</rdfs:label>
+        <foaf:mbox>mailto:Ben.DeMeester@UGent.be</foaf:mbox>
+        <foaf:name xml:lang="en">Ben De Meester</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/mapping# -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/function/vocabulary/mapping#">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+        <rdfs:label>array</rdfs:label>
+        <skos:broader rdf:resource="http://www.w3.org/2001/XMLSchema#anyAtomicType"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#anyAtomicType">
+        <rdfs:label>(any)</rdfs:label>
+        <skos:narrower rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+        <skos:narrower rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <skos:narrower rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <skos:narrower rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <skos:narrower rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
+        <rdfs:label>dateTime</rdfs:label>
+        <skos:broader rdf:resource="http://www.w3.org/2001/XMLSchema#anyAtomicType"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#decimal">
+        <rdfs:label>decimal</rdfs:label>
+        <skos:broader rdf:resource="http://www.w3.org/2001/XMLSchema#anyAtomicType"/>
+        <skos:narrower rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#integer">
+        <rdfs:label>integer</rdfs:label>
+        <skos:broader rdf:resource="http://www.w3.org/2001/XMLSchema#anyAtomicType"/>
+        <skos:broader rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/function/vocabulary/mapping#constantParameterValue">
+        <rdfs:comment xml:lang="en">Connects an implementation constant to a parameter value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/mapping"/>
+        <rdfs:label xml:lang="en">constant parameter value</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/function/vocabulary/mapping#functionOutput">
+        <rdfs:comment xml:lang="en">Connects a function output to a return mapping.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/mapping"/>
+        <rdfs:label xml:lang="en">function output</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/function/vocabulary/mapping#implementationParameterPosition">
+        <rdfs:comment xml:lang="en">Connects an implementation parameter position to a parameter mapping.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/mapping"/>
+        <rdfs:label xml:lang="en">implementation parameter position</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/function/vocabulary/mapping#implementationProperty">
+        <rdfs:comment xml:lang="en">Connects an implementation parameter label to a parameter mapping.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/mapping"/>
+        <rdfs:label xml:lang="en">implementation property</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/function/vocabulary/mapping#repeatableParameter">
+        <rdfs:comment xml:lang="en">Flag indicating whether the parameter can be repeated.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/mapping"/>
+        <rdfs:label xml:lang="en">repeatable parameter value</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

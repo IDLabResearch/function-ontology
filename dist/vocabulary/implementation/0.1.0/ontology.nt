@@ -1,0 +1,181 @@
+<https://w3id.org/function/vocabulary/implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/function/vocabulary/implementation> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/function/vocabulary/implementation/0.1.0> .
+<https://w3id.org/function/vocabulary/implementation> <http://creativecommons.org/ns#license> <http://creativecommons.org/license/by/3.0/> .
+<https://w3id.org/function/vocabulary/implementation> <http://purl.org/dc/terms/creator> <https://ben.de-meester.org/#me> .
+<https://w3id.org/function/vocabulary/implementation> <http://purl.org/dc/terms/description> "The Function Ontology Implementation vocabulary specifies terms relevant to structure fno:Implementations. The specification is online at https://w3id.org/function/spec"@en .
+<https://w3id.org/function/vocabulary/implementation> <http://purl.org/dc/terms/issued> "2019-05-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/function/vocabulary/implementation> <http://purl.org/dc/terms/modified> "2019-05-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/function/vocabulary/implementation> <http://purl.org/dc/terms/publisher> <https://ben.de-meester.org/#me> .
+<https://w3id.org/function/vocabulary/implementation> <http://purl.org/dc/terms/rights> "Copyright © Ghent University – imec – IDLab"@en .
+<https://w3id.org/function/vocabulary/implementation> <http://purl.org/dc/terms/title> "The Function Ontologyy - Implementation vocabulary"@en .
+<https://w3id.org/function/vocabulary/implementation> <http://purl.org/vocab/vann/preferredNamespacePrefix> "fnoi" .
+<https://w3id.org/function/vocabulary/implementation> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/function/vocabulary/implementation#" .
+<https://w3id.org/function/vocabulary/implementation> <http://www.w3.org/2000/01/rdf-schema#comment> "-Version 0.1.0: creation."@en .
+<https://w3id.org/function/vocabulary/implementation> <http://www.w3.org/2000/01/rdf-schema#label> "The Function Ontology - Implementation vocabulary"@en .
+<https://w3id.org/function/vocabulary/implementation> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/function/spec> .
+<https://w3id.org/function/vocabulary/implementation> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.0" .
+<https://w3id.org/function/vocabulary/implementation> <http://xmlns.com/foaf/0.1/primaryTopic> <https://w3id.org/function/ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/primaryTopic
+<http://xmlns.com/foaf/0.1/primaryTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/function/vocabulary/implementation#class-name
+<https://w3id.org/function/vocabulary/implementation#class-name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/function/vocabulary/implementation#class-name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/function/ontology#Implementation> .
+<https://w3id.org/function/ontology#Implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/vocabulary/implementation#class-name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/function/vocabulary/implementation#class-name> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a class name to an implemenation description."@en .
+<https://w3id.org/function/vocabulary/implementation#class-name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/vocabulary/implementation#> .
+<https://w3id.org/function/vocabulary/implementation#class-name> <http://www.w3.org/2000/01/rdf-schema#label> "class name"@en .
+<https://w3id.org/function/vocabulary/implementation#class-name> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/function/ontology#Implementation
+# 
+# https://w3id.org/function/vocabulary/implementation#JavaClass
+<https://w3id.org/function/vocabulary/implementation#JavaClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/vocabulary/implementation#JavaClass> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/function/vocabulary/implementation#JavaImplementation> .
+<https://w3id.org/function/vocabulary/implementation#JavaClass> <http://www.w3.org/2000/01/rdf-schema#comment> "A fno:Implementation, distributed as a JAVA class snippet file"@en .
+<https://w3id.org/function/vocabulary/implementation#JavaClass> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/vocabulary/implementation#> .
+<https://w3id.org/function/vocabulary/implementation#JavaClass> <http://www.w3.org/2000/01/rdf-schema#label> "JAVA class"@en .
+<https://w3id.org/function/vocabulary/implementation#JavaClass> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/function/vocabulary/implementation#JavaImplementation
+<https://w3id.org/function/vocabulary/implementation#JavaImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/vocabulary/implementation#JavaImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/function/ontology#Implementation> .
+<https://w3id.org/function/vocabulary/implementation#JavaImplementation> <http://www.w3.org/2000/01/rdf-schema#comment> "A fno:Implementation, coded in JAVA"@en .
+<https://w3id.org/function/vocabulary/implementation#JavaImplementation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/vocabulary/implementation#> .
+<https://w3id.org/function/vocabulary/implementation#JavaImplementation> <http://www.w3.org/2000/01/rdf-schema#label> "JAVA implementation"@en .
+<https://w3id.org/function/vocabulary/implementation#JavaImplementation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/function/vocabulary/implementation#JavaScriptFunction
+<https://w3id.org/function/vocabulary/implementation#JavaScriptFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/vocabulary/implementation#JavaScriptFunction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/function/vocabulary/implementation#JavaScriptImplementation> .
+<https://w3id.org/function/vocabulary/implementation#JavaScriptFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "A fno:Implementation, distributed as a JavaScript snippet"@en .
+<https://w3id.org/function/vocabulary/implementation#JavaScriptFunction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/vocabulary/implementation#> .
+<https://w3id.org/function/vocabulary/implementation#JavaScriptFunction> <http://www.w3.org/2000/01/rdf-schema#label> "JavaScript function"@en .
+<https://w3id.org/function/vocabulary/implementation#JavaScriptFunction> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/function/vocabulary/implementation#JavaScriptImplementation
+<https://w3id.org/function/vocabulary/implementation#JavaScriptImplementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/vocabulary/implementation#JavaScriptImplementation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/function/ontology#Implementation> .
+<https://w3id.org/function/vocabulary/implementation#JavaScriptImplementation> <http://www.w3.org/2000/01/rdf-schema#comment> "A fno:Implementation, coded in JavaScript"@en .
+<https://w3id.org/function/vocabulary/implementation#JavaScriptImplementation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/vocabulary/implementation#> .
+<https://w3id.org/function/vocabulary/implementation#JavaScriptImplementation> <http://www.w3.org/2000/01/rdf-schema#label> "JavaScript Implementation"@en .
+<https://w3id.org/function/vocabulary/implementation#JavaScriptImplementation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/function/vocabulary/implementation#JsonApi
+<https://w3id.org/function/vocabulary/implementation#JsonApi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/vocabulary/implementation#JsonApi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/function/vocabulary/implementation#WebApi> .
+<https://w3id.org/function/vocabulary/implementation#JsonApi> <http://www.w3.org/2000/01/rdf-schema#comment> "A fno:Implementation, distributed as a JSON (Hydra) API"@en .
+<https://w3id.org/function/vocabulary/implementation#JsonApi> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/vocabulary/implementation#> .
+<https://w3id.org/function/vocabulary/implementation#JsonApi> <http://www.w3.org/2000/01/rdf-schema#label> "JSON API"@en .
+<https://w3id.org/function/vocabulary/implementation#JsonApi> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/function/vocabulary/implementation#NpmPackage
+<https://w3id.org/function/vocabulary/implementation#NpmPackage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/vocabulary/implementation#NpmPackage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/function/vocabulary/implementation#JavaScriptImplementation> .
+<https://w3id.org/function/vocabulary/implementation#NpmPackage> <http://www.w3.org/2000/01/rdf-schema#comment> "A fno:Implementation, distributed as an NPM package"@en .
+<https://w3id.org/function/vocabulary/implementation#NpmPackage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/vocabulary/implementation#> .
+<https://w3id.org/function/vocabulary/implementation#NpmPackage> <http://www.w3.org/2000/01/rdf-schema#label> "NPM Package"@en .
+<https://w3id.org/function/vocabulary/implementation#NpmPackage> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/function/vocabulary/implementation#WebApi
+<https://w3id.org/function/vocabulary/implementation#WebApi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/vocabulary/implementation#WebApi> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/function/ontology#Implementation> .
+<https://w3id.org/function/vocabulary/implementation#WebApi> <http://www.w3.org/2000/01/rdf-schema#comment> "A fno:Implementation, distributed as a Web API"@en .
+<https://w3id.org/function/vocabulary/implementation#WebApi> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/vocabulary/implementation#> .
+<https://w3id.org/function/vocabulary/implementation#WebApi> <http://www.w3.org/2000/01/rdf-schema#label> "Web API"@en .
+<https://w3id.org/function/vocabulary/implementation#WebApi> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://ben.de-meester.org/#me
+<https://ben.de-meester.org/#me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ben.de-meester.org/#me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<https://ben.de-meester.org/#me> <http://www.w3.org/2000/01/rdf-schema#label> "Ben De Meester"@en .
+<https://ben.de-meester.org/#me> <http://xmlns.com/foaf/0.1/mbox> "mailto:Ben.DeMeester@UGent.be" .
+<https://ben.de-meester.org/#me> <http://xmlns.com/foaf/0.1/name> "Ben De Meester"@en .
+# 
+# https://w3id.org/function/vocabulary/implementation
+<https://w3id.org/function/vocabulary/implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/function/vocabulary/implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/

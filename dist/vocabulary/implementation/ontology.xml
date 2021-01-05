@@ -1,0 +1,444 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/function/vocabulary/implementation#"
+     xml:base="https://w3id.org/function/vocabulary/implementation"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="https://w3id.org/function/vocabulary/implementation">
+        <owl:versionIRI rdf:resource="https://w3id.org/function/vocabulary/implementation/0.1.1"/>
+        <dc:description xml:lang="en">The Function Ontology Implementation vocabulary specifies terms relevant to structure fno:Implementations. The specification is online at https://w3id.org/function/spec</dc:description>
+        <dc:rights xml:lang="en">Copyright © Ghent University – imec – IDLab</dc:rights>
+        <dc:source rdf:resource="https://w3id.org/function/spec"/>
+        <dc:title xml:lang="en">The Function Ontology - Implementation vocabulary</dc:title>
+        <terms:bibliographicCitation>De Meester, B.; Seymoens, T.; Dimou, A. &amp; Verborgh, R. Implementation-independent Function Reuse. Future Generation Computer Systems, Elsevier BV, 2020, 110, 946-959 </terms:bibliographicCitation>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-21</terms:created>
+        <terms:creator rdf:resource="https://ben.de-meester.org/#me"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-21</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-12-23</terms:modified>
+        <terms:publisher rdf:resource="https://ben.de-meester.org/#me"/>
+        <bibo:doi>10.5281/zenodo.595382</bibo:doi>
+        <bibo:status>testing</bibo:status>
+        <vann:preferredNamespacePrefix>fnoi</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/function/vocabulary/implementation#</vann:preferredNamespaceUri>
+        <schema:license rdf:resource="http://creativecommons.org/license/by/3.0/"/>
+        <rdfs:comment xml:lang="en">- Version 0.1.1: updated metadata
+- Version 0.1.0: creation.</rdfs:comment>
+        <rdfs:label xml:lang="en">The Function Ontology - Implementation vocabulary</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/function/spec"/>
+        <owl:backwardCompatibleWith rdf:resource="https://w3id.org/function/vocabulary/implementation/0.1.0"/>
+        <owl:priorVersion rdf:resource="https://w3id.org/function/vocabulary/implementation/0.1.0"/>
+        <owl:versionInfo>0.1.1</owl:versionInfo>
+        <foaf:depiction rdf:resource="https://w3id.org/function/spec/resources/images/fno-full.png"/>
+        <foaf:logo rdf:resource="https://w3id.org/function/img/fno_favicon.png"/>
+        <foaf:primaryTopic rdf:resource="https://w3id.org/function/ontology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/doi -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/doi"/>
+    
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/license"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/logo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/logo"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/primaryTopic -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/primaryTopic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/implementation#class-name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/function/vocabulary/implementation#class-name">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Implementation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Connects a class name to an implemenation description.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/implementation"/>
+        <rdfs:label xml:lang="en">class name</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- https://w3id.org/function/ontology#Implementation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/ontology#Implementation"/>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/implementation#JavaClass -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/vocabulary/implementation#JavaClass">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/function/vocabulary/implementation#JavaImplementation"/>
+        <rdfs:comment xml:lang="en">A fno:Implementation, distributed as a JAVA class snippet file</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/implementation"/>
+        <rdfs:label xml:lang="en">JAVA class</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/implementation#JavaImplementation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/vocabulary/implementation#JavaImplementation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/function/ontology#Implementation"/>
+        <rdfs:comment xml:lang="en">A fno:Implementation, coded in JAVA</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/implementation"/>
+        <rdfs:label xml:lang="en">JAVA implementation</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/implementation#JavaScriptFunction -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/vocabulary/implementation#JavaScriptFunction">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/function/vocabulary/implementation#JavaScriptImplementation"/>
+        <rdfs:comment xml:lang="en">A fno:Implementation, distributed as a JavaScript snippet</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/implementation"/>
+        <rdfs:label xml:lang="en">JavaScript function</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/implementation#JavaScriptImplementation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/vocabulary/implementation#JavaScriptImplementation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/function/ontology#Implementation"/>
+        <rdfs:comment xml:lang="en">A fno:Implementation, coded in JavaScript</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/implementation"/>
+        <rdfs:label xml:lang="en">JavaScript Function</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/implementation#JsonApi -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/vocabulary/implementation#JsonApi">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/function/vocabulary/implementation#WebApi"/>
+        <rdfs:comment xml:lang="en">A fno:Implementation, distributed as a JSON (Hydra) API</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/implementation"/>
+        <rdfs:label xml:lang="en">JSON API</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/implementation#NpmPackage -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/vocabulary/implementation#NpmPackage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/function/vocabulary/implementation#JavaScriptImplementation"/>
+        <rdfs:comment xml:lang="en">A fno:Implementation, distributed as an NPM package</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/implementation"/>
+        <rdfs:label xml:lang="en">NPM Package</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/implementation#OpenRefineImplementation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/vocabulary/implementation#OpenRefineImplementation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/function/ontology#Implementation"/>
+        <rdfs:comment xml:lang="en">A fno:Implementation, as used in OpenRefine</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/implementation"/>
+        <rdfs:label xml:lang="en">Openrefine Function</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/implementation#SPARQLImplementation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/vocabulary/implementation#SPARQLImplementation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/function/ontology#Implementation"/>
+        <rdfs:comment xml:lang="en">A fno:Implementation, as used in a SPARQL query</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/implementation"/>
+        <rdfs:label xml:lang="en">SPARQL Function</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/implementation#SQLImplementation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/vocabulary/implementation#SQLImplementation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/function/ontology#Implementation"/>
+        <rdfs:comment xml:lang="en">A fno:Implementation, as used in a SQL query</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/implementation"/>
+        <rdfs:label xml:lang="en">SQL Function</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/implementation#WebApi -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/vocabulary/implementation#WebApi">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/function/ontology#Implementation"/>
+        <rdfs:comment xml:lang="en">A fno:Implementation, distributed as a Web API</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/implementation"/>
+        <rdfs:label xml:lang="en">Web API</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/implementation#XPATHImplementation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/vocabulary/implementation#XPATHImplementation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/function/ontology#Implementation"/>
+        <rdfs:comment xml:lang="en">A fno:Implementation, as used in an XPath expression</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/vocabulary/implementation"/>
+        <rdfs:label xml:lang="en">XPath Function</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://ben.de-meester.org/#me -->
+
+
+    <owl:NamedIndividual rdf:about="https://ben.de-meester.org/#me">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label xml:lang="en">Ben De Meester</rdfs:label>
+        <foaf:mbox>mailto:Ben.DeMeester@UGent.be</foaf:mbox>
+        <foaf:name xml:lang="en">Ben De Meester</foaf:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/function/vocabulary/implementation -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/function/vocabulary/implementation">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

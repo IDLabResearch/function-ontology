@@ -1,0 +1,16 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<https://w3id.org/function/ontology/1.0.0> a prov:Entity;
+	 dc:title "The Function Ontology";
+	 prov:wasAttributedTo <https://ben.de-meester.org/#me>;
+	 dc:creator <https://ben.de-meester.org/#me>;
+	 prov:wasAttributedTo <https://natadimou.com/#me>;
+	 dc:creator <https://natadimou.com/#me>;
+	 prov:wasAttributedTo <http://maxime-lefrancois.info/me#>;
+	 dc:contributor <http://maxime-lefrancois.info/me#>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasRevisionOf <https://w3id.org/function/ontology/0.6.0>;
+	 prov:wasGeneratedAt "2020-12-22";
+.
