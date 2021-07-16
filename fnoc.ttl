@@ -1,0 +1,310 @@
+@prefix : <https://w3id.org/function/vocabulary/composition#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix fno: <https://w3id.org/function/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix schema: <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://w3id.org/function/vocabulary/composition#> .
+
+<https://w3id.org/function/vocabulary/composition#> rdf:type owl:Ontology ;
+                                                     owl:versionIRI <https://w3id.org/function/vocabulary/composition/0.1.0> ;
+                                                     dc:description "The Function Ontology Composition vocabulary specifies terms allowing function composition and partial application. The specification is online at https://w3id.org/function/spec"@en ;
+                                                     dc:source <https://w3id.org/function/spec> ;
+                                                     dc:title "The Function Ontology - Composition vocabulary"@en ;
+                                                     dcterms:created "2021-07-15"^^xsd:date ;
+                                                     dcterms:creator <https://ben.de-meester.org/#me> ,
+                                                                     "Florian Kleedorfer" ;
+                                                     dcterms:issued "2021-07-15"^^xsd:date ;
+                                                     dcterms:modified "2021-07-15"^^xsd:date ;
+                                                     dcterms:publisher <https://ben.de-meester.org/#me> ;
+                                                     bibo:status "testing" ;
+                                                     vann:preferredNamespacePrefix "fnoc" ;
+                                                     vann:preferredNamespaceUri "https://w3id.org/function/vocabulary/composition#" ;
+                                                     schema:license <http://creativecommons.org/license/by/3.0/> ;
+                                                     rdfs:comment """
+- Version 0.1.0: creation."""@en ;
+                                                     rdfs:label "The Function Ontology - Composition vocabulary"@en ;
+                                                     rdfs:seeAlso <https://w3id.org/function/spec> ;
+                                                     owl:backwardCompatibleWith <https://w3id.org/function/vocabulary/composition/0.1.0> ;
+                                                     owl:priorVersion <https://w3id.org/function/vocabulary/composition/0.1.0> ;
+                                                     owl:versionInfo "0.1.0" ;
+                                                     foaf:depiction <https://w3id.org/function/spec/resources/images/fno-full.png> ;
+                                                     foaf:logo <https://w3id.org/function/img/fno_favicon.png> ;
+                                                     foaf:primaryTopic <https://w3id.org/function/ontology> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/source
+dc:source rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+bibo:status rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/license
+schema:license rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+vs:term_status rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/depiction
+foaf:depiction rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/logo
+foaf:logo rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/mbox
+foaf:mbox rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+foaf:name rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/primaryTopic
+foaf:primaryTopic rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/function/vocabulary/composition#composedOf
+:composedOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :Composition ;
+            rdfs:range :CompositionMapping ;
+            rdfs:comment "Connects a [:Composition] with the [:CompositionMapping]s that define it."@en ;
+            rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+            rdfs:label "composedOf"@en ;
+            vs:term_status "testing" .
+
+
+###  https://w3id.org/function/vocabulary/composition#compositionFunction
+:constituentFunction rdf:type owl:ObjectProperty ;
+                     rdfs:domain :CompositionMappingSource ,
+                                 :CompositionMappingTarget ;
+                     rdfs:range fno:Function ;
+                     rdfs:comment "Defines "@en ;
+                     rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+                     rdfs:label "constituentFunction"@en ;
+                     vs:term_status "testing" .
+
+###  https://w3id.org/function/vocabulary/composition#compositionFunction
+:applies rdf:type owl:ObjectProperty ;
+                     rdfs:domain fno:Function ;
+                     rdfs:range fno:Function ;
+                     rdfs:comment """Indicates that the [fno:Function] in the subject is a distinct application of the function in the
+                      object of the triple. The distinct application has the same properties as the original. This construction allows
+                      for making assertions about different applications of the same function."""@en ;
+                     rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+                     rdfs:label "applies"@en ;
+                     vs:term_status "testing" .
+
+###  https://w3id.org/function/vocabulary/composition#functionOutput
+:functionOutput rdf:type owl:ObjectProperty ;
+                rdfs:domain :CompositionMappingSource ,
+                            :CompositionMappingTarget ;
+                rdfs:range fno:Output ;
+                rdfs:comment "References the [fno:Output] of a [fno:Function] as the `source` or the `target` of a [fno:CompositionMapping]."@en ;
+                rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+                rdfs:label "functionOutput"@en ;
+                vs:term_status "testing" .
+
+
+###  https://w3id.org/function/vocabulary/composition#functionParameter
+:functionParameter rdf:type owl:ObjectProperty ;
+                   rdfs:domain :CompositionMappingSource ,
+                               :CompositionMappingTarget ;
+                   rdfs:range fno:Parameter ;
+                   rdfs:comment "References the [fno:Parameter] of a [fno:Function] as the `source` or the `target` of a [fno:CompositionMapping]."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+                   rdfs:label "functionParameter"@en ;
+                   vs:term_status "testing" .
+
+
+###  https://w3id.org/function/vocabulary/composition#mapFrom
+:mapFrom rdf:type owl:ObjectProperty ;
+         rdfs:domain :CompositionMapping ;
+         rdfs:range :CompositionMappingSource ;
+         rdfs:comment "Links a [:CompopsitionMapping] to its [:CompositionMappingSource]"@en ;
+         rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+         rdfs:label "mapFrom"@en ;
+         vs:term_status "testing" .
+
+
+###  https://w3id.org/function/vocabulary/composition#mapFromTerm
+:mapFromTerm rdf:type owl:ObjectProperty ;
+             rdfs:domain :CompositionMapping ;
+             rdfs:comment "Defines a constant term (literal or resource) as the `source` endpoint of a [:CompositionMapping]."@en ;
+             rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+             rdfs:label "mapFromTerm"@en ;
+             vs:term_status "testing" .
+
+
+###  https://w3id.org/function/vocabulary/composition#mapTo
+:mapTo rdf:type owl:ObjectProperty ;
+       rdfs:domain :CompositionMapping ;
+       rdfs:range :CompositionMappingTarget ;
+       rdfs:comment "Links a [:CompopsitionMapping] to its [:CompositionMappingTarget]"@en ;
+       rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+       rdfs:label "mapTo"@en ;
+       vs:term_status "testing" .
+
+
+###  https://w3id.org/function/vocabulary/composition#partiallyApplies
+:partiallyApplies rdf:type owl:ObjectProperty ;
+                  rdfs:domain :PartiallyAppliedFunction ;
+                  rdfs:range fno:Function ;
+                  rdfs:comment """Expresses that the [fno:Function] in the subject is a partial application of the [fno:Function] referenced by the object.
+                  It is expected that the partial application provides a constant value for at least one of the function's [fno:Parameter]s.
+                   If no parameter values are specified the use of [:partiallyApplies] is equivalent to [:applies]."""@en ;
+                  rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+                  rdfs:label "partiallyApplies"@en ;
+                  vs:term_status "testing" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/vocommons/voaf#Vocabulary
+voaf:Vocabulary rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+foaf:Person rdf:type owl:Class .
+
+
+###  https://w3id.org/function/ontology#Function
+fno:Function rdf:type owl:Class .
+
+
+###  https://w3id.org/function/ontology#Output
+fno:Output rdf:type owl:Class .
+
+
+###  https://w3id.org/function/ontology#Parameter
+fno:Parameter rdf:type owl:Class .
+
+
+###  https://w3id.org/function/vocabulary/composition#Composition
+:Composition rdf:type owl:Class ;
+             rdfs:comment "Represents a composition of [fno:Function] individuals"@en ;
+             rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+             rdfs:label "Composition"@en ;
+             vs:term_status "testing" .
+
+
+###  https://w3id.org/function/vocabulary/composition#CompositionMapping
+:CompositionMapping rdf:type owl:Class ;
+                    rdfs:comment """Connects one [fno:Function]'s [fno:Parameter] or [fno:Output] to another function's
+    parameter or output. The properties used for this are [:mapFrom] and [:mapTo] . Exception: mapping from a parameter
+     to an output allowed. Alternatively, a [:CompositionMapping] can link to a constant term via [:mapFromTerm] instead of [:mapFrom]."""@en ;
+                    rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+                    rdfs:label "CompositionMapping"@en ;
+                    vs:term_status "testing" .
+
+
+###  https://w3id.org/function/vocabulary/composition#CompositionMappingSource
+:CompositionMappingSource rdf:type owl:Class ;
+                          rdfs:comment "The source of a [:CompositionMapping], defining the [fno:Function] and [fno:Parameter] or [fno:Output] to be mapped to the `target`."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+                          rdfs:label "CompositionMappingSource"@en ;
+                          vs:term_status "testing" .
+
+
+###  https://w3id.org/function/vocabulary/composition#CompositionMappingTarget
+:CompositionMappingTarget rdf:type owl:Class ;
+                          rdfs:comment "The target of a [:CompositionMapping], defining the [fno:Function] and [fno:Parameter] or [fno:Output] that the `source` is mapped to."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+                          rdfs:label "CompositionMappingTarget"@en ;
+                          vs:term_status "testing" .
+
+
+###  https://w3id.org/function/vocabulary/composition#PartiallyAppliedFunction
+:PartiallyAppliedFunction rdf:type owl:Class ;
+                          rdfs:subClassOf fno:Function ;
+                          rdfs:comment "A [fno:Function] derived from another function by providing one or more, but not all parameter values."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+                          rdfs:label "PartiallyAppliedFunction"@en ;
+                          vs:term_status "testing" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://ben.de-meester.org/#me
+<https://ben.de-meester.org/#me> rdf:type owl:NamedIndividual ,
+                                          foaf:Person ;
+                                 rdfs:label "Ben De Meester"@en ;
+                                 foaf:mbox "mailto:Ben.DeMeester@UGent.be" ;
+                                 foaf:name "Ben De Meester"@en .
+
+
+###  https://w3id.org/function/vocabulary/composition#
+<https://w3id.org/function/vocabulary/composition#> rdf:type owl:NamedIndividual ,
+                                                             voaf:Vocabulary .
+
+
+[ rdf:type foaf:Person ;
+  rdfs:label "Florian Kleedorfer" ;
+  foaf:mbox "mailto:florian.kleedorfer@austria.fm" ;
+  foaf:name "Florian Kleedorfer"
+] .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

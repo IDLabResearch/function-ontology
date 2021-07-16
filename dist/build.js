@@ -25,6 +25,11 @@ const map = [
     outputFolder: "./vocabulary/mapping",
     uri: "https://w3id.org/function/vocabulary/mapping#",
   },
+  {
+    ttlFile: "../fnoc.ttl",
+    outputFolder: "./vocabulary/composition",
+    uri: "https://w3id.org/function/vocabulary/composition#",
+  },
 ]
 
 processMap(map);
@@ -37,7 +42,7 @@ async function processMap(map) {
 }
 
 async function runWidoco(ontFile, outFolder, store) {
-  const preStuff = 'java -jar ../widoco-1.4.14-jar-with-dependencies.jar';
+  const preStuff = 'java -jar ../widoco-1.4.15-jar-with-dependencies.jar';
   const postStuff = '-getOntologyMetadata -oops -rewriteAll -htaccess -webVowl -analytics UA-87734787-2 -excludeIntroduction';
   const voc = store.any(null, RDF('type'), VOAF('Vocabulary'));
   const version = store.any(voc, OWL('versionInfo')).value;
