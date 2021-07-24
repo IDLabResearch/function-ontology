@@ -135,8 +135,7 @@ foaf:primaryTopic rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/function/vocabulary/composition#compositionFunction
 :constituentFunction rdf:type owl:ObjectProperty ;
-                     rdfs:domain :CompositionMappingSource ,
-                                 :CompositionMappingTarget ;
+                     rdfs:domain :CompositionMappingEndpoint ;
                      rdfs:range fno:Function ;
                      rdfs:comment "Defines "@en ;
                      rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
@@ -156,8 +155,7 @@ foaf:primaryTopic rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/function/vocabulary/composition#functionOutput
 :functionOutput rdf:type owl:ObjectProperty ;
-                rdfs:domain :CompositionMappingSource ,
-                            :CompositionMappingTarget ;
+                rdfs:domain :CompositionMappingEndpoint ;
                 rdfs:range fno:Output ;
                 rdfs:comment "References the [fno:Output] of a [fno:Function] as the `source` or the `target` of a [fno:CompositionMapping]."@en ;
                 rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
@@ -167,8 +165,7 @@ foaf:primaryTopic rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/function/vocabulary/composition#functionParameter
 :functionParameter rdf:type owl:ObjectProperty ;
-                   rdfs:domain :CompositionMappingSource ,
-                               :CompositionMappingTarget ;
+                   rdfs:domain :CompositionMappingEndpoint ;
                    rdfs:range fno:Parameter ;
                    rdfs:comment "References the [fno:Parameter] of a [fno:Function] as the `source` or the `target` of a [fno:CompositionMapping]."@en ;
                    rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
@@ -179,8 +176,8 @@ foaf:primaryTopic rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/function/vocabulary/composition#mapFrom
 :mapFrom rdf:type owl:ObjectProperty ;
          rdfs:domain :CompositionMapping ;
-         rdfs:range :CompositionMappingSource ;
-         rdfs:comment "Links a [:CompopsitionMapping] to its [:CompositionMappingSource]"@en ;
+         rdfs:range :CompositionMappingEndpoint;
+         rdfs:comment "Links a [:CompopsitionMapping] to its `source` [:CompositionMappingEndpoint]"@en ;
          rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
          rdfs:label "mapFrom"@en ;
          vs:term_status "testing" .
@@ -198,8 +195,8 @@ foaf:primaryTopic rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/function/vocabulary/composition#mapTo
 :mapTo rdf:type owl:ObjectProperty ;
        rdfs:domain :CompositionMapping ;
-       rdfs:range :CompositionMappingTarget ;
-       rdfs:comment "Links a [:CompopsitionMapping] to its [:CompositionMappingTarget]"@en ;
+       rdfs:range :CompositionMappingEndpoint ;
+       rdfs:comment "Links a [:CompopsitionMapping] to its `target` [:CompositionMappingEndpoint]"@en ;
        rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
        rdfs:label "mapTo"@en ;
        vs:term_status "testing" .
@@ -260,20 +257,11 @@ fno:Parameter rdf:type owl:Class .
 
 
 ###  https://w3id.org/function/vocabulary/composition#CompositionMappingSource
-:CompositionMappingSource rdf:type owl:Class ;
-                          rdfs:comment "The source of a [:CompositionMapping], defining the [fno:Function] and [fno:Parameter] or [fno:Output] to be mapped to the `target`."@en ;
+:CompositionMappingEndpoint rdf:type owl:Class ;
+                          rdfs:comment "The `source` or `target` of a [:CompositionMapping], defining a combination of [fno:Function] and either [fno:Parameter] or [fno:Output]."@en ;
                           rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
-                          rdfs:label "CompositionMappingSource"@en ;
+                          rdfs:label "CompositionMappingEndpoint"@en ;
                           vs:term_status "testing" .
-
-
-###  https://w3id.org/function/vocabulary/composition#CompositionMappingTarget
-:CompositionMappingTarget rdf:type owl:Class ;
-                          rdfs:comment "The target of a [:CompositionMapping], defining the [fno:Function] and [fno:Parameter] or [fno:Output] that the `source` is mapped to."@en ;
-                          rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
-                          rdfs:label "CompositionMappingTarget"@en ;
-                          vs:term_status "testing" .
-
 
 ###  https://w3id.org/function/vocabulary/composition#PartiallyAppliedFunction
 :PartiallyAppliedFunction rdf:type owl:Class ;
