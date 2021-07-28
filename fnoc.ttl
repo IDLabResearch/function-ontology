@@ -213,6 +213,29 @@ foaf:primaryTopic rdf:type owl:AnnotationProperty .
                   rdfs:label "partiallyApplies"@en ;
                   vs:term_status "testing" .
 
+:boundToTerm rdf:type owl:ObjectProperty ;
+                  rdfs:domain :ParameterBinding ;
+                  rdfs:comment """Specifies the constant value of a [:ParameterBinding], which can be any RDF term."""@en ;
+                  rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+                  rdfs:label ":boundToTerm"@en ;
+                  vs:term_status "testing" .
+
+:boundParameter rdf:type owl:ObjectProperty ;
+             rdfs:domain :ParameterBinding ;
+             rdfs:range fno:Parameter ;
+             rdfs:comment """Specifies the [:Parameter] of a [:ParameterBinding]."""@en ;
+             rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+             rdfs:label ":boundParameter"@en ;
+             vs:term_status "testing" .
+
+:parameterBinding rdf:type owl:ObjectProperty ;
+                rdfs:domain :PartiallyAppliedFunction ;
+                rdfs:range :ParameterBinding ;
+                rdfs:comment """Specifies a [:ParameterBinding] of a [:PartiallyAppliedFunction]."""@en ;
+                rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+                rdfs:label "::parameterBinding"@en ;
+                vs:term_status "testing" .
+
 
 #################################################################
 #    Classes
@@ -271,6 +294,12 @@ fno:Parameter rdf:type owl:Class .
                           rdfs:label "PartiallyAppliedFunction"@en ;
                           vs:term_status "testing" .
 
+###  https://w3id.org/function/vocabulary/composition#PartiallyAppliedFunction
+:ParameterBinding rdf:type owl:Class ;
+                          rdfs:comment "Associates a constant term with a [fno:Parameter] in the specification of a [:PartiallyAppliedFunction]. The constant term is referenced via [:boundToTerm], the parameter via [:boundParameter]."@en ;
+                          rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
+                          rdfs:label ":ParameterBinding"@en ;
+                          vs:term_status "testing" .
 
 #################################################################
 #    Individuals
