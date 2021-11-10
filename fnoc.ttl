@@ -133,7 +133,7 @@ foaf:primaryTopic rdf:type owl:AnnotationProperty .
             vs:term_status "testing" .
 
 
-###  https://w3id.org/function/vocabulary/composition#compositionFunction
+###  https://w3id.org/function/vocabulary/composition#constituentFunction
 :constituentFunction rdf:type owl:ObjectProperty ;
                      rdfs:domain :CompositionMappingEndpoint ;
                      rdfs:range fno:Function ;
@@ -142,7 +142,7 @@ foaf:primaryTopic rdf:type owl:AnnotationProperty .
                      rdfs:label "constituentFunction"@en ;
                      vs:term_status "testing" .
 
-###  https://w3id.org/function/vocabulary/composition#compositionFunction
+###  https://w3id.org/function/vocabulary/composition#applies
 :applies rdf:type owl:ObjectProperty ;
                      rdfs:domain fno:Function ;
                      rdfs:range fno:Function ;
@@ -279,7 +279,7 @@ fno:Parameter rdf:type owl:Class .
                     vs:term_status "testing" .
 
 
-###  https://w3id.org/function/vocabulary/composition#CompositionMappingSource
+###  https://w3id.org/function/vocabulary/composition#CompositionMappingEndpoint
 :CompositionMappingEndpoint rdf:type owl:Class ;
                           rdfs:comment "The `source` or `target` of a [:CompositionMapping], defining a combination of [fno:Function] and either [fno:Parameter] or [fno:Output]."@en ;
                           rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
@@ -294,7 +294,7 @@ fno:Parameter rdf:type owl:Class .
                           rdfs:label "PartiallyAppliedFunction"@en ;
                           vs:term_status "testing" .
 
-###  https://w3id.org/function/vocabulary/composition#PartiallyAppliedFunction
+###  https://w3id.org/function/vocabulary/composition#ParameterBinding
 :ParameterBinding rdf:type owl:Class ;
                           rdfs:comment "Associates a constant term with a [fno:Parameter] in the specification of a [:PartiallyAppliedFunction]. The constant term is referenced via [:boundToTerm], the parameter via [:boundParameter]."@en ;
                           rdfs:isDefinedBy <https://w3id.org/function/vocabulary/composition> ;
