@@ -12,19 +12,19 @@ const VANN = Namespace("http://purl.org/vocab/vann/");
 const VOAF = Namespace("http://purl.org/vocommons/voaf#");
 
 const map = [
-  {
-    ttlFile: "../fno.ttl",
-    outputFolder: "./ontology",
-    uri: "https://w3id.org/function/ontology#",
-  }, {
-    ttlFile: "../fnoi.ttl",
-    outputFolder: "./vocabulary/implementation",
-    uri: "https://w3id.org/function/vocabulary/implementation#",
-  }, {
-    ttlFile: "../fnom.ttl",
-    outputFolder: "./vocabulary/mapping",
-    uri: "https://w3id.org/function/vocabulary/mapping#",
-  },
+  // {
+  //   ttlFile: "../fno.ttl",
+  //   outputFolder: "./ontology",
+  //   uri: "https://w3id.org/function/ontology#",
+  // }, {
+  //   ttlFile: "../fnoi.ttl",
+  //   outputFolder: "./vocabulary/implementation",
+  //   uri: "https://w3id.org/function/vocabulary/implementation#",
+  // }, {
+  //   ttlFile: "../fnom.ttl",
+  //   outputFolder: "./vocabulary/mapping",
+  //   uri: "https://w3id.org/function/vocabulary/mapping#",
+  // },
   {
     ttlFile: "../fnoc.ttl",
     outputFolder: "./vocabulary/composition",
@@ -49,19 +49,19 @@ async function runWidoco(ontFile, outFolder, store) {
   const uri = store.any(voc, VANN('preferredNamespaceUri')).value;
   const prefix = store.any(voc, VANN('preferredNamespacePrefix')).value;
   const commandVersion = `${preStuff} -ontFile ${ontFile} -outFolder ${outFolder}/${version} ${postStuff}`;
-  const {stdout, stderr} = await exec(commandVersion);
+  const { stdout, stderr } = await exec(commandVersion);
   console.log(stdout);
   console.warn(stderr);
   const command = `${preStuff} -ontFile ${ontFile} -outFolder ${outFolder} ${postStuff}`;
   await exec(command);
-  const appendData = `<p>The namespace is <b>${uri}</b>, the preferred prefix is <b>${prefix}</b></p>`;
-  await fs.appendFile(`${outFolder}/${version}/sections/abstract-en.html`, appendData);
-  await fs.appendFile(`${outFolder}/sections/abstract-en.html`, appendData);
+  const abstract = `<p>The namespace is <b>${uri}</b>, the preferred prefix is <b>${prefix}</b></p>`;
+  await fillSection('abstract-en.html', outFolder, version, abstract);
   const descriptionPlaceholder = `This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.`;
-  let description = await fs.readFile(`${outFolder}/sections/description-en.html`, 'utf8');
-  description = description.replace(descriptionPlaceholder, "Further description and explanation of these classes and properties are given in the Function Ontology Specification at https://w3id.org/function/spec");
-  await fs.writeFile(`${outFolder}/${version}/sections/description-en.html`, description);
-  await fs.writeFile(`${outFolder}/sections/description-en.html`, description);
+  const description = "Further description and explanation of these classes and properties are given in the Function Ontology Specification at https://w3id.org/function/spec";
+  await fillSection('description-en.html', outFolder, version, description, descriptionPlaceholder);
+  const referencePlaceholder = `Add your references here. It is recommended to have them as a list.`;
+  const reference = "  - De Meester, B.; Seymoens, T.; Dimou, A. & Verborgh, R.: ``Implementation-independent Function Reuse''. _Future Generation Computer Systems_, _Elsevier BV_, **2020**, _110_, 946--959. [10.1016/j.future.2019.10.006](https://doi.org/10.1016/j.future.2019.10.006)";
+  await fillSection('references-en.html', outFolder, version, reference, referencePlaceholder);
 }
 
 async function getStore(ontFile) {
@@ -69,4 +69,16 @@ async function getStore(ontFile) {
   const body = await fs.readFile(ontFile, 'utf8');
   $rdf.parse(body, store, "http://example.com/#", 'text/turtle');
   return store;
+}
+
+async function fillSection(sectionFile, outFolder, version, input, placeholder = '') {
+  if (placeholder) {
+    let fileContents = await fs.readFile(`${outFolder}/sections/${sectionFile}`, 'utf8');
+    fileContents = fileContents.replace(placeholder, input);
+    await fs.writeFile(`${outFolder}/${version}/sections/${sectionFile}`, fileContents);
+    await fs.writeFile(`${outFolder}/sections/${sectionFile}`, fileContents);
+  } else {
+    await fs.appendFile(`${outFolder}/${version}/sections/${sectionFile}`, input);
+    await fs.appendFile(`${outFolder}/sections/${sectionFile}`, input);
+  }
 }

@@ -1,0 +1,763 @@
+<h2 id="crossreference" class="list">Cross reference for The Function Ontology - Composition vocabulary classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by The Function Ontology - Composition vocabulary.
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#ParameterBinding"
+            title="https://w3id.org/function/vocabulary/composition#ParameterBinding">:ParameterBinding</a>
+      </li>
+      <li>
+         <a href="#Composition"
+            title="https://w3id.org/function/vocabulary/composition#Composition">Composition</a>
+      </li>
+      <li>
+         <a href="#CompositionMapping"
+            title="https://w3id.org/function/vocabulary/composition#CompositionMapping">CompositionMapping</a>
+      </li>
+      <li>
+         <a href="#CompositionMappingEndpoint"
+            title="https://w3id.org/function/vocabulary/composition#CompositionMappingEndpoint">CompositionMappingEndpoint</a>
+      </li>
+      <li>
+         <a href="#PartiallyAppliedFunction"
+            title="https://w3id.org/function/vocabulary/composition#PartiallyAppliedFunction">PartiallyAppliedFunction</a>
+      </li>
+   </ul>
+   <div class="entity" id="ParameterBinding">
+      <h3>:ParameterBinding<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#ParameterBinding</p>
+      <div class="comment">
+         <span class="markdown">Associates a constant term with a [fno:Parameter] in the specification of a [:PartiallyAppliedFunction]. The constant term is referenced via [:boundToTerm], the parameter via [:boundParameter].</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/vocabulary/composition">https://w3id.org/function/vocabulary/composition</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#boundParameter"
+               title="https://w3id.org/function/vocabulary/composition#boundParameter">:boundParameter</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#boundToTerm"
+               title="https://w3id.org/function/vocabulary/composition#boundToTerm">:boundToTerm</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#parameterBinding"
+               title="https://w3id.org/function/vocabulary/composition#parameterBinding">::parameterBinding</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Composition">
+      <h3>Composition<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#Composition</p>
+      <div class="comment">
+         <span class="markdown">Represents a composition of [fno:Function] individuals</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/vocabulary/composition">https://w3id.org/function/vocabulary/composition</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#composedOf"
+               title="https://w3id.org/function/vocabulary/composition#composedOf">composedOf</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CompositionMapping">
+      <h3>CompositionMapping<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#CompositionMapping</p>
+      <div class="comment">
+         <span class="markdown">Connects one [fno:Function]'s [fno:Parameter] or [fno:Output] to another function's
+    parameter or output. The properties used for this are [:mapFrom] and [:mapTo] . Exception: mapping from a parameter
+     to an output allowed. Alternatively, a [:CompositionMapping] can link to a constant term via [:mapFromTerm] instead of [:mapFrom].</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/vocabulary/composition">https://w3id.org/function/vocabulary/composition</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#mapFrom"
+               title="https://w3id.org/function/vocabulary/composition#mapFrom">mapFrom</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#mapFromTerm"
+               title="https://w3id.org/function/vocabulary/composition#mapFromTerm">mapFromTerm</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#mapTo"
+               title="https://w3id.org/function/vocabulary/composition#mapTo">mapTo</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#composedOf"
+               title="https://w3id.org/function/vocabulary/composition#composedOf">composedOf</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CompositionMappingEndpoint">
+      <h3>CompositionMappingEndpoint<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#CompositionMappingEndpoint</p>
+      <div class="comment">
+         <span class="markdown">The `source` or `target` of a [:CompositionMapping], defining a combination of [fno:Function] and either [fno:Parameter] or [fno:Output].</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/vocabulary/composition">https://w3id.org/function/vocabulary/composition</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#constituentFunction"
+               title="https://w3id.org/function/vocabulary/composition#constituentFunction">constituentFunction</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#functionOutput"
+               title="https://w3id.org/function/vocabulary/composition#functionOutput">functionOutput</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#functionParameter"
+               title="https://w3id.org/function/vocabulary/composition#functionParameter">functionParameter</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#mapFrom"
+               title="https://w3id.org/function/vocabulary/composition#mapFrom">mapFrom</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#mapTo"
+               title="https://w3id.org/function/vocabulary/composition#mapTo">mapTo</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PartiallyAppliedFunction">
+      <h3>PartiallyAppliedFunction<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#PartiallyAppliedFunction</p>
+      <div class="comment">
+         <span class="markdown">A [fno:Function] derived from another function by providing one or more, but not all parameter values.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/vocabulary/composition">https://w3id.org/function/vocabulary/composition</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="https://w3id.org/function/ontology#Function"
+               target="_blank"
+               title="https://w3id.org/function/ontology#Function">function</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#parameterBinding"
+               title="https://w3id.org/function/vocabulary/composition#parameterBinding">::parameterBinding</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#partiallyApplies"
+               title="https://w3id.org/function/vocabulary/composition#partiallyApplies">partiallyApplies</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#parameterBinding"
+            title="https://w3id.org/function/vocabulary/composition#parameterBinding">::parameterBinding</a>
+      </li>
+      <li>
+         <a href="#boundParameter"
+            title="https://w3id.org/function/vocabulary/composition#boundParameter">:boundParameter</a>
+      </li>
+      <li>
+         <a href="#boundToTerm"
+            title="https://w3id.org/function/vocabulary/composition#boundToTerm">:boundToTerm</a>
+      </li>
+      <li>
+         <a href="#applies"
+            title="https://w3id.org/function/vocabulary/composition#applies">applies</a>
+      </li>
+      <li>
+         <a href="#composedOf"
+            title="https://w3id.org/function/vocabulary/composition#composedOf">composedOf</a>
+      </li>
+      <li>
+         <a href="#constituentFunction"
+            title="https://w3id.org/function/vocabulary/composition#constituentFunction">constituentFunction</a>
+      </li>
+      <li>
+         <a href="#functionOutput"
+            title="https://w3id.org/function/vocabulary/composition#functionOutput">functionOutput</a>
+      </li>
+      <li>
+         <a href="#functionParameter"
+            title="https://w3id.org/function/vocabulary/composition#functionParameter">functionParameter</a>
+      </li>
+      <li>
+         <a href="#mapFrom"
+            title="https://w3id.org/function/vocabulary/composition#mapFrom">mapFrom</a>
+      </li>
+      <li>
+         <a href="#mapFromTerm"
+            title="https://w3id.org/function/vocabulary/composition#mapFromTerm">mapFromTerm</a>
+      </li>
+      <li>
+         <a href="#mapTo"
+            title="https://w3id.org/function/vocabulary/composition#mapTo">mapTo</a>
+      </li>
+      <li>
+         <a href="#partiallyApplies"
+            title="https://w3id.org/function/vocabulary/composition#partiallyApplies">partiallyApplies</a>
+      </li>
+   </ul>
+   <div class="entity" id="parameterBinding">
+      <h3>::parameterBinding<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#parameterBinding</p>
+      <div class="comment">
+         <span class="markdown">Specifies a [:ParameterBinding] of a [:PartiallyAppliedFunction].</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/vocabulary/composition">https://w3id.org/function/vocabulary/composition</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PartiallyAppliedFunction"
+                  title="https://w3id.org/function/vocabulary/composition#PartiallyAppliedFunction">PartiallyAppliedFunction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ParameterBinding"
+                  title="https://w3id.org/function/vocabulary/composition#ParameterBinding">:ParameterBinding</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="boundParameter">
+      <h3>:boundParameter<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#boundParameter</p>
+      <div class="comment">
+         <span class="markdown">Specifies the [:Parameter] of a [:ParameterBinding].</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/vocabulary/composition">https://w3id.org/function/vocabulary/composition</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ParameterBinding"
+                  title="https://w3id.org/function/vocabulary/composition#ParameterBinding">:ParameterBinding</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/function/ontology#Parameter"
+                  target="_blank"
+                  title="https://w3id.org/function/ontology#Parameter">parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="boundToTerm">
+      <h3>:boundToTerm<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#boundToTerm</p>
+      <div class="comment">
+         <span class="markdown">Specifies the constant value of a [:ParameterBinding], which can be any RDF term.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/vocabulary/composition">https://w3id.org/function/vocabulary/composition</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ParameterBinding"
+                  title="https://w3id.org/function/vocabulary/composition#ParameterBinding">:ParameterBinding</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="applies">
+      <h3>applies<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#applies</p>
+      <div class="comment">
+         <span class="markdown">Indicates that the [fno:Function] in the subject is a distinct application of the function in the
+                      object of the triple. The distinct application has the same properties as the original. This construction allows
+                      for making assertions about different applications of the same function.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/vocabulary/composition">https://w3id.org/function/vocabulary/composition</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="https://w3id.org/function/ontology#Function"
+                  target="_blank"
+                  title="https://w3id.org/function/ontology#Function">function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/function/ontology#Function"
+                  target="_blank"
+                  title="https://w3id.org/function/ontology#Function">function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="composedOf">
+      <h3>composedOf<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#composedOf</p>
+      <div class="comment">
+         <span class="markdown">Connects a [:Composition] with the [:CompositionMapping]s that define it.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/vocabulary/composition">https://w3id.org/function/vocabulary/composition</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Composition"
+                  title="https://w3id.org/function/vocabulary/composition#Composition">Composition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#CompositionMapping"
+                  title="https://w3id.org/function/vocabulary/composition#CompositionMapping">CompositionMapping</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="constituentFunction">
+      <h3>constituentFunction<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#constituentFunction</p>
+      <div class="comment">
+         <span class="markdown">Defines </span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/vocabulary/composition">https://w3id.org/function/vocabulary/composition</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CompositionMappingEndpoint"
+                  title="https://w3id.org/function/vocabulary/composition#CompositionMappingEndpoint">CompositionMappingEndpoint</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/function/ontology#Function"
+                  target="_blank"
+                  title="https://w3id.org/function/ontology#Function">function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="functionOutput">
+      <h3>functionOutput<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#functionOutput</p>
+      <div class="comment">
+         <span class="markdown">References the [fno:Output] of a [fno:Function] as the `source` or the `target` of a [fno:CompositionMapping].</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/vocabulary/composition">https://w3id.org/function/vocabulary/composition</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CompositionMappingEndpoint"
+                  title="https://w3id.org/function/vocabulary/composition#CompositionMappingEndpoint">CompositionMappingEndpoint</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/function/ontology#Output"
+                  target="_blank"
+                  title="https://w3id.org/function/ontology#Output">output</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="functionParameter">
+      <h3>functionParameter<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#functionParameter</p>
+      <div class="comment">
+         <span class="markdown">References the [fno:Parameter] of a [fno:Function] as the `source` or the `target` of a [fno:CompositionMapping].</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/vocabulary/composition">https://w3id.org/function/vocabulary/composition</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CompositionMappingEndpoint"
+                  title="https://w3id.org/function/vocabulary/composition#CompositionMappingEndpoint">CompositionMappingEndpoint</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/function/ontology#Parameter"
+                  target="_blank"
+                  title="https://w3id.org/function/ontology#Parameter">parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="mapFrom">
+      <h3>mapFrom<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#mapFrom</p>
+      <div class="comment">
+         <span class="markdown">Links a [:CompopsitionMapping] to its `source` [:CompositionMappingEndpoint]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/vocabulary/composition">https://w3id.org/function/vocabulary/composition</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CompositionMapping"
+                  title="https://w3id.org/function/vocabulary/composition#CompositionMapping">CompositionMapping</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#CompositionMappingEndpoint"
+                  title="https://w3id.org/function/vocabulary/composition#CompositionMappingEndpoint">CompositionMappingEndpoint</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="mapFromTerm">
+      <h3>mapFromTerm<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#mapFromTerm</p>
+      <div class="comment">
+         <span class="markdown">Defines a constant term (literal or resource) as the `source` endpoint of a [:CompositionMapping].</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/vocabulary/composition">https://w3id.org/function/vocabulary/composition</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CompositionMapping"
+                  title="https://w3id.org/function/vocabulary/composition#CompositionMapping">CompositionMapping</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="mapTo">
+      <h3>mapTo<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#mapTo</p>
+      <div class="comment">
+         <span class="markdown">Links a [:CompopsitionMapping] to its `target` [:CompositionMappingEndpoint]</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/vocabulary/composition">https://w3id.org/function/vocabulary/composition</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CompositionMapping"
+                  title="https://w3id.org/function/vocabulary/composition#CompositionMapping">CompositionMapping</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#CompositionMappingEndpoint"
+                  title="https://w3id.org/function/vocabulary/composition#CompositionMappingEndpoint">CompositionMappingEndpoint</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="partiallyApplies">
+      <h3>partiallyApplies<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#partiallyApplies</p>
+      <div class="comment">
+         <span class="markdown">Expresses that the [fno:Function] in the subject is a partial application of the [fno:Function] referenced by the object.
+                  It is expected that the partial application provides a constant value for at least one of the function's [fno:Parameter]s.
+                   If no parameter values are specified the use of [:partiallyApplies] is equivalent to [:applies].</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://w3id.org/function/vocabulary/composition">https://w3id.org/function/vocabulary/composition</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>testing</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PartiallyAppliedFunction"
+                  title="https://w3id.org/function/vocabulary/composition#PartiallyAppliedFunction">PartiallyAppliedFunction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://w3id.org/function/ontology#Function"
+                  target="_blank"
+                  title="https://w3id.org/function/ontology#Function">function</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#https://ben.de-meester.org/#me" title="https://ben.de-meester.org/#me">Ben De Meester</a>
+      </li>
+      <li>
+         <a href="#"
+            title="https://w3id.org/function/vocabulary/composition#">
+            <span>The Function Ontology - Composition vocabulary</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="https://ben.de-meester.org/#me">
+      <h3>Ben De Meester<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://ben.de-meester.org/#me</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://xmlns.com/foaf/0.1/Person"
+               target="_blank"
+               title="http://xmlns.com/foaf/0.1/Person">person</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="">
+      <h3>The Function Ontology - Composition vocabulary<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/function/vocabulary/composition#</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="http://purl.org/vocommons/voaf#Vocabulary"
+               target="_blank"
+               title="http://purl.org/vocommons/voaf#Vocabulary">vocabulary</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
