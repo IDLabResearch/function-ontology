@@ -2,3 +2,4 @@ function.xml
 catalog*.xml
 node_modules/
 *.iml
+.idea
