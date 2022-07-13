@@ -1,0 +1,43 @@
+# Invalid example.
+# Violation: fno:Mapping does NOT contain exactly one fno:methodMapping
+# Violation: fno:Mapping does NOT contain exactly one fno:returnMapping
+
+@prefix ex: <http://example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fno: 	<https://w3id.org/function/ontology#> .
+@prefix fnoi: <https://w3id.org/function/vocabulary/implementation#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix fnom: <https://w3id.org/function/vocabulary/mapping#> .
+
+ex:leftPad
+    a           fno:Function ;
+    fno:expects ( ex:inputStringParameter ex:paddingParameter ) ;
+    fno:returns ( ex:outputStringOutput ) .
+
+ex:inputStringParameter
+    a             fno:Parameter ;
+    fno:predicate ex:inputString ;
+    fno:type      xsd:string ;
+    fno:required  "true"^^xsd:boolean .
+
+ex:paddingParameter
+    a             fno:Parameter ;
+    fno:predicate ex:padding ;
+    fno:type      xsd:int ;
+    fno:required  "false"^^xsd:boolean .
+
+ex:leftPadImplementation
+    a         fnoi:NpmPackage ;
+    doap:name "left-pad" .
+
+ex:leftPadMapping
+    a                    fno:Mapping ;
+    fno:function         ex:leftPad ;
+    fno:implementation   ex:leftPadImplementation ;
+    fno:parameterMapping [ a                                    fnom:PositionParameterMapping ;
+                           fnom:functionParameter               ex:inputStringParameter ;
+                           fnom:implementationParameterPosition "2"^^xsd:integer ] ;
+    fno:parameterMapping [ a                                    fnom:PositionParameterMapping ;
+                           fnom:functionParameter               ex:paddingParameter ;
+                           fnom:implementationParameterPosition "1"^^xsd:integer ] ;
+.

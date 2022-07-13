@@ -1,0 +1,27 @@
+@prefix ex: <http://example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fno: 	<https://w3id.org/function/ontology#> .
+
+ex:sumFunction
+    a           fno:Function ;
+    fno:expects ( ex:intParameterA ex:intParameterB );
+    fno:returns ( ex:sumOutput )
+.
+
+ex:intParameterA
+    a             fno:Parameter ;
+    fno:predicate ex:startValue ;
+    fno:type      xsd:integer ;
+    fno:required  "true"^^xsd:boolean .
+
+ex:intParameterB
+    a             fno:Parameter ;
+    fno:predicate ex:sumValue ;
+    fno:type      xsd:integer ;
+    fno:required  "true"^^xsd:boolean .
+
+ex:sumOutput
+    a             fno:Output ;
+    fno:predicate ex:sumResult ;
+    fno:type      xsd:integer ;
+    fno:required  "true"^^xsd:boolean .

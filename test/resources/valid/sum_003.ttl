@@ -1,0 +1,37 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ex: <http://example.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fno: 	<https://w3id.org/function/ontology#> .
+
+ex:sumFunction
+    a           fno:Function ;
+    fno:expects <http://www.example.org#myList>;
+    fno:returns ( ex:sumOutput )
+.
+<http://www.example.org#myList> rdf:first ex:intParameterA ;
+    rdf:rest ( ex:intParameterB ) .
+
+ex:intParameterA
+    a             fno:Parameter ;
+    fno:predicate ex:startValue ;
+    fno:type      xsd:integer ;
+    fno:required  "true"^^xsd:boolean .
+
+ex:intParameterB
+    a             fno:Parameter ;
+    fno:predicate ex:sumValue ;
+    fno:type      xsd:integer ;
+    fno:required  "true"^^xsd:boolean .
+
+ex:intParameterC
+    a             fno:Parameter ;
+    fno:predicate ex:sumValue ;
+    fno:type      xsd:integer ;
+    fno:required  "true"^^xsd:boolean .
+
+
+ex:sumOutput
+    a             fno:Output ;
+    fno:predicate ex:sumResult ;
+    fno:type      xsd:integer ;
+    fno:required  "true"^^xsd:boolean .
