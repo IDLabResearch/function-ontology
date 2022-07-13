@@ -3,31 +3,18 @@ const path = require('path');
 const assert = require('assert');
 const SHACLValidator = require("shacl-js");
 
-/**
- * Validator class for SHACL.
- */
-class ShaclValidator {
-    /**
-     * Validates SHACL data using shapes.
-     * @param data {string} data in turtle
-     * @param shapes {string} shapes in turtle
-     * @returns {Promise<Object>} Returns a promise which resolves to a SHACL report.
-     */
-    static validate(data, shapes) {
-        return new Promise((resolve, reject) => {
-            new SHACLValidator().validate(
-                data,
-                "text/turtle",
-                shapes,
-                "text/turtle",
-                (e, report) => {
-                    e ? reject(e) : resolve(report);
-                }
-            );
-        });
-    }
-}
+async function validate(data, shape) {
+    const validator = new SHACLValidator();
 
+    return new Promise((resolve,reject)=>{
+        validator.validate(data, "text/turtle", shape, "text/turtle", function (e, report) {
+            if(e) {
+                reject(e);
+            }
+            resolve(report)
+        });
+    })
+}
 describe('SHACL Validation tests', async function () {
 
     const dirTestResources = path.join('test', 'resources');
@@ -43,9 +30,8 @@ describe('SHACL Validation tests', async function () {
         // Iterate over VALID test resources
         validFunctionDescriptions.forEach( (f) => {
             it(`${f} should be valid`, async function() {
-
                 const data = fs.readFileSync(f).toString();
-                const report = await ShaclValidator.validate(data, shapes);
+                const report = await validate(data, shapes);
                 assert(report.conforms())
             })
         });
@@ -58,7 +44,7 @@ describe('SHACL Validation tests', async function () {
             it(`${f} should not be valid`, async function() {
 
                 const data = fs.readFileSync(f).toString();
-                const report = await ShaclValidator.validate(data, shapes);
+                const report = await validate(data, shapes);
                 assert(!report.conforms())
             })
         });

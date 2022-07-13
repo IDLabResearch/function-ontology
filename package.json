@@ -7,7 +7,8 @@
   },
   "devDependencies": {
     "mocha": "^10.0.0",
-    "shacl-js": "^0.0.1"
+    "shacl-js": "^0.0.1",
+    "shacl": "github:TopQuadrant/shacl-js"
   },
   "scripts": {
     "test": "mocha"
