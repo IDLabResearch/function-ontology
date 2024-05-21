@@ -1,0 +1,449 @@
+<https://w3id.org/function/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/function/ontology> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/function/ontology/1.0.0> .
+<https://w3id.org/function/ontology> <http://purl.org/dc/elements/1.1/description> "The Function Ontology allows to declare and describe functions. The specification is online at https://w3id.org/function/spec. Copyright © Ghent University – imec – IDLab."@en .
+<https://w3id.org/function/ontology> <http://purl.org/dc/elements/1.1/rights> "Copyright © Ghent University – imec – IDLab"@en .
+<https://w3id.org/function/ontology> <http://purl.org/dc/elements/1.1/source> <https://w3id.org/function/spec> .
+<https://w3id.org/function/ontology> <http://purl.org/dc/elements/1.1/title> "The Function Ontology"@en .
+<https://w3id.org/function/ontology> <http://purl.org/dc/terms/bibliographicCitation> "De Meester, B.; Seymoens, T.; Dimou, A. & Verborgh, R. Implementation-independent Function Reuse. Future Generation Computer Systems, Elsevier BV, 2020, 110, 946-959 " .
+<https://w3id.org/function/ontology> <http://purl.org/dc/terms/contributor> <http://maxime-lefrancois.info/me#> .
+<https://w3id.org/function/ontology> <http://purl.org/dc/terms/created> "2016-03-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/function/ontology> <http://purl.org/dc/terms/creator> <https://ben.de-meester.org/#me> .
+<https://w3id.org/function/ontology> <http://purl.org/dc/terms/creator> <https://natadimou.com/#me> .
+<https://w3id.org/function/ontology> <http://purl.org/dc/terms/issued> "2016-03-08"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/function/ontology> <http://purl.org/dc/terms/modified> "2020-12-22"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/function/ontology> <http://purl.org/dc/terms/publisher> <https://ben.de-meester.org/#me> .
+<https://w3id.org/function/ontology> <http://purl.org/ontology/bibo/doi> "10.5281/zenodo.595382" .
+<https://w3id.org/function/ontology> <http://purl.org/ontology/bibo/status> "stable" .
+<https://w3id.org/function/ontology> <http://purl.org/vocab/vann/preferredNamespacePrefix> "fno" .
+<https://w3id.org/function/ontology> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/function/ontology#" .
+<https://w3id.org/function/ontology> <http://schema.org/license> <http://creativecommons.org/license/by/3.0/> .
+<https://w3id.org/function/ontology> <http://www.w3.org/2000/01/rdf-schema#label> "The Function Ontology"@en .
+<https://w3id.org/function/ontology> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/function/spec> .
+<https://w3id.org/function/ontology> <http://www.w3.org/2002/07/owl#backwardCompatibleWith> <https://w3id.org/function/ontology/0.6.0> .
+<https://w3id.org/function/ontology> <http://www.w3.org/2002/07/owl#incompatibleWith> <https://w3id.org/function/ontology/0.1> .
+<https://w3id.org/function/ontology> <http://www.w3.org/2002/07/owl#incompatibleWith> <https://w3id.org/function/ontology/0.2> .
+<https://w3id.org/function/ontology> <http://www.w3.org/2002/07/owl#incompatibleWith> <https://w3id.org/function/ontology/0.3> .
+<https://w3id.org/function/ontology> <http://www.w3.org/2002/07/owl#incompatibleWith> <https://w3id.org/function/ontology/0.4> .
+<https://w3id.org/function/ontology> <http://www.w3.org/2002/07/owl#incompatibleWith> <https://w3id.org/function/ontology/0.4.1> .
+<https://w3id.org/function/ontology> <http://www.w3.org/2002/07/owl#incompatibleWith> <https://w3id.org/function/ontology/0.5.0> .
+<https://w3id.org/function/ontology> <http://www.w3.org/2002/07/owl#incompatibleWith> <https://w3id.org/function/ontology/0.5.1> .
+<https://w3id.org/function/ontology> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/function/ontology/0.6.0> .
+<https://w3id.org/function/ontology> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<https://w3id.org/function/ontology> <http://xmlns.com/foaf/0.1/depiction> <https://w3id.org/function/spec/resources/images/fno-full.png> .
+<https://w3id.org/function/ontology> <http://xmlns.com/foaf/0.1/logo> <https://w3id.org/function/img/fno_favicon.png> .
+<https://w3id.org/function/ontology> <http://xmlns.com/foaf/0.1/primaryTopic> <https://w3id.org/function/ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/doi
+<http://purl.org/ontology/bibo/doi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/example
+<http://purl.org/vocab/vann/example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/license
+<http://schema.org/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/depiction
+<http://xmlns.com/foaf/0.1/depiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/logo
+<http://xmlns.com/foaf/0.1/logo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/primaryTopic
+<http://xmlns.com/foaf/0.1/primaryTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/function/ontology#name
+<https://w3id.org/function/ontology#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/function/ontology#name> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/function/ontology#executes
+<https://w3id.org/function/ontology#executes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/function/ontology#executes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/function/ontology#Execution> .
+<https://w3id.org/function/ontology#executes> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/function/ontology#Function> .
+<https://w3id.org/function/ontology#executes> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fn-execution> .
+<https://w3id.org/function/ontology#executes> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a function to an execution definition"@en .
+<https://w3id.org/function/ontology#executes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#executes> <http://www.w3.org/2000/01/rdf-schema#label> "executes"@en .
+<https://w3id.org/function/ontology#executes> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/function/ontology#expects
+<https://w3id.org/function/ontology#expects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/function/ontology#expects> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/function/ontology#Function> .
+<https://w3id.org/function/ontology#expects> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#List> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/ontology#expects> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fn-parameter> .
+<https://w3id.org/function/ontology#expects> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a function description to an ordered list of zero or more parameter descriptions"@en .
+<https://w3id.org/function/ontology#expects> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#expects> <http://www.w3.org/2000/01/rdf-schema#label> "expects"@en .
+<https://w3id.org/function/ontology#expects> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/function/ontology#function
+<https://w3id.org/function/ontology#function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/function/ontology#function> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/function/ontology#Mapping> .
+<https://w3id.org/function/ontology#function> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/function/ontology#Function> .
+<https://w3id.org/function/ontology#function> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fno-Mapping> .
+<https://w3id.org/function/ontology#function> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a function to a mapping definition"@en .
+<https://w3id.org/function/ontology#function> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#function> <http://www.w3.org/2000/01/rdf-schema#label> "function"@en .
+<https://w3id.org/function/ontology#function> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/function/ontology#implementation
+<https://w3id.org/function/ontology#implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/function/ontology#implementation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/function/ontology#Mapping> .
+<https://w3id.org/function/ontology#implementation> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/function/ontology#Implementation> .
+<https://w3id.org/function/ontology#implementation> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fno-Mapping> .
+<https://w3id.org/function/ontology#implementation> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an implementation to a mapping definition"@en .
+<https://w3id.org/function/ontology#implementation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#implementation> <http://www.w3.org/2000/01/rdf-schema#label> "implementation"@en .
+<https://w3id.org/function/ontology#implementation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/function/ontology#implements
+<https://w3id.org/function/ontology#implements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/function/ontology#implements> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/function/ontology#Function> .
+<https://w3id.org/function/ontology#implements> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/function/ontology#Algorithm> .
+<https://w3id.org/function/ontology#implements> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fn-algorithm> .
+<https://w3id.org/function/ontology#implements> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a function to an algorithm it implements. A function can implement 0..n algorithms."@en .
+<https://w3id.org/function/ontology#implements> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#implements> <http://www.w3.org/2000/01/rdf-schema#label> "implements"@en .
+<https://w3id.org/function/ontology#implements> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/function/ontology#methodMapping
+<https://w3id.org/function/ontology#methodMapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/function/ontology#methodMapping> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/function/ontology#Mapping> .
+<https://w3id.org/function/ontology#methodMapping> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/function/ontology#MethodMapping> .
+<https://w3id.org/function/ontology#methodMapping> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fno-MethodMapping> .
+<https://w3id.org/function/ontology#methodMapping> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a method mapping to a mapping definition"@en .
+<https://w3id.org/function/ontology#methodMapping> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#methodMapping> <http://www.w3.org/2000/01/rdf-schema#label> "method mapping"@en .
+<https://w3id.org/function/ontology#methodMapping> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/function/ontology#parameterMapping
+<https://w3id.org/function/ontology#parameterMapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/function/ontology#parameterMapping> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/function/ontology#Mapping> .
+<https://w3id.org/function/ontology#parameterMapping> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/function/ontology#ParameterMapping> .
+<https://w3id.org/function/ontology#parameterMapping> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fno-ParameterMapping> .
+<https://w3id.org/function/ontology#parameterMapping> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a parameter mapping to a mapping definition"@en .
+<https://w3id.org/function/ontology#parameterMapping> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#parameterMapping> <http://www.w3.org/2000/01/rdf-schema#label> "parameter mapping"@en .
+<https://w3id.org/function/ontology#parameterMapping> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/function/ontology#predicate
+<https://w3id.org/function/ontology#predicate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/function/ontology#predicate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/function/ontology#Parameter> .
+<https://w3id.org/function/ontology#predicate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/ontology#predicate> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fn-parameter> .
+<https://w3id.org/function/ontology#predicate> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a parameter description to the predicate used to link executions of this function to their parameter."@en .
+<https://w3id.org/function/ontology#predicate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#predicate> <http://www.w3.org/2000/01/rdf-schema#label> "predicate"@en .
+<https://w3id.org/function/ontology#predicate> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/function/ontology#returnMapping
+<https://w3id.org/function/ontology#returnMapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/function/ontology#returnMapping> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/function/ontology#Mapping> .
+<https://w3id.org/function/ontology#returnMapping> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/function/ontology#ReturnMapping> .
+<https://w3id.org/function/ontology#returnMapping> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fno-ReturnMapping> .
+<https://w3id.org/function/ontology#returnMapping> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a return mapping to a mapping definition"@en .
+<https://w3id.org/function/ontology#returnMapping> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#returnMapping> <http://www.w3.org/2000/01/rdf-schema#label> "return mapping"@en .
+<https://w3id.org/function/ontology#returnMapping> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/function/ontology#returns
+<https://w3id.org/function/ontology#returns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/function/ontology#returns> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/function/ontology#Function> .
+<https://w3id.org/function/ontology#returns> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://w3id.org/function/ontology#returns> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fn-output> .
+<https://w3id.org/function/ontology#returns> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a description of a function to the description of the output"@en .
+<https://w3id.org/function/ontology#returns> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#returns> <http://www.w3.org/2000/01/rdf-schema#label> "returns"@en .
+<https://w3id.org/function/ontology#returns> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/function/ontology#solves
+<https://w3id.org/function/ontology#solves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/function/ontology#solves> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/function/ontology#Function> .
+<https://w3id.org/function/ontology#solves> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/function/ontology#Problem> .
+<https://w3id.org/function/ontology#solves> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fn-problem> .
+<https://w3id.org/function/ontology#solves> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a description of a function to the description of a problem it tries to solve."@en .
+<https://w3id.org/function/ontology#solves> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#solves> <http://www.w3.org/2000/01/rdf-schema#label> "solves"@en .
+<https://w3id.org/function/ontology#solves> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/function/ontology#type
+<https://w3id.org/function/ontology#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/function/ontology#type> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/function/ontology#Parameter> .
+<https://w3id.org/function/ontology#type> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fn-parameter> .
+<https://w3id.org/function/ontology#type> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an output or a parameter description to the type of instances of these parameters or outputs."@en .
+<https://w3id.org/function/ontology#type> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#type> <http://www.w3.org/2000/01/rdf-schema#label> "type"@en .
+<https://w3id.org/function/ontology#type> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://w3id.org/function/ontology#uses
+<https://w3id.org/function/ontology#uses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/function/ontology#uses> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/function/ontology#Execution> .
+<https://w3id.org/function/ontology#uses> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/function/ontology#Mapping> .
+<https://w3id.org/function/ontology#uses> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fno-uses> .
+<https://w3id.org/function/ontology#uses> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an execution to a mapping definition"@en .
+<https://w3id.org/function/ontology#uses> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#uses> <http://www.w3.org/2000/01/rdf-schema#label> "uses"@en .
+<https://w3id.org/function/ontology#uses> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/function/ontology#name
+<https://w3id.org/function/ontology#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/function/ontology#name> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/function/ontology#Function> .
+<https://w3id.org/function/ontology#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://w3id.org/function/ontology#nullable
+<https://w3id.org/function/ontology#nullable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/function/ontology#nullable> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/function/ontology#Parameter> .
+<https://w3id.org/function/ontology#nullable> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/function/ontology#nullable> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines if a parameteris nullable."@en .
+<https://w3id.org/function/ontology#nullable> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#nullable> <http://www.w3.org/2000/01/rdf-schema#label> "nullable"@en .
+<https://w3id.org/function/ontology#nullable> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/function/ontology#required
+<https://w3id.org/function/ontology#required> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/function/ontology#required> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/function/ontology#Parameter> .
+<https://w3id.org/function/ontology#required> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://w3id.org/function/ontology#required> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fn-parameter> .
+<https://w3id.org/function/ontology#required> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines if a parameter or an output is required."@en .
+<https://w3id.org/function/ontology#required> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#required> <http://www.w3.org/2000/01/rdf-schema#label> "required"@en .
+<https://w3id.org/function/ontology#required> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#List
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/function/ontology#Algorithm
+<https://w3id.org/function/ontology#Algorithm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/ontology#Algorithm> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fn-algorithm> .
+<https://w3id.org/function/ontology#Algorithm> <http://www.w3.org/2000/01/rdf-schema#comment> "An algorithm is a specified set of instructions, independent of its implementation."@en .
+<https://w3id.org/function/ontology#Algorithm> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#Algorithm> <http://www.w3.org/2000/01/rdf-schema#label> "Algorithm"@en .
+<https://w3id.org/function/ontology#Algorithm> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://w3id.org/function/ontology#Algorithm> <http://www.w3.org/2004/02/skos/core#note> "A function can be implemented using a known algorithm (e.g., Dijkstra's shortest path algorithm),\r\nor use a combination of multiple algorithms to solve a certain problem.\r\nA function does not have to be implemented by any algorithm or have to be mapped one-on-one to an algorithm.\r\nIt is not required to have a one-to-one mapping between an algorithm and a problem."@en .
+# 
+# https://w3id.org/function/ontology#Execution
+<https://w3id.org/function/ontology#Execution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/ontology#Execution> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fn-execution> .
+<https://w3id.org/function/ontology#Execution> <http://www.w3.org/2000/01/rdf-schema#comment> "An Execution is the connection between a Function and its Parameters and Outputs."@en .
+<https://w3id.org/function/ontology#Execution> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#Execution> <http://www.w3.org/2000/01/rdf-schema#label> "Execution"@en .
+<https://w3id.org/function/ontology#Execution> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/function/ontology#Execution> <http://www.w3.org/2004/02/skos/core#note> " An Execution is the assignment of the values of the Parameters of a Function. An Execution has as result the value of the Output of the Function."@en .
+# 
+# https://w3id.org/function/ontology#Function
+<https://w3id.org/function/ontology#Function> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/ontology#Function> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fn-function> .
+<https://w3id.org/function/ontology#Function> <http://www.w3.org/2000/01/rdf-schema#comment> "A Function is a process that performs a specific task by associating one or more Parameters to an Output"@en .
+<https://w3id.org/function/ontology#Function> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#Function> <http://www.w3.org/2000/01/rdf-schema#label> "Function"@en .
+<https://w3id.org/function/ontology#Function> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/function/ontology#Function> <http://www.w3.org/2004/02/skos/core#note> "A Function is an actionable thing that can have input parameters, output, solve certain problems, and can be implemented using certain algorithms."@en .
+# 
+# https://w3id.org/function/ontology#Implementation
+<https://w3id.org/function/ontology#Implementation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/ontology#Implementation> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fno-implementation> .
+<https://w3id.org/function/ontology#Implementation> <http://www.w3.org/2000/01/rdf-schema#comment> "An Implementation defines the internal workings of one or more Functions"@en .
+<https://w3id.org/function/ontology#Implementation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#Implementation> <http://www.w3.org/2000/01/rdf-schema#label> "Implementation"@en .
+<https://w3id.org/function/ontology#Implementation> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://w3id.org/function/ontology#Implementation> <http://www.w3.org/2004/02/skos/core#note> "An Implementation depends on the used development context, i.e., the used programming language and execution environment. An Implementation could be, e.g., an NPM package."@en .
+# 
+# https://w3id.org/function/ontology#Mapping
+<https://w3id.org/function/ontology#Mapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/ontology#Mapping> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fno-Mapping> .
+<https://w3id.org/function/ontology#Mapping> <http://www.w3.org/2000/01/rdf-schema#comment> "A Mapping links (abstract) Functions and (concrete) Implementations"@en .
+<https://w3id.org/function/ontology#Mapping> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#Mapping> <http://www.w3.org/2000/01/rdf-schema#label> "Mapping"@en .
+<https://w3id.org/function/ontology#Mapping> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/function/ontology#MethodMapping
+<https://w3id.org/function/ontology#MethodMapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/ontology#MethodMapping> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fno-MethodMapping> .
+<https://w3id.org/function/ontology#MethodMapping> <http://www.w3.org/2000/01/rdf-schema#comment> "A method mapping unambiguously specifies how the abstract function can be mapped to the implemented method. This can be, e.g., the name of the method"@en .
+<https://w3id.org/function/ontology#MethodMapping> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#MethodMapping> <http://www.w3.org/2000/01/rdf-schema#label> "Method mapping"@en .
+<https://w3id.org/function/ontology#MethodMapping> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/function/ontology#Output
+<https://w3id.org/function/ontology#Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/ontology#Output> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fn-output> .
+<https://w3id.org/function/ontology#Output> <http://www.w3.org/2000/01/rdf-schema#comment> "An Output is the description of the output value of a Function."@en .
+<https://w3id.org/function/ontology#Output> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#Output> <http://www.w3.org/2000/01/rdf-schema#label> "Output"@en .
+<https://w3id.org/function/ontology#Output> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/function/ontology#Output> <http://www.w3.org/2004/02/skos/core#note> "A Function can have multiple outputs, just as, e.g., callbacks in JavaScript can return multiple results, or a function could throw multiple types of errors."@en .
+# 
+# https://w3id.org/function/ontology#Parameter
+<https://w3id.org/function/ontology#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/ontology#Parameter> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fn-parameter> .
+<https://w3id.org/function/ontology#Parameter> <http://www.w3.org/2000/01/rdf-schema#comment> "A Parameter is the description of the input value of a Function."@en .
+<https://w3id.org/function/ontology#Parameter> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#Parameter> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter"@en .
+<https://w3id.org/function/ontology#Parameter> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+<https://w3id.org/function/ontology#Parameter> <http://www.w3.org/2004/02/skos/core#note> "A Function expects a list of Parameters. This description actually defines which predicates to use when binding the values to the execution of the Function. The parameters are ordered in a list, and each parameter defines the relationship that is used for the execution. For this, the fno:predicate predicate MUST be used. All predicates are allowed, except for rdf:type and fno:executes. A Parameter can have a specific type or other metadata (e.g., required or not, having a default value or not)."@en .
+# 
+# https://w3id.org/function/ontology#ParameterMapping
+<https://w3id.org/function/ontology#ParameterMapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/ontology#ParameterMapping> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fno-ParameterMapping> .
+<https://w3id.org/function/ontology#ParameterMapping> <http://www.w3.org/2000/01/rdf-schema#comment> "A parameter mapping unambiguously specifies how the abstract parameter can be mapped to the implemented method's argument. For example: Parameter X is mapped to the third argument of the method (a position parameter mapping, common for programming languages), or to property with name Y of the method (a property parameter mapping, common for Web APIs)"@en .
+<https://w3id.org/function/ontology#ParameterMapping> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#ParameterMapping> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter mapping"@en .
+<https://w3id.org/function/ontology#ParameterMapping> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# https://w3id.org/function/ontology#Problem
+<https://w3id.org/function/ontology#Problem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/ontology#Problem> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fn-problem> .
+<https://w3id.org/function/ontology#Problem> <http://www.w3.org/2000/01/rdf-schema#comment> "A Problem is a general issue. Some problems can be solved by executing a certain Function."@en .
+<https://w3id.org/function/ontology#Problem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#Problem> <http://www.w3.org/2000/01/rdf-schema#label> "Problem"@en .
+<https://w3id.org/function/ontology#Problem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+<https://w3id.org/function/ontology#Problem> <http://www.w3.org/2004/02/skos/core#note> "For example, a Function can solve the <code>doing a sum</code> problem, however, \"global warming\" could also be perceived as a problem, with no single function to solve it."@en .
+# 
+# https://w3id.org/function/ontology#ReturnMapping
+<https://w3id.org/function/ontology#ReturnMapping> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/function/ontology#ReturnMapping> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fno-ReturnMapping> .
+<https://w3id.org/function/ontology#ReturnMapping> <http://www.w3.org/2000/01/rdf-schema#comment> "A return mapping unambiguously specifies how the abstract output can be mapped to the implemented method's return value. For example: the return value of the method, or the thrown error of a the method"@en .
+<https://w3id.org/function/ontology#ReturnMapping> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#ReturnMapping> <http://www.w3.org/2000/01/rdf-schema#label> "Return mapping"@en .
+<https://w3id.org/function/ontology#ReturnMapping> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://ben.de-meester.org/#me
+<https://ben.de-meester.org/#me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://ben.de-meester.org/#me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<https://ben.de-meester.org/#me> <http://www.w3.org/2000/01/rdf-schema#label> "Ben De Meester"@en .
+<https://ben.de-meester.org/#me> <http://xmlns.com/foaf/0.1/mbox> "mailto:Ben.DeMeester@UGent.be" .
+<https://ben.de-meester.org/#me> <http://xmlns.com/foaf/0.1/name> "Ben De Meester"@en .
+# 
+# https://natadimou.com/#me
+<https://natadimou.com/#me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://natadimou.com/#me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<https://natadimou.com/#me> <http://www.w3.org/2000/01/rdf-schema#label> "Anastasia Dimou"@en .
+<https://natadimou.com/#me> <http://xmlns.com/foaf/0.1/mbox> "mailto:Anastasia.dimou@UGent.be" .
+<https://natadimou.com/#me> <http://xmlns.com/foaf/0.1/name> "Anastasia Dimou"@en .
+# 
+# https://w3id.org/function/ontology
+<https://w3id.org/function/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/function/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://w3id.org/function/ontology#name> <http://purl.org/vocab/vann/example> <https://w3id.org/function/spec/#fn-function> .
+<https://w3id.org/function/ontology#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a function or a parameter to its name."@en .
+<https://w3id.org/function/ontology#name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/function/ontology> .
+<https://w3id.org/function/ontology#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+<https://w3id.org/function/ontology#name> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

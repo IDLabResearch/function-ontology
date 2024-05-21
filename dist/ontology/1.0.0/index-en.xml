@@ -1,0 +1,762 @@
+-<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/function/ontology#"
+     xml:base="https://w3id.org/function/ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:ontology="https://w3id.org/function/ontology#">
+    <owl:Ontology rdf:about="https://w3id.org/function/ontology">
+        <owl:versionIRI rdf:resource="https://w3id.org/function/ontology/1.0.0"/>
+        <dc:description xml:lang="en">The Function Ontology allows to declare and describe functions. The specification is online at https://w3id.org/function/spec. Copyright © Ghent University – imec – IDLab.</dc:description>
+        <dc:rights xml:lang="en">Copyright © Ghent University – imec – IDLab</dc:rights>
+        <dc:source rdf:resource="https://w3id.org/function/spec"/>
+        <dc:title xml:lang="en">The Function Ontology</dc:title>
+        <terms:bibliographicCitation>De Meester, B.; Seymoens, T.; Dimou, A. &amp; Verborgh, R. Implementation-independent Function Reuse. Future Generation Computer Systems, Elsevier BV, 2020, 110, 946-959 </terms:bibliographicCitation>
+        <terms:contributor rdf:resource="http://maxime-lefrancois.info/me#"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-03-08</terms:created>
+        <terms:creator rdf:resource="https://ben.de-meester.org/#me"/>
+        <terms:creator rdf:resource="https://natadimou.com/#me"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-03-08</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-12-22</terms:modified>
+        <terms:publisher rdf:resource="https://ben.de-meester.org/#me"/>
+        <bibo:doi>10.5281/zenodo.595382</bibo:doi>
+        <bibo:status>stable</bibo:status>
+        <vann:preferredNamespacePrefix>fno</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/function/ontology#</vann:preferredNamespaceUri>
+        <schema:license rdf:resource="http://creativecommons.org/license/by/3.0/"/>
+        <rdfs:label xml:lang="en">The Function Ontology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://w3id.org/function/spec"/>
+        <owl:backwardCompatibleWith rdf:resource="https://w3id.org/function/ontology/0.6.0"/>
+        <owl:incompatibleWith rdf:resource="https://w3id.org/function/ontology/0.1"/>
+        <owl:incompatibleWith rdf:resource="https://w3id.org/function/ontology/0.2"/>
+        <owl:incompatibleWith rdf:resource="https://w3id.org/function/ontology/0.3"/>
+        <owl:incompatibleWith rdf:resource="https://w3id.org/function/ontology/0.4"/>
+        <owl:incompatibleWith rdf:resource="https://w3id.org/function/ontology/0.4.1"/>
+        <owl:incompatibleWith rdf:resource="https://w3id.org/function/ontology/0.5.0"/>
+        <owl:incompatibleWith rdf:resource="https://w3id.org/function/ontology/0.5.1"/>
+        <owl:priorVersion rdf:resource="https://w3id.org/function/ontology/0.6.0"/>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <foaf:depiction rdf:resource="https://w3id.org/function/spec/resources/images/fno-full.png"/>
+        <foaf:logo rdf:resource="https://w3id.org/function/img/fno_favicon.png"/>
+        <foaf:primaryTopic rdf:resource="https://w3id.org/function/ontology"/>
+    </owl:Ontology>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+
+
+
+    <!-- http://purl.org/ontology/bibo/doi -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/doi"/>
+
+
+
+    <!-- http://purl.org/ontology/bibo/status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/ontology/bibo/status"/>
+
+
+
+    <!-- http://purl.org/vocab/vann/example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/example"/>
+
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+
+
+
+    <!-- http://schema.org/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/license"/>
+
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+
+
+
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/depiction"/>
+
+
+
+    <!-- http://xmlns.com/foaf/0.1/logo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/logo"/>
+
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/mbox"/>
+
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+
+
+
+    <!-- http://xmlns.com/foaf/0.1/primaryTopic -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/primaryTopic"/>
+
+
+
+    <!-- https://w3id.org/function/ontology#name -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/function/ontology#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+
+    <!-- https://w3id.org/function/ontology#executes -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/function/ontology#executes">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Execution"/>
+        <rdfs:range rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fn-execution"/>
+        <rdfs:comment xml:lang="en">Connects a function to an execution definition</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">executes</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/function/ontology#expects -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/function/ontology#expects">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fn-parameter"/>
+        <rdfs:comment xml:lang="en">Connects a function description to an ordered list of zero or more parameter descriptions</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">expects</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/function/ontology#function -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/function/ontology#function">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Mapping"/>
+        <rdfs:range rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fno-Mapping"/>
+        <rdfs:comment xml:lang="en">Connects a function to a mapping definition</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">function</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/function/ontology#implementation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/function/ontology#implementation">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Mapping"/>
+        <rdfs:range rdf:resource="https://w3id.org/function/ontology#Implementation"/>
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fno-Mapping"/>
+        <rdfs:comment xml:lang="en">Connects an implementation to a mapping definition</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">implementation</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/function/ontology#implements -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/function/ontology#implements">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:range rdf:resource="https://w3id.org/function/ontology#Algorithm"/>
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fn-algorithm"/>
+        <rdfs:comment xml:lang="en">Connects a function to an algorithm it implements. A function can implement 0..n algorithms.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">implements</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/function/ontology#methodMapping -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/function/ontology#methodMapping">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Mapping"/>
+        <rdfs:range rdf:resource="https://w3id.org/function/ontology#MethodMapping"/>
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fno-MethodMapping"/>
+        <rdfs:comment xml:lang="en">Connects a method mapping to a mapping definition</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">method mapping</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/function/ontology#parameterMapping -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/function/ontology#parameterMapping">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Mapping"/>
+        <rdfs:range rdf:resource="https://w3id.org/function/ontology#ParameterMapping"/>
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fno-ParameterMapping"/>
+        <rdfs:comment xml:lang="en">Connects a parameter mapping to a mapping definition</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">parameter mapping</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/function/ontology#predicate -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/function/ontology#predicate">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fn-parameter"/>
+        <rdfs:comment xml:lang="en">Connects a parameter description to the predicate used to link executions of this function to their parameter.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">predicate</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/function/ontology#returnMapping -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/function/ontology#returnMapping">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Mapping"/>
+        <rdfs:range rdf:resource="https://w3id.org/function/ontology#ReturnMapping"/>
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fno-ReturnMapping"/>
+        <rdfs:comment xml:lang="en">Connects a return mapping to a mapping definition</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">return mapping</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/function/ontology#returns -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/function/ontology#returns">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fn-output"/>
+        <rdfs:comment xml:lang="en">Connects a description of a function to the description of the output</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">returns</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/function/ontology#solves -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/function/ontology#solves">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:range rdf:resource="https://w3id.org/function/ontology#Problem"/>
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fn-problem"/>
+        <rdfs:comment xml:lang="en">Connects a description of a function to the description of a problem it tries to solve.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">solves</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/function/ontology#type -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/function/ontology#type">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fn-parameter"/>
+        <rdfs:comment xml:lang="en">Connects an output or a parameter description to the type of instances of these parameters or outputs.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">type</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+    </owl:ObjectProperty>
+
+
+
+    <!-- https://w3id.org/function/ontology#uses -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/function/ontology#uses">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Execution"/>
+        <rdfs:range rdf:resource="https://w3id.org/function/ontology#Mapping"/>
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fno-uses"/>
+        <rdfs:comment xml:lang="en">Connects an execution to a mapping definition</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">uses</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:ObjectProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+
+    <!-- https://w3id.org/function/ontology#name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/function/ontology#name">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Function"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/function/ontology#nullable -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/function/ontology#nullable">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Defines if a parameteris nullable.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">nullable</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- https://w3id.org/function/ontology#required -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/function/ontology#required">
+        <rdfs:domain rdf:resource="https://w3id.org/function/ontology#Parameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fn-parameter"/>
+        <rdfs:comment xml:lang="en">Defines if a parameter or an output is required.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">required</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:DatatypeProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+
+    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
+
+
+    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
+
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#Property -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+
+
+
+    <!-- https://w3id.org/function/ontology#Algorithm -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/ontology#Algorithm">
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fn-algorithm"/>
+        <rdfs:comment xml:lang="en">An algorithm is a specified set of instructions, independent of its implementation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">Algorithm</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+        <skos:note xml:lang="en">A function can be implemented using a known algorithm (e.g., Dijkstra&apos;s shortest path algorithm),
+or use a combination of multiple algorithms to solve a certain problem.
+A function does not have to be implemented by any algorithm or have to be mapped one-on-one to an algorithm.
+It is not required to have a one-to-one mapping between an algorithm and a problem.</skos:note>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/function/ontology#Execution -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/ontology#Execution">
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fn-execution"/>
+        <rdfs:comment xml:lang="en">An Execution is the connection between a Function and its Parameters and Outputs.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">Execution</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+        <skos:note xml:lang="en"> An Execution is the assignment of the values of the Parameters of a Function. An Execution has as result the value of the Output of the Function.</skos:note>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/function/ontology#Function -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/ontology#Function">
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fn-function"/>
+        <rdfs:comment xml:lang="en">A Function is a process that performs a specific task by associating one or more Parameters to an Output</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">Function</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+        <skos:note xml:lang="en">A Function is an actionable thing that can have input parameters, output, solve certain problems, and can be implemented using certain algorithms.</skos:note>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/function/ontology#Implementation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/ontology#Implementation">
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fno-implementation"/>
+        <rdfs:comment xml:lang="en">An Implementation defines the internal workings of one or more Functions</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">Implementation</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+        <skos:note xml:lang="en">An Implementation depends on the used development context, i.e., the used programming language and execution environment. An Implementation could be, e.g., an NPM package.</skos:note>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/function/ontology#Mapping -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/ontology#Mapping">
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fno-Mapping"/>
+        <rdfs:comment xml:lang="en">A Mapping links (abstract) Functions and (concrete) Implementations</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">Mapping</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/function/ontology#MethodMapping -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/ontology#MethodMapping">
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fno-MethodMapping"/>
+        <rdfs:comment xml:lang="en">A method mapping unambiguously specifies how the abstract function can be mapped to the implemented method. This can be, e.g., the name of the method</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">Method mapping</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/function/ontology#Output -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/ontology#Output">
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fn-output"/>
+        <rdfs:comment xml:lang="en">An Output is the description of the output value of a Function.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">Output</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+        <skos:note xml:lang="en">A Function can have multiple outputs, just as, e.g., callbacks in JavaScript can return multiple results, or a function could throw multiple types of errors.</skos:note>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/function/ontology#Parameter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/ontology#Parameter">
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fn-parameter"/>
+        <rdfs:comment xml:lang="en">A Parameter is the description of the input value of a Function.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">Parameter</rdfs:label>
+        <ns:term_status>stable</ns:term_status>
+        <skos:note xml:lang="en">A Function expects a list of Parameters. This description actually defines which predicates to use when binding the values to the execution of the Function. The parameters are ordered in a list, and each parameter defines the relationship that is used for the execution. For this, the fno:predicate predicate MUST be used. All predicates are allowed, except for rdf:type and fno:executes. A Parameter can have a specific type or other metadata (e.g., required or not, having a default value or not).</skos:note>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/function/ontology#ParameterMapping -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/ontology#ParameterMapping">
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fno-ParameterMapping"/>
+        <rdfs:comment xml:lang="en">A parameter mapping unambiguously specifies how the abstract parameter can be mapped to the implemented method&apos;s argument. For example: Parameter X is mapped to the third argument of the method (a position parameter mapping, common for programming languages), or to property with name Y of the method (a property parameter mapping, common for Web APIs)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">Parameter mapping</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/function/ontology#Problem -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/ontology#Problem">
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fn-problem"/>
+        <rdfs:comment xml:lang="en">A Problem is a general issue. Some problems can be solved by executing a certain Function.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">Problem</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+        <skos:note xml:lang="en">For example, a Function can solve the &lt;code&gt;doing a sum&lt;/code&gt; problem, however, &quot;global warming&quot; could also be perceived as a problem, with no single function to solve it.</skos:note>
+    </owl:Class>
+
+
+
+    <!-- https://w3id.org/function/ontology#ReturnMapping -->
+
+
+    <owl:Class rdf:about="https://w3id.org/function/ontology#ReturnMapping">
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fno-ReturnMapping"/>
+        <rdfs:comment xml:lang="en">A return mapping unambiguously specifies how the abstract output can be mapped to the implemented method&apos;s return value. For example: the return value of the method, or the thrown error of a the method</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">Return mapping</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </owl:Class>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+
+    <!-- https://ben.de-meester.org/#me -->
+
+
+    <owl:NamedIndividual rdf:about="https://ben.de-meester.org/#me">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label xml:lang="en">Ben De Meester</rdfs:label>
+        <foaf:mbox>mailto:Ben.DeMeester@UGent.be</foaf:mbox>
+        <foaf:name xml:lang="en">Ben De Meester</foaf:name>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://natadimou.com/#me -->
+
+
+    <owl:NamedIndividual rdf:about="https://natadimou.com/#me">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label xml:lang="en">Anastasia Dimou</rdfs:label>
+        <foaf:mbox>mailto:Anastasia.dimou@UGent.be</foaf:mbox>
+        <foaf:name xml:lang="en">Anastasia Dimou</foaf:name>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://w3id.org/function/ontology -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/function/ontology">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+    </owl:NamedIndividual>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://w3id.org/function/ontology#name">
+        <vann:example rdf:resource="https://w3id.org/function/spec/#fn-function"/>
+        <rdfs:comment xml:lang="en">Connects a function or a parameter to its name.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/function/ontology"/>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+        <ns:term_status>testing</ns:term_status>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

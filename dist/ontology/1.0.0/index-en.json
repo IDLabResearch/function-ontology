@@ -1,0 +1,876 @@
+[ {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/ontology/bibo/doi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/ontology/bibo/status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocommons/voaf#Vocabulary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#note",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/depiction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/logo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/mbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/primaryTopic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://ben.de-meester.org/#me",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ben De Meester"
+  } ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "mailto:Ben.DeMeester@UGent.be"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "Ben De Meester"
+  } ]
+}, {
+  "@id" : "https://natadimou.com/#me",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Anastasia Dimou"
+  } ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "mailto:Anastasia.dimou@UGent.be"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "Anastasia Dimou"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/vocommons/voaf#Vocabulary" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "The Function Ontology allows to declare and describe functions. The specification is online at https://w3id.org/function/spec. Copyright © Ghent University – imec – IDLab."
+  } ],
+  "http://purl.org/dc/elements/1.1/rights" : [ {
+    "@language" : "en",
+    "@value" : "Copyright © Ghent University – imec – IDLab"
+  } ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://w3id.org/function/spec"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "The Function Ontology"
+  } ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "De Meester, B.; Seymoens, T.; Dimou, A. & Verborgh, R. Implementation-independent Function Reuse. Future Generation Computer Systems, Elsevier BV, 2020, 110, 946-959 "
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@id" : "http://maxime-lefrancois.info/me#"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2016-03-08"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://ben.de-meester.org/#me"
+  }, {
+    "@id" : "https://natadimou.com/#me"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2016-03-08"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-12-22"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://ben.de-meester.org/#me"
+  } ],
+  "http://purl.org/ontology/bibo/doi" : [ {
+    "@value" : "10.5281/zenodo.595382"
+  } ],
+  "http://purl.org/ontology/bibo/status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "fno"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/function/ontology#"
+  } ],
+  "http://schema.org/license" : [ {
+    "@id" : "http://creativecommons.org/license/by/3.0/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "The Function Ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://w3id.org/function/spec"
+  } ],
+  "http://www.w3.org/2002/07/owl#backwardCompatibleWith" : [ {
+    "@id" : "https://w3id.org/function/ontology/0.6.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#incompatibleWith" : [ {
+    "@id" : "https://w3id.org/function/ontology/0.1"
+  }, {
+    "@id" : "https://w3id.org/function/ontology/0.2"
+  }, {
+    "@id" : "https://w3id.org/function/ontology/0.3"
+  }, {
+    "@id" : "https://w3id.org/function/ontology/0.4"
+  }, {
+    "@id" : "https://w3id.org/function/ontology/0.4.1"
+  }, {
+    "@id" : "https://w3id.org/function/ontology/0.5.0"
+  }, {
+    "@id" : "https://w3id.org/function/ontology/0.5.1"
+  } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@id" : "https://w3id.org/function/ontology/0.6.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/function/ontology/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ],
+  "http://xmlns.com/foaf/0.1/depiction" : [ {
+    "@id" : "https://w3id.org/function/spec/resources/images/fno-full.png"
+  } ],
+  "http://xmlns.com/foaf/0.1/logo" : [ {
+    "@id" : "https://w3id.org/function/img/fno_favicon.png"
+  } ],
+  "http://xmlns.com/foaf/0.1/primaryTopic" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#Algorithm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fn-algorithm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An algorithm is a specified set of instructions, independent of its implementation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Algorithm"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@language" : "en",
+    "@value" : "A function can be implemented using a known algorithm (e.g., Dijkstra's shortest path algorithm),\r\nor use a combination of multiple algorithms to solve a certain problem.\r\nA function does not have to be implemented by any algorithm or have to be mapped one-on-one to an algorithm.\r\nIt is not required to have a one-to-one mapping between an algorithm and a problem."
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#Execution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fn-execution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Execution is the connection between a Function and its Parameters and Outputs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Execution"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@language" : "en",
+    "@value" : " An Execution is the assignment of the values of the Parameters of a Function. An Execution has as result the value of the Output of the Function."
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#Function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fn-function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Function is a process that performs a specific task by associating one or more Parameters to an Output"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Function"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@language" : "en",
+    "@value" : "A Function is an actionable thing that can have input parameters, output, solve certain problems, and can be implemented using certain algorithms."
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#Implementation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fno-implementation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Implementation defines the internal workings of one or more Functions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Implementation"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@language" : "en",
+    "@value" : "An Implementation depends on the used development context, i.e., the used programming language and execution environment. An Implementation could be, e.g., an NPM package."
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#Mapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fno-Mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Mapping links (abstract) Functions and (concrete) Implementations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mapping"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#MethodMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fno-MethodMapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A method mapping unambiguously specifies how the abstract function can be mapped to the implemented method. This can be, e.g., the name of the method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Method mapping"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#Output",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fn-output"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Output is the description of the output value of a Function."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Output"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@language" : "en",
+    "@value" : "A Function can have multiple outputs, just as, e.g., callbacks in JavaScript can return multiple results, or a function could throw multiple types of errors."
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#Parameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fn-parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Parameter is the description of the input value of a Function."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Parameter"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@language" : "en",
+    "@value" : "A Function expects a list of Parameters. This description actually defines which predicates to use when binding the values to the execution of the Function. The parameters are ordered in a list, and each parameter defines the relationship that is used for the execution. For this, the fno:predicate predicate MUST be used. All predicates are allowed, except for rdf:type and fno:executes. A Parameter can have a specific type or other metadata (e.g., required or not, having a default value or not)."
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#ParameterMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fno-ParameterMapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A parameter mapping unambiguously specifies how the abstract parameter can be mapped to the implemented method's argument. For example: Parameter X is mapped to the third argument of the method (a position parameter mapping, common for programming languages), or to property with name Y of the method (a property parameter mapping, common for Web APIs)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Parameter mapping"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#Problem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fn-problem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Problem is a general issue. Some problems can be solved by executing a certain Function."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Problem"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@language" : "en",
+    "@value" : "For example, a Function can solve the <code>doing a sum</code> problem, however, \"global warming\" could also be perceived as a problem, with no single function to solve it."
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#ReturnMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fno-ReturnMapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A return mapping unambiguously specifies how the abstract output can be mapped to the implemented method's return value. For example: the return value of the method, or the thrown error of a the method"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Return mapping"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#executes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fn-execution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a function to an execution definition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/ontology#Execution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "executes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/function/ontology#Function"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#expects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fn-parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a function description to an ordered list of zero or more parameter descriptions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/ontology#Function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "expects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fno-Mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a function to a mapping definition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/ontology#Mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/function/ontology#Function"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#implementation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fno-Mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects an implementation to a mapping definition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/ontology#Mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "implementation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/function/ontology#Implementation"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#implements",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fn-algorithm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a function to an algorithm it implements. A function can implement 0..n algorithms."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/ontology#Function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "implements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/function/ontology#Algorithm"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#methodMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fno-MethodMapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a method mapping to a mapping definition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/ontology#Mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "method mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/function/ontology#MethodMapping"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fn-function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a function or a parameter to its name."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/ontology#Function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#nullable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Defines if a parameteris nullable."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/ontology#Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "nullable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#parameterMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fno-ParameterMapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a parameter mapping to a mapping definition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/ontology#Mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "parameter mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/function/ontology#ParameterMapping"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#predicate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fn-parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a parameter description to the predicate used to link executions of this function to their parameter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/ontology#Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "predicate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#required",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fn-parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Defines if a parameter or an output is required."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/ontology#Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "required"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#returnMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fno-ReturnMapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a return mapping to a mapping definition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/ontology#Mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "return mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/function/ontology#ReturnMapping"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#returns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fn-output"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a description of a function to the description of the output"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/ontology#Function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "returns"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#solves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fn-problem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a description of a function to the description of a problem it tries to solve."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/ontology#Function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "solves"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/function/ontology#Problem"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fn-parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects an output or a parameter description to the type of instances of these parameters or outputs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/ontology#Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "type"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#uses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/example" : [ {
+    "@id" : "https://w3id.org/function/spec/#fno-uses"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects an execution to a mapping definition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/ontology#Execution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "uses"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/function/ontology#Mapping"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+} ]
