@@ -1,0 +1,533 @@
+[ {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/ontology/bibo/doi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/ontology/bibo/status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocommons/voaf#Vocabulary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://schema.org/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "array"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyAtomicType"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#anyAtomicType",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "(any)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#dateTime",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "dateTime"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyAtomicType"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#decimal",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "decimal"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyAtomicType"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#integer",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "integer"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyAtomicType"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#string",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyAtomicType"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#broader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/depiction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/logo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/mbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/primaryTopic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://ben.de-meester.org/#me",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Person" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Ben De Meester"
+  } ],
+  "http://xmlns.com/foaf/0.1/mbox" : [ {
+    "@value" : "mailto:Ben.DeMeester@UGent.be"
+  } ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@language" : "en",
+    "@value" : "Ben De Meester"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#MethodMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#Output",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#Parameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#ParameterMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/function/ontology#ReturnMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/function/vocabulary/mapping#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/vocommons/voaf#Vocabulary" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "The Function Ontology Implementation Mapping vocabulary specifies terms relevant to link FnO models to implementations. The specification is online at https://w3id.org/function/spec"
+  } ],
+  "http://purl.org/dc/elements/1.1/rights" : [ {
+    "@language" : "en",
+    "@value" : "Copyright © Ghent University – imec – IDLab"
+  } ],
+  "http://purl.org/dc/elements/1.1/source" : [ {
+    "@id" : "https://w3id.org/function/spec"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "The Function Ontology - Mapping vocabulary"
+  } ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "De Meester, B.; Seymoens, T.; Dimou, A. & Verborgh, R. Implementation-independent Function Reuse. Future Generation Computer Systems, Elsevier BV, 2020, 110, 946-959 "
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-05-21"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://ben.de-meester.org/#me"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2019-05-21"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-12-23"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://ben.de-meester.org/#me"
+  } ],
+  "http://purl.org/ontology/bibo/doi" : [ {
+    "@value" : "10.5281/zenodo.595382"
+  } ],
+  "http://purl.org/ontology/bibo/status" : [ {
+    "@value" : "testing"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "fnom"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/function/vocabulary/mapping#"
+  } ],
+  "http://schema.org/license" : [ {
+    "@id" : "http://creativecommons.org/license/by/3.0/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "- Version 0.2.1: Updated metadata\r\n- Version 0.2.0: ReturnMapping\r\n- Version 0.1.0: creation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "The Function Ontology - Mapping vocabulary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://w3id.org/function/spec"
+  } ],
+  "http://www.w3.org/2002/07/owl#backwardCompatibleWith" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping/0.2.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping/0.2.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping/0.2.1"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.2.1"
+  } ],
+  "http://xmlns.com/foaf/0.1/depiction" : [ {
+    "@id" : "https://w3id.org/function/spec/resources/images/fno-full.png"
+  } ],
+  "http://xmlns.com/foaf/0.1/logo" : [ {
+    "@id" : "https://w3id.org/function/img/fno_favicon.png"
+  } ],
+  "http://xmlns.com/foaf/0.1/primaryTopic" : [ {
+    "@id" : "https://w3id.org/function/ontology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/vocabulary/mapping#ConstantParameterMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A constant parameter mapping uses a property string to map a parameter of an fno:Implementation to a constant value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Constant Parameter Mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/function/ontology#ParameterMapping"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/vocabulary/mapping#DefaultReturnMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A default return mapping links the return value of the method to a fno:Output"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Default Return Mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/function/ontology#ReturnMapping"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/vocabulary/mapping#ExceptionReturnMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An exception return mapping links the thrown exception of the method to a fno:Output"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Exception Return Mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/function/ontology#ReturnMapping"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/vocabulary/mapping#PositionParameterMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A position parameter mapping uses a position to map a parameter of an fno:Implementation to an fno:Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Position Parameter Mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/function/ontology#ParameterMapping"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/vocabulary/mapping#PropertyParameterMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A property parameter mapping uses a property string to map a parameter of an fno:Implementation to an fno:Parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Property Parameter Mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/function/ontology#ParameterMapping"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/vocabulary/mapping#StringMethodMapping",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A string method mapping uses a string to map a method of an fno:Implementation to an fno:Function"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "String Method Mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/function/ontology#MethodMapping"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/vocabulary/mapping#constantParameterValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects an implementation constant to a parameter value."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping#ParameterMapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "constant parameter value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/vocabulary/mapping#functionOutput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a function output to a return mapping."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping#ReturnMapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "function output"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/function/ontology#Output"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/vocabulary/mapping#functionParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a function parameter to a parameter mapping."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping#PositionParameterMapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "function parameter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/function/ontology#Parameter"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/vocabulary/mapping#implementationParameterPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects an implementation parameter position to a parameter mapping."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping#ParameterMapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "implementation parameter position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/vocabulary/mapping#implementationProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects an implementation parameter label to a parameter mapping."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping#ParameterMapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "implementation property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/vocabulary/mapping#method-name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Connects a method name to a method mapping."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping#StringMethodMapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "method name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/function/vocabulary/mapping#repeatableParameter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Flag indicating whether the parameter can be repeated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping#ParameterMapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/function/vocabulary/mapping"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "repeatable parameter value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "testing"
+  } ]
+} ]

@@ -1,0 +1,263 @@
+@prefix : <https://w3id.org/function/vocabulary/mapping#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/function/vocabulary/mapping#> .
+
+<https://w3id.org/function/vocabulary/mapping#> rdf:type owl:Ontology ;
+                                                 owl:versionIRI <https://w3id.org/function/vocabulary/mapping/0.2.0> ;
+                                                 <http://creativecommons.org/ns#license> <http://creativecommons.org/license/by/3.0/> ;
+                                                 <http://purl.org/dc/terms/creator> <https://ben.de-meester.org/#me> ;
+                                                 <http://purl.org/dc/terms/description> "The Function Ontology Implementation Mapping vocabulary specifies terms relevant to link FnO models to implementations. The specification is online at https://w3id.org/function/spec"@en ;
+                                                 <http://purl.org/dc/terms/issued> "2019-05-21"^^xsd:date ;
+                                                 <http://purl.org/dc/terms/modified> "2019-05-29"^^xsd:date ;
+                                                 <http://purl.org/dc/terms/publisher> <https://ben.de-meester.org/#me> ;
+                                                 <http://purl.org/dc/terms/rights> "Copyright © Ghent University – imec – IDLab"@en ;
+                                                 <http://purl.org/dc/terms/title> "The Function Ontology - Implementation Mapping vocabulary"@en ;
+                                                 <http://purl.org/vocab/vann/preferredNamespacePrefix> "fnom" ;
+                                                 <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/function/vocabulary/mapping#" ;
+                                                 rdfs:comment """-Version 0.2.0: ReturnMapping
+-Version 0.1.0: creation."""@en ;
+                                                 rdfs:label "The Function Ontology - Implementation Mapping vocabulary"@en ;
+                                                 rdfs:seeAlso <https://w3id.org/function/spec> ;
+                                                 owl:priorVersion "https://w3id.org/function/vocabulary/mapping/0.1.0" ;
+                                                 owl:versionInfo "0.2.0" ;
+                                                 <http://xmlns.com/foaf/0.1/primaryTopic> <https://w3id.org/function/ontology> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
+
+
+###  http://xmlns.com/foaf/0.1/primaryTopic
+<http://xmlns.com/foaf/0.1/primaryTopic> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/function/vocabulary/mapping#functionOutput
+:functionOutput rdf:type owl:AnnotationProperty ;
+                rdfs:domain :ReturnMapping .
+
+
+###  https://w3id.org/function/vocabulary/mapping#implementationParameterPosition
+:implementationParameterPosition rdf:type owl:AnnotationProperty ;
+                                 rdfs:domain :ParameterMapping .
+
+
+###  https://w3id.org/function/vocabulary/mapping#implementationProperty
+:implementationProperty rdf:type owl:AnnotationProperty ;
+                        rdfs:domain :ParameterMapping .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/function/vocabulary/mapping#functionOutput
+:functionOutput rdf:type owl:ObjectProperty ;
+                rdfs:range <https://w3id.org/function/ontology#Output> .
+
+
+###  https://w3id.org/function/vocabulary/mapping#functionParameter
+:functionParameter rdf:type owl:ObjectProperty ;
+                   rdfs:domain :PositionParameterMapping ;
+                   rdfs:range <https://w3id.org/function/ontology#Parameter> ;
+                   rdfs:comment "Connects a function parameter to a parameter mapping."@en ;
+                   rdfs:isDefinedBy <https://w3id.org/vocabulary/mapping#> ;
+                   rdfs:label "function parameter"@en ;
+                   <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/function/vocabulary/mapping#implementationParameterPosition
+:implementationParameterPosition rdf:type owl:DatatypeProperty ;
+                                 rdfs:range xsd:int .
+
+
+###  https://w3id.org/function/vocabulary/mapping#implementationProperty
+:implementationProperty rdf:type owl:DatatypeProperty ;
+                        rdfs:range xsd:string .
+
+
+###  https://w3id.org/function/vocabulary/mapping#method-name
+:method-name rdf:type owl:DatatypeProperty ;
+             rdfs:domain :StringMethodMapping ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Connects a method name to a method mapping."@en ;
+             rdfs:isDefinedBy <https://w3id.org/vocabulary/mapping#> ;
+             rdfs:label "method name"@en ;
+             <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/vocommons/voaf#Vocabulary
+<http://purl.org/vocommons/voaf#Vocabulary> rdf:type owl:Class .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
+###  https://w3id.org/function/ontology#MethodMapping
+<https://w3id.org/function/ontology#MethodMapping> rdf:type owl:Class .
+
+
+###  https://w3id.org/function/ontology#Output
+<https://w3id.org/function/ontology#Output> rdf:type owl:Class .
+
+
+###  https://w3id.org/function/ontology#Parameter
+<https://w3id.org/function/ontology#Parameter> rdf:type owl:Class .
+
+
+###  https://w3id.org/function/ontology#ParameterMapping
+<https://w3id.org/function/ontology#ParameterMapping> rdf:type owl:Class .
+
+
+###  https://w3id.org/function/ontology#ReturnMapping
+<https://w3id.org/function/ontology#ReturnMapping> rdf:type owl:Class .
+
+
+###  https://w3id.org/function/vocabulary/mapping#DefaultReturnMapping
+:DefaultReturnMapping rdf:type owl:Class ;
+                      rdfs:subClassOf <https://w3id.org/function/ontology#ReturnMapping> ;
+                      rdfs:comment "A default return mapping links the return value of the method to a fno:Output"@en ;
+                      rdfs:isDefinedBy <https://w3id.org/function/vocabulary/mapping#> ;
+                      rdfs:label "Default Return Mapping"@en ;
+                      <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://w3id.org/function/vocabulary/mapping#ExceptionReturnMapping
+:ExceptionReturnMapping rdf:type owl:Class ;
+                        rdfs:subClassOf <https://w3id.org/function/ontology#ReturnMapping> ;
+                        rdfs:comment "An exception return mapping links the thrown exception of the method to a fno:Output"@en ;
+                        rdfs:isDefinedBy <https://w3id.org/function/vocabulary/mapping#> ;
+                        rdfs:label "Exception Return Mapping"@en ;
+                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://w3id.org/function/vocabulary/mapping#PositionParameterMapping
+:PositionParameterMapping rdf:type owl:Class ;
+                          rdfs:subClassOf <https://w3id.org/function/ontology#ParameterMapping> ;
+                          rdfs:comment "A position parameter mapping uses a position to map a parameter of an fno:Implementation to an fno:Parameter"@en ;
+                          rdfs:isDefinedBy <https://w3id.org/function/vocabulary/mapping#> ;
+                          rdfs:label "Position Parameter Mapping"@en ;
+                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://w3id.org/function/vocabulary/mapping#PropertyParameterMapping
+:PropertyParameterMapping rdf:type owl:Class ;
+                          rdfs:subClassOf <https://w3id.org/function/ontology#ParameterMapping> ;
+                          rdfs:comment "A property parameter mapping uses a property string to map a parameter of an fno:Implementation to an fno:Parameter"@en ;
+                          rdfs:isDefinedBy <https://w3id.org/function/vocabulary/mapping#> ;
+                          rdfs:label "Property Parameter Mapping"@en ;
+                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  https://w3id.org/function/vocabulary/mapping#StringMethodMapping
+:StringMethodMapping rdf:type owl:Class ;
+                     rdfs:subClassOf <https://w3id.org/function/ontology#MethodMapping> ;
+                     rdfs:comment "A string method mapping uses a string to map a method of an fno:Implementation to an fno:Function"@en ;
+                     rdfs:isDefinedBy <https://w3id.org/function/vocabulary/mapping#> ;
+                     rdfs:label "String Method Mapping"@en ;
+                     <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://ben.de-meester.org/#me
+<https://ben.de-meester.org/#me> rdf:type owl:NamedIndividual ,
+                                          <http://xmlns.com/foaf/0.1/Person> ;
+                                 rdfs:label "Ben De Meester"@en ;
+                                 <http://xmlns.com/foaf/0.1/mbox> "mailto:Ben.DeMeester@UGent.be" ;
+                                 <http://xmlns.com/foaf/0.1/name> "Ben De Meester"@en .
+
+
+###  https://w3id.org/function/vocabulary/mapping#
+<https://w3id.org/function/vocabulary/mapping#> rdf:type owl:NamedIndividual ,
+                                                         <http://purl.org/vocommons/voaf#Vocabulary> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:functionOutput rdfs:comment "Connects a function output to a return mapping."@en ;
+                rdfs:isDefinedBy <https://w3id.org/vocabulary/mapping#> ;
+                rdfs:label "function output"@en ;
+                <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+:implementationParameterPosition rdfs:comment "Connects an implementation parameter position to a parameter mapping."@en ;
+                                 rdfs:isDefinedBy <https://w3id.org/vocabulary/mapping#> ;
+                                 rdfs:label "implementation parameter position"@en ;
+                                 <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+:implementationProperty rdfs:comment "Connects an implementation parameter label to a parameter mapping."@en ;
+                        rdfs:isDefinedBy <https://w3id.org/vocabulary/mapping#> ;
+                        rdfs:label "implementation property"@en ;
+                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing" .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
