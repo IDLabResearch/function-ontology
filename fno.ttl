@@ -94,7 +94,6 @@
 
 :name
     rdf:type           owl:DatatypeProperty ;
-    rdfs:domain        :Function ;
     rdfs:range         xsd:string ;
     rdfs:subPropertyOf rdfs:label ;
     rdfs:label         "name"@en ;
